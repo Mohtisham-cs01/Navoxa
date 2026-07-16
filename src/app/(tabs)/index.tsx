@@ -59,21 +59,13 @@ export default function HomeScreen() {
           try {
             const row = await db.getFirstAsync<any>('SELECT * FROM words WHERE id = ?', [settings.currentWordId]);
             if (row) {
-              let meaningsRaw = [];
-              let formsRaw = [];
-              let examplesRaw = [];
-              try { if (row.meanings) meaningsRaw = JSON.parse(row.meanings); } catch (e) { }
-              try { if (row.forms) formsRaw = JSON.parse(row.forms); } catch (e) { }
-              try { if (row.examples) examplesRaw = JSON.parse(row.examples); } catch (e) { }
-
               setWord({
                 id: row.id,
-                lemma: row.lemma,
+                word: row.word,
+                article: row.article,
                 pos: row.pos,
-                gender: row.gender,
-                meanings: meaningsRaw,
-                forms: formsRaw,
-                examples: examplesRaw,
+                meaning: row.meaning,
+                examples: row.examples,
               });
             } else {
               await loadNewWord();
@@ -117,7 +109,14 @@ export default function HomeScreen() {
     if (!word || isSpeaking) return;
     setIsSpeaking(true);
     try {
-      await speakGermanWord(word.lemma);
+      // Speak the word (without article for pronunciation)
+      let wordToSpeak = word.word;
+      if (word.article && word.word.includes(`${word.article} `)) {
+        wordToSpeak = word.word.replace(`${word.article} `, '');
+      }
+      await speakGermanWord(wordToSpeak);
+    } catch (error) {
+      console.error('Error speaking word:', error);
     } finally {
       setTimeout(() => setIsSpeaking(false), 2000);
     }
@@ -145,11 +144,39 @@ export default function HomeScreen() {
     );
   }
 
-  let exampleStr = null;
-  if (word.examples && word.examples.length > 0) {
-    const first = word.examples[0];
-    exampleStr = typeof first === 'string' ? first : (first as any)?.example;
-  }
+  // Render article badge for nouns
+  const renderArticleBadge = () => {
+    if (!word.article || word.pos !== 'noun') return null;
+
+    // Safety check - ensure article exists before using it
+    const article = word.article.toLowerCase();
+
+    const getBadgeColor = () => {
+      switch (article) {
+        case 'der': return theme.text; // Blue for der
+        case 'die': return '#ff6b6b'; // Red for die
+        case 'das': return '#51a0dc'; // Green for das
+        default: return theme.textSecondary;
+      }
+    };
+
+    const badgeColor = getBadgeColor();
+    const isDer = article === 'der';
+
+    return (
+      <View style={[
+        styles.articleBadge,
+        {
+          backgroundColor: isDer ? '#2196f3' : (article === 'die' ? '#f44336' : '#4caf50'),
+          borderColor: badgeColor
+        }
+      ]}>
+        <Text style={[styles.articleBadgeText, { color: '#fff' }]}>
+          {word.article}
+        </Text>
+      </View>
+    );
+  };
 
   return (
     <ThemedView style={styles.container}>
@@ -184,14 +211,17 @@ export default function HomeScreen() {
           <View style={[styles.card, { backgroundColor: theme.backgroundElement, shadowColor: theme.text }]}>
             {/* Word row */}
             <View style={styles.wordHeader}>
-              <Text
-                style={[styles.lemma, { color: theme.text }]}
-                adjustsFontSizeToFit
-                numberOfLines={2}
+              <View style={styles.wordContainer}>
+                {renderArticleBadge()}
+                <Text
+                  style={[styles.lemma, { color: theme.text }]}
+                  adjustsFontSizeToFit
+                  numberOfLines={2}
                 // minWidth: 0 crucial for flex shrinking below content width
-              >
-                {word.lemma}
-              </Text>
+                >
+                  {word.word}
+                </Text>
+              </View>
               <Pressable
                 onPress={handleSpeak}
                 style={({ pressed }) => [
@@ -207,9 +237,9 @@ export default function HomeScreen() {
               </Pressable>
             </View>
 
-            {(word.pos || word.gender) && (
+            {word.pos && (
               <Text style={[styles.grammarInfo, { color: theme.textSecondary }]}>
-                {[word.pos, word.gender].filter(Boolean).join(' • ')}
+                {word.pos}
               </Text>
             )}
 
@@ -217,23 +247,21 @@ export default function HomeScreen() {
 
             <Text style={[styles.sectionTitle, { color: theme.textSecondary }]}>MEANINGS</Text>
             <View style={styles.meaningsList}>
-              {word.meanings && word.meanings.length > 0 ? (
-                word.meanings.map((m, idx) => (
-                  <Text key={idx} style={[styles.meaningItem, { color: theme.text }]}>
-                    <Text style={{ fontWeight: '800' }}>•</Text> {m}
-                  </Text>
-                ))
+              {word.meaning ? (
+                <Text style={[styles.meaningItem, { color: theme.text }]}>
+                  <Text style={{ fontWeight: '800' }}>•</Text> {word.meaning}
+                </Text>
               ) : (
                 <Text style={[styles.meaningItem, { color: theme.textSecondary }]}>No meaning available</Text>
               )}
             </View>
 
-            {exampleStr && (
+            {word.examples && word.examples !== '' && (
               <>
                 <View style={[styles.divider, { backgroundColor: theme.textSecondary, opacity: 0.2 }]} />
                 <Text style={[styles.sectionTitle, { color: theme.textSecondary }]}>EXAMPLE</Text>
                 <Text style={[styles.exampleText, { color: theme.text }]}>
-                  "{exampleStr.replace(/\\n/g, '\n')}"
+                  "{word.examples.replace(/\\n/g, '\n')}"
                 </Text>
               </>
             )}
@@ -314,8 +342,13 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 4,
   },
+  wordContainer: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    flex: 1,
+  },
   lemma: {
-    fontSize: 38,
+    fontSize: 30,
     fontWeight: '900',
     flex: 1,
     flexShrink: 1,
@@ -337,6 +370,19 @@ const styles = StyleSheet.create({
   },
   speakIcon: {
     fontSize: 24,
+  },
+  articleBadge: {
+    borderRadius: 6,
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    marginRight: Spacing.two,
+    borderWidth: 1,
+    minWidth: 40,
+    alignItems: 'center',
+  },
+  articleBadgeText: {
+    fontSize: 14,
+    fontWeight: '700',
   },
   grammarInfo: {
     fontSize: 16,

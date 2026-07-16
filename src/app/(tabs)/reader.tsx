@@ -151,7 +151,16 @@ export default function ReaderScreen() {
                 );
                 setParagraph(result);
                 setLastMeta({ cefr: cefrLevel, topic });
-                setFormVisible(false); // collapse form to give more space to reading
+                setFormVisible(false);
+
+                // ── Auto-save: keep the last 10 paragraphs ──────────────────
+                await saveParagraph({
+                    id: Date.now().toString(),
+                    createdAt: new Date().toISOString(),
+                    cefrLevel,
+                    topic,
+                    data: result,
+                });
             } catch (err: unknown) {
                 const message = err instanceof Error ? err.message : String(err);
                 setError(message);

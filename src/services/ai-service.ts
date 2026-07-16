@@ -116,6 +116,10 @@ export async function generateCompletion(
         // Ask the model to return JSON so we can reliably parse it.
         response_format: { type: 'json_object' },
         temperature: 0.7,
+        // Pollinations caches responses by prompt content (deterministic by default).
+        // Sending a unique seed on every call busts that cache and forces a fresh response.
+        // Other providers ignore this field safely.
+        seed: Math.floor(Math.random() * 2_147_483_647),
     });
 
     const response = await fetch(url, { method: 'POST', headers, body });

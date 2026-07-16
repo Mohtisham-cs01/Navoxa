@@ -59,6 +59,26 @@ export default function AppTabs() {
 
 
       <Tabs.Screen
+        name="quiz"
+        options={{
+          title: 'Artikel',
+          tabBarIcon: ({ size }) => (
+            <EmojiTabIcon emoji="🎯" size={size} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="meaning-quiz"
+        options={{
+          title: 'Bedeutung',
+          tabBarIcon: ({ size }) => (
+            <EmojiTabIcon emoji="📝" size={size} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
         name="settings"
         options={{
           title: 'Settings',

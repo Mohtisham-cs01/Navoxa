@@ -5,41 +5,31 @@
  * and querying the 'Word of the Day' using expo-sqlite.
  */
 
-import * as FileSystem from 'expo-file-system/legacy';
 import { Asset } from 'expo-asset';
+import * as FileSystem from 'expo-file-system/legacy';
 import * as SQLite from 'expo-sqlite';
 
 const DB_NAME = 'word.db';
 
-export interface Meaning {
-    meaning: string;
-}
-
-export interface Example {
-    example: string;
-    translation?: string;
-}
-
-export interface WordForm {
-    form: string;
-    tags?: string[];
-}
-
 export interface DBWord {
     id: number;
-    lemma: string;
-    pos: string;
-    gender: string | null;
-    meanings: string[];
-    forms: WordForm[];
-    examples: string[];
+    word: string;        // Full word for display (includes article for nouns)
+    article: string | null;  // Article for nouns (der/die/das)
+    pos: string;         // Part of speech (noun, verb, pronoun, etc.)
+    meaning: string;     // English meaning
+    examples: string | null;  // Example/notes (may be null)
 }
 
+let _db: SQLite.SQLiteDatabase | null = null;
+
 /**
- * Initializes the database by copying it from the bundled assets
- * into the local SQlite directory folder if it doesn't already exist.
+ * Initializes the database by always copying the bundled asset into
+ * the writable SQLite directory. Re-copies on every cold start to
+ * guarantee data always comes from assets/word.db.
  */
 export async function initDatabase(): Promise<SQLite.SQLiteDatabase> {
+    if (_db) return _db;
+
     const dbDir = `${(FileSystem as any).documentDirectory}SQLite`;
     const dbPath = `${dbDir}/${DB_NAME}`;
 
@@ -49,24 +39,27 @@ export async function initDatabase(): Promise<SQLite.SQLiteDatabase> {
         await FileSystem.makeDirectoryAsync(dbDir, { intermediates: true });
     }
 
+    // Always delete any stale copy and re-copy from the bundled asset.
+    // This guarantees we read from assets/word.db and never from a
+    // previously-corrupted or wrong file.
     const fileInfo = await FileSystem.getInfoAsync(dbPath);
-    if (!fileInfo.exists) {
-        // Requires metro.config.js to have assetExts.push('db')
-        const asset = require('@/assets/word.db');
-        const assetObj = await Asset.fromModule(asset).downloadAsync();
-
-        if (assetObj.localUri) {
-            await FileSystem.copyAsync({
-                from: assetObj.localUri,
-                to: dbPath,
-            });
-        } else {
-            throw new Error('Failed to download bundled database asset.');
-        }
+    if (fileInfo.exists) {
+        await FileSystem.deleteAsync(dbPath, { idempotent: true });
     }
 
-    // Open the database sync/async (using the new SDK 50+ API)
-    return await SQLite.openDatabaseAsync(DB_NAME);
+    // Use an explicit relative path (src/services/ → project-root/assets/)
+    // to avoid Metro alias ambiguity (@/* resolves to src/* and could shadow @/assets/*).
+    const asset = require('../../assets/word.db');
+    const assetObj = await Asset.fromModule(asset).downloadAsync();
+
+    if (!assetObj.localUri) {
+        throw new Error('Failed to locate bundled word.db asset.');
+    }
+
+    await FileSystem.copyAsync({ from: assetObj.localUri, to: dbPath });
+
+    _db = await SQLite.openDatabaseAsync(DB_NAME);
+    return _db;
 }
 
 /**
@@ -79,26 +72,71 @@ export async function getRandomWord(): Promise<DBWord | null> {
         const row = await db.getFirstAsync<any>('SELECT * FROM words ORDER BY RANDOM() LIMIT 1');
         if (!row) return null;
 
-        // Parse JSON fields
-        let meaningsRaw = [];
-        let formsRaw = [];
-        let examplesRaw = [];
-
-        try { if (row.meanings) meaningsRaw = JSON.parse(row.meanings); } catch (e) { }
-        try { if (row.forms) formsRaw = JSON.parse(row.forms); } catch (e) { }
-        try { if (row.examples) examplesRaw = JSON.parse(row.examples); } catch (e) { }
-
+        // Ensure all fields have safe defaults
         return {
-            id: row.id,
-            lemma: row.lemma,
-            pos: row.pos,
-            gender: row.gender,
-            meanings: meaningsRaw,
-            forms: formsRaw,
-            examples: examplesRaw,
+            id: row.id || 0,
+            word: row.word || '',
+            article: row.article || null,
+            pos: row.pos || '',
+            meaning: row.meaning || '',
+            examples: row.examples || null,
         };
     } catch (error) {
         console.error('Error fetching random word:', error);
         return null;
     }
 }
+
+/**
+ * Returns 4 shuffled meaning options for the meaning quiz:
+ * 1 correct answer + 3 random distractors (different word, different meaning).
+ */
+export async function getFourOptions(correct: DBWord): Promise<{ id: number; meaning: string }[]> {
+    try {
+        const db = await initDatabase();
+        const rows = await db.getAllAsync<any>(
+            `SELECT id, meaning FROM words WHERE id != ? AND meaning IS NOT NULL AND meaning != '' ORDER BY RANDOM() LIMIT 3`,
+            [correct.id]
+        );
+        const opts = [
+            { id: correct.id, meaning: correct.meaning },
+            ...rows.map((r: any) => ({ id: r.id as number, meaning: r.meaning as string })),
+        ];
+        // Fisher-Yates shuffle
+        for (let i = opts.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [opts[i], opts[j]] = [opts[j], opts[i]];
+        }
+        return opts;
+    } catch {
+        return [{ id: correct.id, meaning: correct.meaning }];
+    }
+}
+
+/**
+ * Retrieves a random noun that has a non-null article (der/die/das).
+ * Used by the Article Quiz tab.
+ */
+export async function getRandomNoun(): Promise<DBWord | null> {
+    try {
+        const db = await initDatabase();
+
+        const row = await db.getFirstAsync<any>(
+            `SELECT * FROM words WHERE pos = 'noun' AND article IS NOT NULL AND article != '' ORDER BY RANDOM() LIMIT 1`
+        );
+        if (!row) return null;
+
+        return {
+            id: row.id || 0,
+            word: row.word || '',
+            article: row.article || null,
+            pos: row.pos || '',
+            meaning: row.meaning || '',
+            examples: row.examples || null,
+        };
+    } catch (error) {
+        console.error('Error fetching random noun:', error);
+        return null;
+    }
+}
+

@@ -104,7 +104,8 @@ export async function loadSavedParagraphs(): Promise<SavedParagraph[]> {
 
 export async function saveParagraph(entry: SavedParagraph): Promise<void> {
     const existing = await loadSavedParagraphs();
-    const updated = [entry, ...existing];
+    // Prepend new, keep only the 10 most recent
+    const updated = [entry, ...existing].slice(0, 10);
     await AsyncStorage.setItem(KEYS.SAVED_PARAGRAPHS, JSON.stringify(updated));
 }
 

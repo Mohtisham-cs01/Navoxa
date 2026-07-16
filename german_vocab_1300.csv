@@ -1,0 +1,1305 @@
+rank,german,artikel,pos,english,notes_conjugation
+1,ich,,pronoun,I,
+2,du,,pronoun,you (informal),
+3,er,,pronoun,he,
+4,sie,,pronoun,she,
+5,es,,pronoun,it,
+6,wir,,pronoun,we,
+7,ihr,,pronoun,you all (informal),
+8,sie,,pronoun,they,
+9,Sie,,pronoun,you (formal),
+10,mich,,pronoun,me,
+11,dich,,pronoun,you,
+12,ihn,,pronoun,him,
+13,uns,,pronoun,us,
+14,euch,,pronoun,you all,
+15,mein,,pronoun,my,
+16,dein,,pronoun,your,
+17,sein,,pronoun,his/its,
+18,ihr,,pronoun,her,
+19,unser,,pronoun,our,
+20,euer,,pronoun,your (pl.),
+21,man,,pronoun,one/you (impersonal),
+22,wer,,pronoun,who,
+23,was,,pronoun,what,
+24,welche,,pronoun,which,
+25,dieser,,pronoun,this,
+26,jener,,pronoun,that,
+27,jeder,,pronoun,every/each,
+28,alle,,pronoun,all,
+29,etwas,,pronoun,something,
+30,nichts,,pronoun,nothing,
+31,jemand,,pronoun,someone,
+32,niemand,,pronoun,no one,
+33,selbst,,pronoun,self/oneself,
+34,der,,article,the (masc.),
+35,die,,article,the (fem./pl.),
+36,das,,article,the (neut.),
+37,ein,,article,a/an (masc./neut.),
+38,eine,,article,a/an (fem.),
+39,kein,,article,no/not a,
+40,und,,conjunction,and,
+41,oder,,conjunction,or,
+42,aber,,conjunction,but,
+43,denn,,conjunction,for/because,
+44,weil,,conjunction,because,
+45,dass,,conjunction,that,
+46,wenn,,conjunction,if/when,
+47,als,,conjunction,when/as,
+48,obwohl,,conjunction,although,
+49,während,,conjunction,while,
+50,sondern,,conjunction,but rather,
+51,doch,,conjunction,yet/but,
+52,also,,conjunction,so/therefore,
+53,sowie,,conjunction,as well as,
+54,bevor,,conjunction,before,
+55,nachdem,,conjunction,after,
+56,damit,,conjunction,so that,
+57,falls,,conjunction,in case,
+58,in,,preposition,in,
+59,an,,preposition,at/on,
+60,auf,,preposition,on/upon,
+61,für,,preposition,for,
+62,von,,preposition,from/of,
+63,mit,,preposition,with,
+64,zu,,preposition,to,
+65,bei,,preposition,at/near,
+66,nach,,preposition,after/to,
+67,aus,,preposition,from/out of,
+68,über,,preposition,over/about,
+69,unter,,preposition,under,
+70,vor,,preposition,before/in front of,
+71,hinter,,preposition,behind,
+72,neben,,preposition,next to,
+73,zwischen,,preposition,between,
+74,durch,,preposition,through,
+75,gegen,,preposition,against,
+76,ohne,,preposition,without,
+77,um,,preposition,around,
+78,seit,,preposition,since,
+79,trotz,,preposition,despite,
+80,wegen,,preposition,because of,
+81,während,,preposition,during,
+82,nicht,,adverb,not,
+83,auch,,adverb,also/too,
+84,schon,,adverb,already,
+85,noch,,adverb,still/yet,
+86,sehr,,adverb,very,
+87,so,,adverb,so/thus,
+88,nur,,adverb,only,
+89,immer,,adverb,always,
+90,wieder,,adverb,again,
+91,hier,,adverb,here,
+92,da,,adverb,there (dat.),
+93,dort,,adverb,there,
+94,jetzt,,adverb,now,
+95,dann,,adverb,then,
+96,heute,,adverb,today,
+97,morgen,,adverb,tomorrow,
+98,gestern,,adverb,yesterday,
+99,oft,,adverb,often,
+100,manchmal,,adverb,sometimes,
+101,nie,,adverb,never,
+102,vielleicht,,adverb,maybe,
+103,wirklich,,adverb,really,
+104,ganz,,adverb,whole/quite,
+105,gar,,adverb,at all,
+106,eigentlich,,adverb,actually,
+107,natürlich,,adverb,of course,
+108,leider,,adverb,unfortunately,
+109,gerade,,adverb,just/right now,
+110,bald,,adverb,soon,
+111,genau,,adverb,exactly,
+112,fast,,adverb,almost,
+113,sogar,,adverb,even,
+114,besonders,,adverb,especially,
+115,einfach,,adverb,simply,
+116,wohl,,adverb,probably,
+117,zwar,,adverb,admittedly,
+118,übrigens,,adverb,by the way,
+119,sonst,,adverb,otherwise,
+120,dabei,,adverb,in doing so,
+121,dazu,,adverb,for that,
+122,davon,,adverb,of that/it,
+123,damit,,adverb,with that,
+124,daher,,adverb,therefore,
+125,deshalb,,adverb,that's why,
+126,trotzdem,,adverb,nevertheless,
+127,sein,,verb,to be,ist/war/ist gewesen
+128,haben,,verb,to have,hat/hatte/hat gehabt
+129,werden,,verb,to become,wird/wurde/ist geworden
+130,können,,verb,can/to be able to,kann/konnte/hat gekonnt
+131,müssen,,verb,must/to have to,muss/musste/hat gemusst
+132,sollen,,verb,should/to be supposed to,soll/sollte/hat gesollt
+133,wollen,,verb,to want,will/wollte/hat gewollt
+134,mögen,,verb,to like,mag/mochte/hat gemocht
+135,dürfen,,verb,to be allowed to,darf/durfte/hat gedurft
+136,machen,,verb,to make/do,macht/machte/hat gemacht
+137,gehen,,verb,to go,geht/ging/ist gegangen
+138,kommen,,verb,to come,kommt/kam/ist gekommen
+139,sehen,,verb,to see,sieht/sah/hat gesehen
+140,wissen,,verb,to know (facts),weiß/wusste/hat gewusst
+141,sagen,,verb,to say,sagt/sagte/hat gesagt
+142,geben,,verb,to give,gibt/gab/hat gegeben
+143,nehmen,,verb,to take,nimmt/nahm/hat genommen
+144,finden,,verb,to find,findet/fand/hat gefunden
+145,denken,,verb,to think,denkt/dachte/hat gedacht
+146,bleiben,,verb,to stay,bleibt/blieb/ist geblieben
+147,liegen,,verb,to lie/be located,liegt/lag/hat gelegen
+148,stehen,,verb,to stand,steht/stand/hat gestanden
+149,lassen,,verb,to let/leave,lässt/ließ/hat gelassen
+150,tun,,verb,to do,tut/tat/hat getan
+151,fühlen,,verb,to feel,fühlt/fühlte/hat gefühlt
+152,brauchen,,verb,to need,braucht/brauchte/hat gebraucht
+153,glauben,,verb,to believe,glaubt/glaubte/hat geglaubt
+154,halten,,verb,to hold,hält/hielt/hat gehalten
+155,sprechen,,verb,to speak,spricht/sprach/hat gesprochen
+156,fahren,,verb,to drive/travel,fährt/fuhr/ist gefahren
+157,arbeiten,,verb,to work,arbeitet/arbeitete/hat gearbeitet
+158,spielen,,verb,to play,spielt/spielte/hat gespielt
+159,leben,,verb,to live,lebt/lebte/hat gelebt
+160,hören,,verb,to hear/listen,hört/hörte/hat gehört
+161,sitzen,,verb,to sit,sitzt/saß/hat gesessen
+162,führen,,verb,to lead,führt/führte/hat geführt
+163,bringen,,verb,to bring,bringt/brachte/hat gebracht
+164,laufen,,verb,to run/walk,läuft/lief/ist gelaufen
+165,folgen,,verb,to follow,folgt/folgte/ist gefolgt
+166,stellen,,verb,to place/put,stellt/stellte/hat gestellt
+167,zeigen,,verb,to show,zeigt/zeigte/hat gezeigt
+168,verstehen,,verb,to understand,versteht/verstand/hat verstanden
+169,fragen,,verb,to ask,fragt/fragte/hat gefragt
+170,kennen,,verb,to know (people/things),kennt/kannte/hat gekannt
+171,lernen,,verb,to learn,lernt/lernte/hat gelernt
+172,essen,,verb,to eat,isst/aß/hat gegessen
+173,trinken,,verb,to drink,trinkt/trank/hat getrunken
+174,schlafen,,verb,to sleep,schläft/schlief/hat geschlafen
+175,kaufen,,verb,to buy,kauft/kaufte/hat gekauft
+176,verkaufen,,verb,to sell,verkauft/verkaufte/hat verkauft
+177,beginnen,,verb,to begin,beginnt/begann/hat begonnen
+178,öffnen,,verb,to open,öffnet/öffnete/hat geöffnet
+179,schließen,,verb,to close,schließt/schloss/hat geschlossen
+180,schreiben,,verb,to write,schreibt/schrieb/hat geschrieben
+181,lesen,,verb,to read,liest/las/hat gelesen
+182,helfen,,verb,to help,hilft/half/hat geholfen
+183,lieben,,verb,to love,liebt/liebte/hat geliebt
+184,warten,,verb,to wait,wartet/wartete/hat gewartet
+185,suchen,,verb,to search,sucht/suchte/hat gesucht
+186,treffen,,verb,to meet,trifft/traf/hat getroffen
+187,verlieren,,verb,to lose,verliert/verlor/hat verloren
+188,gewinnen,,verb,to win,gewinnt/gewann/hat gewonnen
+189,versuchen,,verb,to try,versucht/versuchte/hat versucht
+190,erklären,,verb,to explain,erklärt/erklärte/hat erklärt
+191,erzählen,,verb,to tell/narrate,erzählt/erzählte/hat erzählt
+192,antworten,,verb,to answer,antwortet/antwortete/hat geantwortet
+193,entscheiden,,verb,to decide,entscheidet/entschied/hat entschieden
+194,vergessen,,verb,to forget,vergisst/vergaß/hat vergessen
+195,erinnern,,verb,to remind/remember,erinnert/erinnerte/hat erinnert
+196,wünschen,,verb,to wish,wünscht/wünschte/hat gewünscht
+197,hoffen,,verb,to hope,hofft/hoffte/hat gehofft
+198,lachen,,verb,to laugh,lacht/lachte/hat gelacht
+199,weinen,,verb,to cry,weint/weinte/hat geweint
+200,kochen,,verb,to cook,kocht/kochte/hat gekocht
+201,reisen,,verb,to travel,reist/reiste/ist gereist
+202,fliegen,,verb,to fly,fliegt/flog/ist geflogen
+203,schwimmen,,verb,to swim,schwimmt/schwamm/ist geschwommen
+204,fallen,,verb,to fall,fällt/fiel/ist gefallen
+205,wachsen,,verb,to grow,wächst/wuchs/ist gewachsen
+206,sterben,,verb,to die,stirbt/starb/ist gestorben
+207,heiraten,,verb,to marry,heiratet/heiratete/hat geheiratet
+208,scheinen,,verb,to seem/shine,scheint/schien/hat geschienen
+209,regnen,,verb,to rain,regnet/regnete/hat geregnet
+210,passieren,,verb,to happen,passiert/passierte/ist passiert
+211,bedeuten,,verb,to mean,bedeutet/bedeutete/hat bedeutet
+212,gehören,,verb,to belong,gehört/gehörte/hat gehört
+213,benutzen,,verb,to use,benutzt/benutzte/hat benutzt
+214,existieren,,verb,to exist,existiert/existierte/hat existiert
+215,entwickeln,,verb,to develop,entwickelt/entwickelte/hat entwickelt
+216,bekommen,,verb,to receive/get,bekommt/bekam/hat bekommen
+217,wohnen,,verb,to reside/live (address),wohnt/wohnte/hat gewohnt
+218,besuchen,,verb,to visit,besucht/besuchte/hat besucht
+219,schauen,,verb,to look,schaut/schaute/hat geschaut
+220,holen,,verb,to fetch/get,holt/holte/hat geholt
+221,setzen,,verb,to set/put,setzt/setzte/hat gesetzt
+222,bauen,,verb,to build,baut/baute/hat gebaut
+223,ändern,,verb,to change,ändert/änderte/hat geändert
+224,prüfen,,verb,to check/examine,prüft/prüfte/hat geprüft
+225,zahlen,,verb,to pay,zahlt/zahlte/hat gezahlt
+226,dienen,,verb,to serve,dient/diente/hat gedient
+227,Mann,der,noun,man,
+228,Frau,die,noun,woman,
+229,Kind,das,noun,child,
+230,Mensch,der,noun,human/person,
+231,Zeit,die,noun,time,
+232,Jahr,das,noun,year,
+233,Tag,der,noun,day,
+234,Woche,die,noun,week,
+235,Monat,der,noun,month,
+236,Stunde,die,noun,hour,
+237,Minute,die,noun,minute,
+238,Welt,die,noun,world,
+239,Leben,das,noun,life,
+240,Hand,die,noun,hand,
+241,Kopf,der,noun,head,
+242,Auge,das,noun,eye,
+243,Fuß,der,noun,foot,
+244,Haus,das,noun,house,
+245,Wohnung,die,noun,apartment,
+246,Tisch,der,noun,table,
+247,Stuhl,der,noun,chair,
+248,Bett,das,noun,bed,
+249,Tür,die,noun,door,
+250,Fenster,das,noun,window,
+251,Straße,die,noun,street,
+252,Stadt,die,noun,city,
+253,Land,das,noun,country/land,
+254,Schule,die,noun,school,
+255,Arbeit,die,noun,work,
+256,Beruf,der,noun,profession,
+257,Geld,das,noun,money,
+258,Staat,der,noun,state,
+259,Regierung,die,noun,government,
+260,Firma,die,noun,company,
+261,Unternehmen,das,noun,business/enterprise,
+262,Freund,der,noun,friend (m.),
+263,Freundin,die,noun,friend (f.),
+264,Familie,die,noun,family,
+265,Mutter,die,noun,mother,
+266,Vater,der,noun,father,
+267,Sohn,der,noun,son,
+268,Tochter,die,noun,daughter,
+269,Bruder,der,noun,brother,
+270,Schwester,die,noun,sister,
+271,Eltern,die,noun,parents (pl.),
+272,Lehrer,der,noun,teacher (m.),
+273,Schüler,der,noun,student/pupil (m.),
+274,Auto,das,noun,car,
+275,Zug,der,noun,train,
+276,Flugzeug,das,noun,airplane,
+277,Bus,der,noun,bus,
+278,Fahrrad,das,noun,bicycle,
+279,Essen,das,noun,food/meal,
+280,Wasser,das,noun,water,
+281,Brot,das,noun,bread,
+282,Milch,die,noun,milk,
+283,Kaffee,der,noun,coffee,
+284,Tee,der,noun,tea,
+285,Buch,das,noun,book,
+286,Zeitung,die,noun,newspaper,
+287,Brief,der,noun,letter,
+288,Wort,das,noun,word,
+289,Sprache,die,noun,language,
+290,Frage,die,noun,question,
+291,Antwort,die,noun,answer,
+292,Problem,das,noun,problem,
+293,Lösung,die,noun,solution,
+294,Idee,die,noun,idea,
+295,Gedanke,der,noun,thought,
+296,Meinung,die,noun,opinion,
+297,Ziel,das,noun,goal,
+298,Grund,der,noun,reason,
+299,Weg,der,noun,way/path,
+300,Richtung,die,noun,direction,
+301,Ort,der,noun,place,
+302,Platz,der,noun,place/square,
+303,Seite,die,noun,side/page,
+304,Teil,der,noun,part,
+305,Gruppe,die,noun,group,
+306,Zahl,die,noun,number (figure),
+307,Nummer,die,noun,number (numeral),
+308,Preis,der,noun,price,
+309,Wert,der,noun,value,
+310,Qualität,die,noun,quality,
+311,Menge,die,noun,quantity,
+312,Beispiel,das,noun,example,
+313,Art,die,noun,kind/type,
+314,Weise,die,noun,manner/way,
+315,Möglichkeit,die,noun,possibility,
+316,Bedeutung,die,noun,meaning,
+317,Recht,das,noun,right/law,
+318,Gesetz,das,noun,law,
+319,Regel,die,noun,rule,
+320,Krieg,der,noun,war,
+321,Frieden,der,noun,peace,
+322,Politik,die,noun,politics,
+323,Wirtschaft,die,noun,economy,
+324,Kultur,die,noun,culture,
+325,Kunst,die,noun,art,
+326,Musik,die,noun,music,
+327,Film,der,noun,movie,
+328,Bild,das,noun,picture/image,
+329,Farbe,die,noun,color,
+330,Licht,das,noun,light,
+331,Luft,die,noun,air,
+332,Feuer,das,noun,fire,
+333,Erde,die,noun,earth,
+334,Himmel,der,noun,sky/heaven,
+335,Sonne,die,noun,sun,
+336,Mond,der,noun,moon,
+337,Stern,der,noun,star,
+338,Wetter,das,noun,weather,
+339,Wind,der,noun,wind,
+340,Regen,der,noun,rain,
+341,Schnee,der,noun,snow,
+342,Sommer,der,noun,summer,
+343,Winter,der,noun,winter,
+344,Frühling,der,noun,spring,
+345,Herbst,der,noun,autumn,
+346,Morgen,der,noun,morning,
+347,Abend,der,noun,evening,
+348,Nacht,die,noun,night,
+349,Gesicht,das,noun,face,
+350,Herz,das,noun,heart,
+351,Körper,der,noun,body,
+352,Gesundheit,die,noun,health,
+353,Krankheit,die,noun,illness,
+354,Arzt,der,noun,doctor,
+355,Krankenhaus,das,noun,hospital,
+356,Schmerz,der,noun,pain,
+357,Angst,die,noun,fear,
+358,Liebe,die,noun,love,
+359,Glück,das,noun,luck/happiness,
+360,Freude,die,noun,joy,
+361,Sorge,die,noun,worry,
+362,Hoffnung,die,noun,hope,
+363,Traum,der,noun,dream,
+364,Erinnerung,die,noun,memory,
+365,Erfahrung,die,noun,experience,
+366,Gefühl,das,noun,feeling,
+367,Kraft,die,noun,strength,
+368,Macht,die,noun,power,
+369,Erfolg,der,noun,success,
+370,Fehler,der,noun,mistake,
+371,Chance,die,noun,chance,
+372,Gefahr,die,noun,danger,
+373,Sicherheit,die,noun,safety/security,
+374,Freiheit,die,noun,freedom,
+375,Verantwortung,die,noun,responsibility,
+376,Entscheidung,die,noun,decision,
+377,Plan,der,noun,plan,
+378,Aufgabe,die,noun,task,
+379,Projekt,das,noun,project,
+380,Markt,der,noun,market,
+381,Produkt,das,noun,product,
+382,Kunde,der,noun,customer,
+383,Chef,der,noun,boss,
+384,Mitarbeiter,der,noun,employee,
+385,Büro,das,noun,office,
+386,Bank,die,noun,bank,
+387,Kirche,die,noun,church,
+388,Religion,die,noun,religion,
+389,Wissenschaft,die,noun,science,
+390,Technik,die,noun,technology,
+391,Computer,der,noun,computer,
+392,Telefon,das,noun,telephone,
+393,Internet,das,noun,internet,
+394,Information,die,noun,information,
+395,Nachricht,die,noun,message/news,
+396,Geschichte,die,noun,history/story,
+397,Universität,die,noun,university,
+398,Studium,das,noun,studies (university),
+399,Student,der,noun,"student (university, m.)",
+400,Klasse,die,noun,class,
+401,Unterricht,der,noun,lesson/instruction,
+402,Prüfung,die,noun,exam,
+403,Note,die,noun,grade,
+404,Sommerferien,die,noun,summer holidays (pl.),
+405,Reise,die,noun,trip/journey,
+406,Urlaub,der,noun,vacation,
+407,Hotel,das,noun,hotel,
+408,Flughafen,der,noun,airport,
+409,Bahnhof,der,noun,train station,
+410,Restaurant,das,noun,restaurant,
+411,Geschäft,das,noun,shop/business,
+412,Supermarkt,der,noun,supermarket,
+413,Küche,die,noun,kitchen,
+414,Bad,das,noun,bathroom,
+415,Garten,der,noun,garden,
+416,Zimmer,das,noun,room,
+417,Miete,die,noun,rent,
+418,Nachbar,der,noun,neighbor,
+419,Kleidung,die,noun,clothing,
+420,Schuh,der,noun,shoe,
+421,Hemd,das,noun,shirt,
+422,Hund,der,noun,dog,
+423,Katze,die,noun,cat,
+424,Vogel,der,noun,bird,
+425,Tier,das,noun,animal,
+426,Baum,der,noun,tree,
+427,Blume,die,noun,flower,
+428,Wald,der,noun,forest,
+429,Berg,der,noun,mountain,
+430,Fluss,der,noun,river,
+431,Meer,das,noun,sea,
+432,See,der,noun,lake,
+433,gut,,adjective,good,
+434,schlecht,,adjective,bad,
+435,groß,,adjective,big,
+436,klein,,adjective,small,
+437,neu,,adjective,new,
+438,alt,,adjective,old,
+439,jung,,adjective,young,
+440,lang,,adjective,long,
+441,kurz,,adjective,short,
+442,hoch,,adjective,high,
+443,niedrig,,adjective,low,
+444,breit,,adjective,wide,
+445,schmal,,adjective,narrow,
+446,tief,,adjective,deep,
+447,schwer,,adjective,heavy/difficult,
+448,leicht,,adjective,light/easy,
+449,stark,,adjective,strong,
+450,schwach,,adjective,weak,
+451,schnell,,adjective,fast,
+452,langsam,,adjective,slow,
+453,früh,,adjective,early,
+454,spät,,adjective,late,
+455,warm,,adjective,warm,
+456,kalt,,adjective,cold,
+457,heiß,,adjective,hot,
+458,hell,,adjective,bright,
+459,dunkel,,adjective,dark,
+460,schön,,adjective,beautiful,
+461,richtig,,adjective,correct,
+462,falsch,,adjective,wrong,
+463,wichtig,,adjective,important,
+464,möglich,,adjective,possible,
+465,nötig,,adjective,necessary,
+466,sicher,,adjective,safe/certain,
+467,gefährlich,,adjective,dangerous,
+468,einfach,,adjective,simple,
+469,schwierig,,adjective,difficult,
+470,klar,,adjective,clear,
+471,ganz,,adjective,whole/entire,
+472,voll,,adjective,full,
+473,leer,,adjective,empty,
+474,offen,,adjective,open,
+475,frei,,adjective,free,
+476,gleich,,adjective,same/equal,
+477,ähnlich,,adjective,similar,
+478,anders,,adjective,different,
+479,verschieden,,adjective,various,
+480,viel,,adjective,much/a lot,
+481,wenig,,adjective,little/few,
+482,mehr,,adjective,more,
+483,weniger,,adjective,less,
+484,genug,,adjective,enough,
+485,eigen,,adjective,own,
+486,letzte,,adjective,last,
+487,nächste,,adjective,next,
+488,erste,,adjective,first,
+489,zweite,,adjective,second,
+490,dritte,,adjective,third,
+491,gesund,,adjective,healthy,
+492,krank,,adjective,sick,
+493,müde,,adjective,tired,
+494,glücklich,,adjective,happy,
+495,traurig,,adjective,sad,
+496,freundlich,,adjective,friendly,
+497,nett,,adjective,nice,
+498,ruhig,,adjective,calm/quiet,
+499,laut,,adjective,loud,
+500,interessant,,adjective,interesting,
+501,langweilig,,adjective,boring,
+502,bekannt,,adjective,known/famous,
+503,reich,,adjective,rich,
+504,arm,,adjective,poor,
+505,teuer,,adjective,expensive,
+506,billig,,adjective,cheap,
+507,modern,,adjective,modern,
+508,normal,,adjective,normal,
+509,besonders,,adjective,special,
+510,null,,number,zero,
+511,eins,,number,one,
+512,zwei,,number,two,
+513,drei,,number,three,
+514,vier,,number,four,
+515,fünf,,number,five,
+516,sechs,,number,six,
+517,sieben,,number,seven,
+518,acht,,number,eight,
+519,neun,,number,nine,
+520,zehn,,number,ten,
+521,elf,,number,eleven,
+522,zwölf,,number,twelve,
+523,zwanzig,,number,twenty,
+524,dreißig,,number,thirty,
+525,hundert,,number,hundred,
+526,tausend,,number,thousand,
+527,verlassen,,verb,to leave (a place/person),verlässt/verließ/hat verlassen
+528,verbringen,,verb,to spend (time),verbringt/verbrachte/hat verbracht
+529,verdienen,,verb,to earn,verdient/verdiente/hat verdient
+530,verstecken,,verb,to hide,versteckt/versteckte/hat versteckt
+531,verletzen,,verb,to injure,verletzt/verletzte/hat verletzt
+532,vermeiden,,verb,to avoid,vermeidet/vermied/hat vermieden
+533,verändern,,verb,to alter,verändert/veränderte/hat verändert
+534,verbinden,,verb,to connect,verbindet/verband/hat verbunden
+535,verlangen,,verb,to demand,verlangt/verlangte/hat verlangt
+536,verbieten,,verb,to forbid,verbietet/verbot/hat verboten
+537,erlauben,,verb,to allow,erlaubt/erlaubte/hat erlaubt
+538,erreichen,,verb,to reach/achieve,erreicht/erreichte/hat erreicht
+539,erkennen,,verb,to recognize,erkennt/erkannte/hat erkannt
+540,erfahren,,verb,to find out/experience,erfährt/erfuhr/hat erfahren
+541,erhalten,,verb,to receive/preserve,erhält/erhielt/hat erhalten
+542,erscheinen,,verb,to appear,erscheint/erschien/ist erschienen
+543,ermöglichen,,verb,to enable,ermöglicht/ermöglichte/hat ermöglicht
+544,empfehlen,,verb,to recommend,empfiehlt/empfahl/hat empfohlen
+545,entstehen,,verb,to arise/originate,entsteht/entstand/ist entstanden
+546,entdecken,,verb,to discover,entdeckt/entdeckte/hat entdeckt
+547,entfernen,,verb,to remove,entfernt/entfernte/hat entfernt
+548,entspannen,,verb,to relax,entspannt/entspannte/hat entspannt
+549,entschuldigen,,verb,to excuse/apologize,entschuldigt/entschuldigte/hat entschuldigt
+550,beobachten,,verb,to observe,beobachtet/beobachtete/hat beobachtet
+551,bewegen,,verb,to move,bewegt/bewegte/hat bewegt
+552,beeinflussen,,verb,to influence,beeinflusst/beeinflusste/hat beeinflusst
+553,beantworten,,verb,to answer (a question),beantwortet/beantwortete/hat beantwortet
+554,bezahlen,,verb,to pay for,bezahlt/bezahlte/hat bezahlt
+555,besitzen,,verb,to own,besitzt/besaß/hat besessen
+556,bestehen,,verb,to consist of/pass (exam),besteht/bestand/hat bestanden
+557,bestellen,,verb,to order,bestellt/bestellte/hat bestellt
+558,bestimmen,,verb,to determine,bestimmt/bestimmte/hat bestimmt
+559,betreffen,,verb,to concern/affect,betrifft/betraf/hat betroffen
+560,betreten,,verb,to enter,betritt/betrat/hat betreten
+561,beschließen,,verb,to decide/resolve,beschließt/beschloss/hat beschlossen
+562,beschreiben,,verb,to describe,beschreibt/beschrieb/hat beschrieben
+563,beschäftigen,,verb,to occupy/employ,beschäftigt/beschäftigte/hat beschäftigt
+564,besprechen,,verb,to discuss,bespricht/besprach/hat besprochen
+565,gelingen,,verb,to succeed,gelingt/gelang/ist gelungen
+566,geschehen,,verb,to happen,geschieht/geschah/ist geschehen
+567,genießen,,verb,to enjoy,genießt/genoss/hat genossen
+568,gewöhnen,,verb,to get used to,gewöhnt/gewöhnte/hat gewöhnt
+569,gelten,,verb,to be valid/count as,gilt/galt/hat gegolten
+570,gründen,,verb,to found/establish,gründet/gründete/hat gegründet
+571,handeln,,verb,to act/trade,handelt/handelte/hat gehandelt
+572,herstellen,,verb,to manufacture,stellt her/stellte her/hat hergestellt
+573,hinzufügen,,verb,to add,fügt hinzu/fügte hinzu/hat hinzugefügt
+574,interessieren,,verb,to interest,interessiert/interessierte/hat interessiert
+575,kämpfen,,verb,to fight,kämpft/kämpfte/hat gekämpft
+576,klingen,,verb,to sound,klingt/klang/hat geklungen
+577,kritisieren,,verb,to criticize,kritisiert/kritisierte/hat kritisiert
+578,leiten,,verb,to lead/manage,leitet/leitete/hat geleitet
+579,leiden,,verb,to suffer,leidet/litt/hat gelitten
+580,liefern,,verb,to deliver,liefert/lieferte/hat geliefert
+581,lösen,,verb,to solve,löst/löste/hat gelöst
+582,meinen,,verb,to mean/think,meint/meinte/hat gemeint
+583,melden,,verb,to report,meldet/meldete/hat gemeldet
+584,messen,,verb,to measure,misst/maß/hat gemessen
+585,mieten,,verb,to rent,mietet/mietete/hat gemietet
+586,nennen,,verb,to name/call,nennt/nannte/hat genannt
+587,nutzen,,verb,to use,nutzt/nutzte/hat genutzt
+588,planen,,verb,to plan,plant/plante/hat geplant
+589,produzieren,,verb,to produce,produziert/produzierte/hat produziert
+590,reagieren,,verb,to react,reagiert/reagierte/hat reagiert
+591,rechnen,,verb,to calculate,rechnet/rechnete/hat gerechnet
+592,reduzieren,,verb,to reduce,reduziert/reduzierte/hat reduziert
+593,reparieren,,verb,to repair,repariert/reparierte/hat repariert
+594,riechen,,verb,to smell,riecht/roch/hat gerochen
+595,rufen,,verb,to call/shout,ruft/rief/hat gerufen
+596,sammeln,,verb,to collect,sammelt/sammelte/hat gesammelt
+597,schaffen,,verb,to manage/create,schafft/schuf/hat geschaffen
+598,scheiden,,verb,to separate/divorce,scheidet/schied/hat geschieden
+599,schicken,,verb,to send,schickt/schickte/hat geschickt
+600,schießen,,verb,to shoot,schießt/schoss/hat geschossen
+601,schlagen,,verb,to hit/beat,schlägt/schlug/hat geschlagen
+602,schneiden,,verb,to cut,schneidet/schnitt/hat geschnitten
+603,schützen,,verb,to protect,schützt/schützte/hat geschützt
+604,senden,,verb,to send/broadcast,sendet/sandte/hat gesandt
+605,sinken,,verb,to sink/decline,sinkt/sank/ist gesunken
+606,sorgen,,verb,to care for/worry,sorgt/sorgte/hat gesorgt
+607,sparen,,verb,to save (money),spart/sparte/hat gespart
+608,steigen,,verb,to climb/rise,steigt/stieg/ist gestiegen
+609,steigern,,verb,to increase,steigert/steigerte/hat gesteigert
+610,stimmen,,verb,to be correct/vote,stimmt/stimmte/hat gestimmt
+611,stören,,verb,to disturb,stört/störte/hat gestört
+612,studieren,,verb,to study (university),studiert/studierte/hat studiert
+613,tragen,,verb,to carry/wear,trägt/trug/hat getragen
+614,teilen,,verb,to share/divide,teilt/teilte/hat geteilt
+615,teilnehmen,,verb,to participate,nimmt teil/nahm teil/hat teilgenommen
+616,töten,,verb,to kill,tötet/tötete/hat getötet
+617,überlegen,,verb,to consider/reflect,überlegt/überlegte/hat überlegt
+618,überraschen,,verb,to surprise,überrascht/überraschte/hat überrascht
+619,überzeugen,,verb,to convince,überzeugt/überzeugte/hat überzeugt
+620,übernehmen,,verb,to take over,übernimmt/übernahm/hat übernommen
+621,umziehen,,verb,to move (house),zieht um/zog um/ist umgezogen
+622,unterscheiden,,verb,to distinguish,unterscheidet/unterschied/hat unterschieden
+623,unterstützen,,verb,to support,unterstützt/unterstützte/hat unterstützt
+624,untersuchen,,verb,to examine,untersucht/untersuchte/hat untersucht
+625,vergleichen,,verb,to compare,vergleicht/verglich/hat verglichen
+626,verhindern,,verb,to prevent,verhindert/verhinderte/hat verhindert
+627,vermitteln,,verb,to mediate/convey,vermittelt/vermittelte/hat vermittelt
+628,veröffentlichen,,verb,to publish,veröffentlicht/veröffentlichte/hat veröffentlicht
+629,verpassen,,verb,to miss (a chance),verpasst/verpasste/hat verpasst
+630,versprechen,,verb,to promise,verspricht/versprach/hat versprochen
+631,verwenden,,verb,to use/apply,verwendet/verwendete/hat verwendet
+632,verzichten,,verb,to forgo,verzichtet/verzichtete/hat verzichtet
+633,vorbereiten,,verb,to prepare,bereitet vor/bereitete vor/hat vorbereitet
+634,vorschlagen,,verb,to suggest,schlägt vor/schlug vor/hat vorgeschlagen
+635,vorstellen,,verb,to introduce/imagine,stellt vor/stellte vor/hat vorgestellt
+636,wählen,,verb,to choose/vote,wählt/wählte/hat gewählt
+637,wechseln,,verb,to change/switch,wechselt/wechselte/hat gewechselt
+638,wecken,,verb,to wake (someone),weckt/weckte/hat geweckt
+639,wiederholen,,verb,to repeat,wiederholt/wiederholte/hat wiederholt
+640,wundern,,verb,to wonder/surprise,wundert/wunderte/hat gewundert
+641,zeichnen,,verb,to draw,zeichnet/zeichnete/hat gezeichnet
+642,ziehen,,verb,to pull/move,zieht/zog/hat gezogen
+643,zwingen,,verb,to force,zwingt/zwang/hat gezwungen
+644,anfangen,,verb,to begin,fängt an/fing an/hat angefangen
+645,ankommen,,verb,to arrive,kommt an/kam an/ist angekommen
+646,anrufen,,verb,to call (phone),ruft an/rief an/hat angerufen
+647,aufhören,,verb,to stop/quit,hört auf/hörte auf/hat aufgehört
+648,aufmachen,,verb,to open,macht auf/machte auf/hat aufgemacht
+649,aufpassen,,verb,to pay attention,passt auf/passte auf/hat aufgepasst
+650,aufstehen,,verb,to get up,steht auf/stand auf/ist aufgestanden
+651,aufwachen,,verb,to wake up,wacht auf/wachte auf/ist aufgewacht
+652,ausgeben,,verb,to spend (money),gibt aus/gab aus/hat ausgegeben
+653,ausruhen,,verb,to rest,ruht aus/ruhte aus/hat ausgeruht
+654,aussehen,,verb,to look/appear,sieht aus/sah aus/hat ausgesehen
+655,ausziehen,,verb,to move out/take off,zieht aus/zog aus/ist ausgezogen
+656,einkaufen,,verb,to shop,kauft ein/kaufte ein/hat eingekauft
+657,einladen,,verb,to invite,lädt ein/lud ein/hat eingeladen
+658,einsteigen,,verb,to board/get in,steigt ein/stieg ein/ist eingestiegen
+659,mitbringen,,verb,to bring along,bringt mit/brachte mit/hat mitgebracht
+660,mitmachen,,verb,to join in,macht mit/machte mit/hat mitgemacht
+661,nachdenken,,verb,to reflect/think over,denkt nach/dachte nach/hat nachgedacht
+662,umsteigen,,verb,to change (transport),steigt um/stieg um/ist umgestiegen
+663,wegfahren,,verb,to drive away/leave,fährt weg/fuhr weg/ist weggefahren
+664,zunehmen,,verb,to gain weight/increase,nimmt zu/nahm zu/hat zugenommen
+665,zurückkommen,,verb,to come back,kommt zurück/kam zurück/ist zurückgekommen
+666,zusammenarbeiten,,verb,to collaborate,arbeitet zusammen/arbeitete zusammen/hat zusammengearbeitet
+667,Großmutter,die,noun,grandmother,
+668,Großvater,der,noun,grandfather,
+669,Oma,die,noun,grandma,
+670,Opa,der,noun,grandpa,
+671,Enkel,der,noun,grandson,
+672,Enkelin,die,noun,granddaughter,
+673,Onkel,der,noun,uncle,
+674,Tante,die,noun,aunt,
+675,Cousin,der,noun,cousin (m.),
+676,Cousine,die,noun,cousin (f.),
+677,Neffe,der,noun,nephew,
+678,Nichte,die,noun,niece,
+679,Ehemann,der,noun,husband,
+680,Ehefrau,die,noun,wife,
+681,Verwandte,der/die,noun,relative,
+682,Baby,das,noun,baby,
+683,Nachbarin,die,noun,neighbor (f.),
+684,Kollege,der,noun,colleague (m.),
+685,Kollegin,die,noun,colleague (f.),
+686,Chefin,die,noun,boss (f.),
+687,Erwachsene,der/die,noun,adult,
+688,Jugendliche,der/die,noun,teenager,
+689,Ärztin,die,noun,doctor (f.),
+690,Krankenschwester,die,noun,nurse (f.),
+691,Ingenieur,der,noun,engineer,
+692,Anwalt,der,noun,lawyer,
+693,Polizist,der,noun,police officer,
+694,Koch,der,noun,cook/chef,
+695,Kellner,der,noun,waiter,
+696,Verkäuferin,die,noun,salesperson (f.),
+697,Fahrer,der,noun,driver,
+698,Bäcker,der,noun,baker,
+699,Journalist,der,noun,journalist,
+700,Künstler,der,noun,artist,
+701,Musiker,der,noun,musician,
+702,Schauspieler,der,noun,actor,
+703,Handwerker,der,noun,craftsman,
+704,Bauer,der,noun,farmer,
+705,Sekretärin,die,noun,secretary (f.),
+706,Manager,der,noun,manager,
+707,Direktor,der,noun,director,
+708,Beamte,der,noun,civil servant,
+709,Fleisch,das,noun,meat,
+710,Fisch,der,noun,fish,
+711,Gemüse,das,noun,vegetables,
+712,Obst,das,noun,fruit,
+713,Apfel,der,noun,apple,
+714,Banane,die,noun,banana,
+715,Kartoffel,die,noun,potato,
+716,Reis,der,noun,rice,
+717,Nudel,die,noun,noodle/pasta,
+718,Suppe,die,noun,soup,
+719,Salat,der,noun,salad,
+720,Käse,der,noun,cheese,
+721,Ei,das,noun,egg,
+722,Butter,die,noun,butter,
+723,Zucker,der,noun,sugar,
+724,Salz,das,noun,salt,
+725,Pfeffer,der,noun,pepper,
+726,Öl,das,noun,oil,
+727,Bier,das,noun,beer,
+728,Wein,der,noun,wine,
+729,Saft,der,noun,juice,
+730,Kuchen,der,noun,cake,
+731,Süßigkeit,die,noun,sweet/candy,
+732,Frühstück,das,noun,breakfast,
+733,Mittagessen,das,noun,lunch,
+734,Abendessen,das,noun,dinner,
+735,Mahlzeit,die,noun,meal,
+736,Rezept,das,noun,recipe,
+737,Portion,die,noun,portion,
+738,Wand,die,noun,wall,
+739,Boden,der,noun,floor,
+740,Decke,die,noun,ceiling/blanket,
+741,Treppe,die,noun,staircase,
+742,Keller,der,noun,basement,
+743,Dach,das,noun,roof,
+744,Schrank,der,noun,cupboard/closet,
+745,Regal,das,noun,shelf,
+746,Lampe,die,noun,lamp,
+747,Spiegel,der,noun,mirror,
+748,Teppich,der,noun,carpet,
+749,Kissen,das,noun,pillow,
+750,Herd,der,noun,stove,
+751,Ofen,der,noun,oven,
+752,Kühlschrank,der,noun,refrigerator,
+753,Waschmaschine,die,noun,washing machine,
+754,Besen,der,noun,broom,
+755,Schlüssel,der,noun,key,
+756,Handtuch,das,noun,towel,
+757,Teller,der,noun,plate,
+758,Tasse,die,noun,cup,
+759,Glas,das,noun,glass,
+760,Löffel,der,noun,spoon,
+761,Gabel,die,noun,fork,
+762,Messer,das,noun,knife,
+763,Topf,der,noun,pot,
+764,Pfanne,die,noun,pan,
+765,Nase,die,noun,nose,
+766,Mund,der,noun,mouth,
+767,Ohr,das,noun,ear,
+768,Zahn,der,noun,tooth,
+769,Haar,das,noun,hair,
+770,Hals,der,noun,neck/throat,
+771,Schulter,die,noun,shoulder,
+772,Arm,der,noun,arm,
+773,Bein,das,noun,leg,
+774,Finger,der,noun,finger,
+775,Knie,das,noun,knee,
+776,Rücken,der,noun,back,
+777,Bauch,der,noun,stomach/belly,
+778,Haut,die,noun,skin,
+779,Muskel,der,noun,muscle,
+780,Knochen,der,noun,bone,
+781,Fieber,das,noun,fever,
+782,Erkältung,die,noun,cold (illness),
+783,Husten,der,noun,cough,
+784,Verletzung,die,noun,injury,
+785,Medikament,das,noun,medication,
+786,Tablette,die,noun,pill,
+787,Impfung,die,noun,vaccination,
+788,Diagnose,die,noun,diagnosis,
+789,Hose,die,noun,pants,
+790,Jacke,die,noun,jacket,
+791,Mantel,der,noun,coat,
+792,Rock,der,noun,skirt,
+793,Kleid,das,noun,dress,
+794,Pullover,der,noun,sweater,
+795,Mütze,die,noun,cap,
+796,Hut,der,noun,hat,
+797,Handschuh,der,noun,glove,
+798,Socke,die,noun,sock,
+799,Gürtel,der,noun,belt,
+800,Tasche,die,noun,bag,
+801,Brille,die,noun,glasses,
+802,Uhr,die,noun,watch/clock,
+803,Schmuck,der,noun,jewelry,
+804,Pflanze,die,noun,plant,
+805,Gras,das,noun,grass,
+806,Blatt,das,noun,leaf,
+807,Wurzel,die,noun,root,
+808,Ast,der,noun,branch,
+809,Insel,die,noun,island,
+810,Küste,die,noun,coast,
+811,Wüste,die,noun,desert,
+812,Tal,das,noun,valley,
+813,Feld,das,noun,field,
+814,Insekt,das,noun,insect,
+815,Pferd,das,noun,horse,
+816,Kuh,die,noun,cow,
+817,Schwein,das,noun,pig,
+818,Schaf,das,noun,sheep,
+819,Maus,die,noun,mouse,
+820,Löwe,der,noun,lion,
+821,Bär,der,noun,bear,
+822,Schmetterling,der,noun,butterfly,
+823,Biene,die,noun,bee,
+824,Spinne,die,noun,spider,
+825,Rathaus,das,noun,town hall,
+826,Museum,das,noun,museum,
+827,Park,der,noun,park,
+828,Brücke,die,noun,bridge,
+829,Ecke,die,noun,corner,
+830,Kreuzung,die,noun,intersection,
+831,Ampel,die,noun,traffic light,
+832,Parkplatz,der,noun,parking lot,
+833,Fahrkarte,die,noun,ticket (transport),
+834,Gepäck,das,noun,luggage,
+835,Koffer,der,noun,suitcase,
+836,Pass,der,noun,passport,
+837,Grenze,die,noun,border,
+838,Karte,die,noun,map/card,
+839,Route,die,noun,route,
+840,Ausflug,der,noun,excursion,
+841,Sehenswürdigkeit,die,noun,tourist attraction,
+842,Unterkunft,die,noun,accommodation,
+843,Autobahn,die,noun,highway,
+844,Kreuzfahrt,die,noun,cruise,
+845,Kenntnis,die,noun,knowledge,
+846,Fähigkeit,die,noun,ability,
+847,Wissen,das,noun,knowledge,
+848,Ausbildung,die,noun,training/education,
+849,Diplom,das,noun,diploma,
+850,Zeugnis,das,noun,report card/certificate,
+851,Software,die,noun,software,
+852,Datei,die,noun,file,
+853,Daten,die,noun,data (pl.),
+854,Bildschirm,der,noun,screen,
+855,Taste,die,noun,key (keyboard),
+856,Programm,das,noun,program,
+857,System,das,noun,system,
+858,Netzwerk,das,noun,network,
+859,Passwort,das,noun,password,
+860,Anwendung,die,noun,application,
+861,Gerät,das,noun,device,
+862,Batterie,die,noun,battery,
+863,Anschluss,der,noun,connection,
+864,Verbindung,die,noun,connection/link,
+865,Wut,die,noun,anger,
+866,Neid,der,noun,envy,
+867,Scham,die,noun,shame,
+868,Stolz,der,noun,pride,
+869,Mut,der,noun,courage,
+870,Geduld,die,noun,patience,
+871,Vertrauen,das,noun,trust,
+872,Respekt,der,noun,respect,
+873,Enttäuschung,die,noun,disappointment,
+874,Überraschung,die,noun,surprise,
+875,Langeweile,die,noun,boredom,
+876,Aufregung,die,noun,excitement,
+877,Neugier,die,noun,curiosity,
+878,Zufriedenheit,die,noun,satisfaction,
+879,Dankbarkeit,die,noun,gratitude,
+880,Einsamkeit,die,noun,loneliness,
+881,wunderbar,,adjective,wonderful,
+882,furchtbar,,adjective,terrible,
+883,herrlich,,adjective,magnificent,
+884,angenehm,,adjective,pleasant,
+885,unangenehm,,adjective,unpleasant,
+886,bequem,,adjective,comfortable,
+887,praktisch,,adjective,practical,
+888,nützlich,,adjective,useful,
+889,nutzlos,,adjective,useless,
+890,erfolgreich,,adjective,successful,
+891,erfolglos,,adjective,unsuccessful,
+892,mutig,,adjective,brave,
+893,feige,,adjective,cowardly,
+894,ehrlich,,adjective,honest,
+895,unehrlich,,adjective,dishonest,
+896,höflich,,adjective,polite,
+897,unhöflich,,adjective,impolite,
+898,geduldig,,adjective,patient,
+899,ungeduldig,,adjective,impatient,
+900,neugierig,,adjective,curious,
+901,stolz,,adjective,proud,
+902,eifersüchtig,,adjective,jealous,
+903,verliebt,,adjective,in love,
+904,verheiratet,,adjective,married,
+905,ledig,,adjective,single (unmarried),
+906,geschieden,,adjective,divorced,
+907,schwanger,,adjective,pregnant,
+908,erwachsen,,adjective,adult/grown-up,
+909,volljährig,,adjective,of legal age,
+910,beliebt,,adjective,popular,
+911,unbeliebt,,adjective,unpopular,
+912,berühmt,,adjective,famous,
+913,unbekannt,,adjective,unknown,
+914,geheim,,adjective,secret,
+915,privat,,adjective,private,
+916,öffentlich,,adjective,public,
+917,staatlich,,adjective,state-owned,
+918,beruflich,,adjective,professional,
+919,persönlich,,adjective,personal,
+920,politisch,,adjective,political,
+921,wirtschaftlich,,adjective,economic,
+922,sozial,,adjective,social,
+923,kulturell,,adjective,cultural,
+924,technisch,,adjective,technical,
+925,digital,,adjective,digital,
+926,elektrisch,,adjective,electric,
+927,chemisch,,adjective,chemical,
+928,biologisch,,adjective,biological,
+929,historisch,,adjective,historical,
+930,aktuell,,adjective,current,
+931,ehemalig,,adjective,former,
+932,zukünftig,,adjective,future,
+933,dauerhaft,,adjective,permanent,
+934,vorübergehend,,adjective,temporary,
+935,regelmäßig,,adjective,regular,
+936,unregelmäßig,,adjective,irregular,
+937,gewöhnlich,,adjective,usual/ordinary,
+938,ungewöhnlich,,adjective,unusual,
+939,selten,,adjective,rare,
+940,häufig,,adjective,frequent,
+941,typisch,,adjective,typical,
+942,original,,adjective,original,
+943,künstlich,,adjective,artificial,
+944,echt,,adjective,real/genuine,
+945,gemeinsam,,adjective,joint/common,
+946,einzeln,,adjective,individual,
+947,gesamt,,adjective,total/whole,
+948,durchschnittlich,,adjective,average,
+949,maximal,,adjective,maximum,
+950,minimal,,adjective,minimal,
+951,positiv,,adjective,positive,
+952,negativ,,adjective,negative,
+953,aktiv,,adjective,active,
+954,passiv,,adjective,passive,
+955,direkt,,adjective,direct,
+956,indirekt,,adjective,indirect,
+957,konkret,,adjective,concrete,
+958,abstrakt,,adjective,abstract,
+959,flexibel,,adjective,flexible,
+960,stabil,,adjective,stable,
+961,instabil,,adjective,unstable,
+962,bereit,,adjective,ready,
+963,fertig,,adjective,finished/ready,
+964,beschäftigt,,adjective,busy,
+965,besetzt,,adjective,occupied,
+966,kaputt,,adjective,broken,
+967,sauber,,adjective,clean,
+968,schmutzig,,adjective,dirty,
+969,trocken,,adjective,dry,
+970,nass,,adjective,wet,
+971,frisch,,adjective,fresh,
+972,süß,,adjective,sweet,
+973,sauer,,adjective,sour,
+974,bitter,,adjective,bitter,
+975,salzig,,adjective,salty,
+976,scharf,,adjective,spicy/sharp,
+977,weich,,adjective,soft,
+978,hart,,adjective,hard,
+979,glatt,,adjective,smooth,
+980,rau,,adjective,rough,
+981,rund,,adjective,round,
+982,eckig,,adjective,angular,
+983,flach,,adjective,flat,
+984,spitz,,adjective,pointed,
+985,gerade,,adjective,straight,
+986,krumm,,adjective,crooked,
+987,rot,,adjective,red,
+988,blau,,adjective,blue,
+989,gelb,,adjective,yellow,
+990,grün,,adjective,green,
+991,schwarz,,adjective,black,
+992,weiß,,adjective,white,
+993,grau,,adjective,gray,
+994,braun,,adjective,brown,
+995,orange,,adjective,orange,
+996,lila,,adjective,purple,
+997,rosa,,adjective,pink,
+998,bunt,,adjective,colorful,
+999,außerdem,,adverb,besides/moreover,
+1000,deswegen,,adverb,that's why,
+1001,dennoch,,adverb,yet/still,
+1002,jedoch,,adverb,however,
+1003,allerdings,,adverb,however/though,
+1004,insgesamt,,adverb,in total,
+1005,schließlich,,adverb,finally,
+1006,zuerst,,adverb,first (of all),
+1007,zuletzt,,adverb,lastly,
+1008,plötzlich,,adverb,suddenly,
+1009,allmählich,,adverb,gradually,
+1010,gleichzeitig,,adverb,simultaneously,
+1011,normalerweise,,adverb,normally,
+1012,hoffentlich,,adverb,hopefully,
+1013,offenbar,,adverb,apparently,
+1014,anscheinend,,adverb,apparently,
+1015,tatsächlich,,adverb,actually/indeed,
+1016,kaum,,adverb,hardly,
+1017,ungefähr,,adverb,approximately,
+1018,etwa,,adverb,about/roughly,
+1019,insbesondere,,adverb,in particular,
+1020,beispielsweise,,adverb,for example,
+1021,jedenfalls,,adverb,in any case,
+1022,draußen,,adverb,outside,
+1023,drinnen,,adverb,inside,
+1024,oben,,adverb,above/upstairs,
+1025,unten,,adverb,below/downstairs,
+1026,links,,adverb,left,
+1027,rechts,,adverb,right,
+1028,geradeaus,,adverb,straight ahead,
+1029,überall,,adverb,everywhere,
+1030,irgendwo,,adverb,somewhere,
+1031,nirgends,,adverb,nowhere,
+1032,zusammen,,adverb,together,
+1033,allein,,adverb,alone,
+1034,gemeinsam,,adverb,together/jointly,
+1035,Guten Morgen,,phrase,Good morning,
+1036,Guten Tag,,phrase,Good day/Hello,
+1037,Guten Abend,,phrase,Good evening,
+1038,Gute Nacht,,phrase,Good night,
+1039,Auf Wiedersehen,,phrase,Goodbye,
+1040,Bis später,,phrase,See you later,
+1041,Bis bald,,phrase,See you soon,
+1042,Wie geht's?,,phrase,How are you?,
+1043,Mir geht es gut,,phrase,I'm doing well,
+1044,Danke schön,,phrase,Thank you very much,
+1045,Bitte schön,,phrase,You're welcome / here you go,
+1046,Entschuldigung,,phrase,Excuse me / sorry,
+1047,Es tut mir leid,,phrase,I'm sorry,
+1048,Kein Problem,,phrase,No problem,
+1049,Viel Glück,,phrase,Good luck,
+1050,Herzlichen Glückwunsch,,phrase,Congratulations,
+1051,Ich verstehe nicht,,phrase,I don't understand,
+1052,Können Sie das wiederholen?,,phrase,Can you repeat that?,
+1053,Wie bitte?,,phrase,Pardon?,
+1054,Was bedeutet das?,,phrase,What does that mean?,
+1055,Ich weiß nicht,,phrase,I don't know,
+1056,Ich bin mir nicht sicher,,phrase,I'm not sure,
+1057,Auf jeden Fall,,phrase,In any case / definitely,
+1058,Auf keinen Fall,,phrase,No way / under no circumstances,
+1059,Zum Beispiel,,phrase,For example,
+1060,Mit anderen Worten,,phrase,In other words,
+1061,Es kommt darauf an,,phrase,It depends,
+1062,Montag,der,noun,Monday,
+1063,Dienstag,der,noun,Tuesday,
+1064,Mittwoch,der,noun,Wednesday,
+1065,Donnerstag,der,noun,Thursday,
+1066,Freitag,der,noun,Friday,
+1067,Samstag,der,noun,Saturday,
+1068,Sonntag,der,noun,Sunday,
+1069,Januar,der,noun,January,
+1070,Februar,der,noun,February,
+1071,März,der,noun,March,
+1072,April,der,noun,April,
+1073,Mai,der,noun,May,
+1074,Juni,der,noun,June,
+1075,Juli,der,noun,July,
+1076,August,der,noun,August,
+1077,September,der,noun,September,
+1078,Oktober,der,noun,October,
+1079,November,der,noun,November,
+1080,Dezember,der,noun,December,
+1081,Sport,der,noun,sport(s),
+1082,Fußball,der,noun,soccer,
+1083,Tennis,das,noun,tennis,
+1084,Basketball,der,noun,basketball,
+1085,Mannschaft,die,noun,team,
+1086,Spiel,das,noun,game,
+1087,Wettkampf,der,noun,competition,
+1088,Sieger,der,noun,winner,
+1089,Training,das,noun,training,
+1090,Trainer,der,noun,coach,
+1091,Hobby,das,noun,hobby,
+1092,Freizeit,die,noun,free time,
+1093,Ausstellung,die,noun,exhibition,
+1094,Konzert,das,noun,concert,
+1095,Theater,das,noun,theater,
+1096,Party,die,noun,party,
+1097,Fest,das,noun,festival/celebration,
+1098,Feiertag,der,noun,holiday,
+1099,Geburtstag,der,noun,birthday,
+1100,Geschenk,das,noun,gift,
+1101,Temperatur,die,noun,temperature,
+1102,Grad,der,noun,degree,
+1103,Wolke,die,noun,cloud,
+1104,Nebel,der,noun,fog,
+1105,Sturm,der,noun,storm,
+1106,Gewitter,das,noun,thunderstorm,
+1107,Blitz,der,noun,lightning,
+1108,Donner,der,noun,thunder,
+1109,Jahreszeit,die,noun,season,
+1110,Zeitpunkt,der,noun,point in time,
+1111,Zeitraum,der,noun,period of time,
+1112,Vergangenheit,die,noun,the past,
+1113,Gegenwart,die,noun,the present,
+1114,Zukunft,die,noun,the future,
+1115,Termin,der,noun,appointment,
+1116,Uhrzeit,die,noun,time (clock),
+1117,Datum,das,noun,date,
+1118,Gesellschaft,die,noun,society,
+1119,Bevölkerung,die,noun,population,
+1120,Bürger,der,noun,citizen,
+1121,Gemeinde,die,noun,municipality/community,
+1122,Organisation,die,noun,organization,
+1123,Verein,der,noun,club/association,
+1124,Mitglied,das,noun,member,
+1125,Versammlung,die,noun,meeting/assembly,
+1126,Konferenz,die,noun,conference,
+1127,Diskussion,die,noun,discussion,
+1128,Debatte,die,noun,debate,
+1129,Streit,der,noun,argument/dispute,
+1130,Konflikt,der,noun,conflict,
+1131,Lösungsvorschlag,der,noun,proposed solution,
+1132,Kompromiss,der,noun,compromise,
+1133,Vertrag,der,noun,contract,
+1134,Vereinbarung,die,noun,agreement,
+1135,Bedingung,die,noun,condition,
+1136,Voraussetzung,die,noun,prerequisite,
+1137,Folgerung,die,noun,conclusion,
+1138,Ergebnis,das,noun,result,
+1139,Wirkung,die,noun,effect,
+1140,Ursache,die,noun,cause,
+1141,Auswirkung,die,noun,impact,
+1142,Entwicklung,die,noun,development,
+1143,Fortschritt,der,noun,progress,
+1144,Veränderung,die,noun,change,
+1145,Unterschied,der,noun,difference,
+1146,Gemeinsamkeit,die,noun,commonality,
+1147,Beziehung,die,noun,relationship,
+1148,Verhältnis,das,noun,relationship/ratio,
+1149,Kontakt,der,noun,contact,
+1150,Gespräch,das,noun,conversation,
+1151,Unterhaltung,die,noun,conversation/entertainment,
+1152,Kommentar,der,noun,comment,
+1153,Kritik,die,noun,criticism,
+1154,Vorschlag,der,noun,suggestion,
+1155,Empfehlung,die,noun,recommendation,
+1156,Warnung,die,noun,warning,
+1157,Hinweis,der,noun,hint/note,
+1158,Anleitung,die,noun,instructions,
+1159,Anweisung,die,noun,instruction,
+1160,Genehmigung,die,noun,approval,
+1161,Erlaubnis,die,noun,permission,
+1162,Verbot,das,noun,ban/prohibition,
+1163,Strafe,die,noun,punishment/fine,
+1164,Belohnung,die,noun,reward,
+1165,Leistung,die,noun,performance/achievement,
+1166,Erziehung,die,noun,upbringing,
+1167,Verhalten,das,noun,behavior,
+1168,Gewohnheit,die,noun,habit,
+1169,Tradition,die,noun,tradition,
+1170,Brauch,der,noun,custom,
+1171,Sitte,die,noun,custom/tradition,
+1172,Werbung,die,noun,advertising,
+1173,Marke,die,noun,brand,
+1174,Angebot,das,noun,offer,
+1175,Nachfrage,die,noun,demand,
+1176,Umsatz,der,noun,revenue/turnover,
+1177,Gewinn,der,noun,profit,
+1178,Verlust,der,noun,loss,
+1179,Kosten,die,noun,costs (pl.),
+1180,Ausgabe,die,noun,expense/edition,
+1181,Einnahme,die,noun,income/revenue,
+1182,Investition,die,noun,investment,
+1183,Schuld,die,noun,debt/guilt,
+1184,Kredit,der,noun,loan/credit,
+1185,Zins,der,noun,interest (finance),
+1186,Konto,das,noun,account,
+1187,Rechnung,die,noun,invoice/bill,
+1188,Quittung,die,noun,receipt,
+1189,Steuererklärung,die,noun,tax return,
+1190,Kerze,die,noun,candle,
+1191,Feuerzeug,das,noun,lighter,
+1192,Streichholz,das,noun,match,
+1193,Papier,das,noun,paper,
+1194,Stift,der,noun,pen,
+1195,Bleistift,der,noun,pencil,
+1196,Radiergummi,der,noun,eraser,
+1197,Schere,die,noun,scissors,
+1198,Klebstoff,der,noun,glue,
+1199,Nadel,die,noun,needle,
+1200,Faden,der,noun,thread,
+1201,Werkzeug,das,noun,tool,
+1202,Hammer,der,noun,hammer,
+1203,Nagel,der,noun,nail,
+1204,Schraube,die,noun,screw,
+1205,Draht,der,noun,wire,
+1206,Seil,das,noun,rope,
+1207,Kiste,die,noun,box/crate,
+1208,Sack,der,noun,sack,
+1209,Beutel,der,noun,bag/pouch,
+1210,Korb,der,noun,basket,
+1211,Eimer,der,noun,bucket,
+1212,Flasche,die,noun,bottle,
+1213,Dose,die,noun,can/tin,
+1214,Deckel,der,noun,lid,
+1215,Kabel,das,noun,cable,
+1216,Stecker,der,noun,plug,
+1217,Steckdose,die,noun,electrical outlet,
+1218,Schalter,der,noun,switch,
+1219,Knopf,der,noun,button,
+1220,sich freuen,,verb,to be happy/look forward to,freut sich/freute sich/hat sich gefreut
+1221,sich beeilen,,verb,to hurry,beeilt sich/beeilte sich/hat sich beeilt
+1222,sich erinnern,,verb,to remember,erinnert sich/erinnerte sich/hat sich erinnert
+1223,sich entscheiden,,verb,to decide,entscheidet sich/entschied sich/hat sich entschieden
+1224,sich entspannen,,verb,to relax,entspannt sich/entspannte sich/hat sich entspannt
+1225,sich verlieben,,verb,to fall in love,verliebt sich/verliebte sich/hat sich verliebt
+1226,sich verabreden,,verb,to arrange to meet,verabredet sich/verabredete sich/hat sich verabredet
+1227,sich vorbereiten,,verb,to prepare oneself,bereitet sich vor/bereitete sich vor/hat sich vorbereitet
+1228,sich anziehen,,verb,to get dressed,zieht sich an/zog sich an/hat sich angezogen
+1229,sich ausziehen,,verb,to undress,zieht sich aus/zog sich aus/hat sich ausgezogen
+1230,sich waschen,,verb,to wash oneself,wäscht sich/wusch sich/hat sich gewaschen
+1231,sich duschen,,verb,to shower,duscht sich/duschte sich/hat sich geduscht
+1232,sich ärgern,,verb,to be annoyed,ärgert sich/ärgerte sich/hat sich geärgert
+1233,sich wundern,,verb,to be surprised,wundert sich/wunderte sich/hat sich gewundert
+1234,sich bewerben,,verb,to apply (for a job),bewirbt sich/bewarb sich/hat sich beworben
+1235,sich befinden,,verb,to be located,befindet sich/befand sich/hat sich befunden
+1236,sich fühlen,,verb,to feel,fühlt sich/fühlte sich/hat sich gefühlt
+1237,sich unterhalten,,verb,to converse,unterhält sich/unterhielt sich/hat sich unterhalten
+1238,sich verabschieden,,verb,to say goodbye,verabschiedet sich/verabschiedete sich/hat sich verabschiedet
+1239,sich vorstellen,,verb,to imagine/introduce oneself,stellt sich vor/stellte sich vor/hat sich vorgestellt
+1240,klettern,,verb,to climb,klettert/kletterte/ist geklettert
+1241,springen,,verb,to jump,springt/sprang/ist gesprungen
+1242,werfen,,verb,to throw,wirft/warf/hat geworfen
+1243,fangen,,verb,to catch,fängt/fing/hat gefangen
+1244,drücken,,verb,to push/press,drückt/drückte/hat gedrückt
+1245,heben,,verb,to lift,hebt/hob/hat gehoben
+1246,senken,,verb,to lower,senkt/senkte/hat gesenkt
+1247,drehen,,verb,to turn/rotate,dreht/drehte/hat gedreht
+1248,biegen,,verb,to bend,biegt/bog/hat gebogen
+1249,binden,,verb,to tie/bind,bindet/band/hat gebunden
+1250,füllen,,verb,to fill,füllt/füllte/hat gefüllt
+1251,leeren,,verb,to empty,leert/leerte/hat geleert
+1252,mischen,,verb,to mix,mischt/mischte/hat gemischt
+1253,rühren,,verb,to stir,rührt/rührte/hat gerührt
+1254,braten,,verb,to fry/roast,brät/briet/hat gebraten
+1255,grillen,,verb,to grill,grillt/grillte/hat gegrillt
+1256,gießen,,verb,to pour/water,gießt/goss/hat gegossen
+1257,pflanzen,,verb,to plant,pflanzt/pflanzte/hat gepflanzt
+1258,ernten,,verb,to harvest,erntet/erntete/hat geerntet
+1259,füttern,,verb,to feed,füttert/fütterte/hat gefüttert
+1260,streicheln,,verb,to pet/stroke,streichelt/streichelte/hat gestreichelt
+1261,beißen,,verb,to bite,beißt/biss/hat gebissen
+1262,kratzen,,verb,to scratch,kratzt/kratzte/hat gekratzt
+1263,husten,,verb,to cough,hustet/hustete/hat gehustet
+1264,niesen,,verb,to sneeze,niest/nieste/hat geniest
+1265,atmen,,verb,to breathe,atmet/atmete/hat geatmet
+1266,schwitzen,,verb,to sweat,schwitzt/schwitzte/hat geschwitzt
+1267,frieren,,verb,to freeze/be cold,friert/fror/hat gefroren
+1268,zittern,,verb,to shiver/tremble,zittert/zitterte/hat gezittert
+1269,gähnen,,verb,to yawn,gähnt/gähnte/hat gegähnt
+1270,nicken,,verb,to nod,nickt/nickte/hat genickt
+1271,winken,,verb,to wave,winkt/winkte/hat gewinkt
+1272,küssen,,verb,to kiss,küsst/küsste/hat geküsst
+1273,umarmen,,verb,to hug,umarmt/umarmte/hat umarmt
+1274,streiten,,verb,to argue,streitet/stritt/hat gestritten
+1275,zustimmen,,verb,to agree,stimmt zu/stimmte zu/hat zugestimmt
+1276,widersprechen,,verb,to contradict,widerspricht/widersprach/hat widersprochen
+1277,behaupten,,verb,to claim/assert,behauptet/behauptete/hat behauptet
+1278,beweisen,,verb,to prove,beweist/bewies/hat bewiesen
+1279,zweifeln,,verb,to doubt,zweifelt/zweifelte/hat gezweifelt
+1280,ahnen,,verb,to suspect/sense,ahnt/ahnte/hat geahnt
+1281,vermuten,,verb,to assume/suspect,vermutet/vermutete/hat vermutet
+1282,überprüfen,,verb,to verify,überprüft/überprüfte/hat überprüft
+1283,kontrollieren,,verb,to check/control,kontrolliert/kontrollierte/hat kontrolliert
+1284,verwalten,,verb,to manage/administer,verwaltet/verwaltete/hat verwaltet
+1285,organisieren,,verb,to organize,organisiert/organisierte/hat organisiert
+1286,koordinieren,,verb,to coordinate,koordiniert/koordinierte/hat koordiniert
+1287,delegieren,,verb,to delegate,delegiert/delegierte/hat delegiert
+1288,motivieren,,verb,to motivate,motiviert/motivierte/hat motiviert
+1289,inspirieren,,verb,to inspire,inspiriert/inspirierte/hat inspiriert
+1290,beeindrucken,,verb,to impress,beeindruckt/beeindruckte/hat beeindruckt
+1291,enttäuschen,,verb,to disappoint,enttäuscht/enttäuschte/hat enttäuscht
+1292,verzeihen,,verb,to forgive,verzeiht/verzieh/hat verziehen
+1293,beleidigen,,verb,to insult,beleidigt/beleidigte/hat beleidigt
+1294,loben,,verb,to praise,lobt/lobte/hat gelobt
+1295,tadeln,,verb,to reprimand,tadelt/tadelte/hat getadelt
+1296,warnen,,verb,to warn,warnt/warnte/hat gewarnt
+1297,drohen,,verb,to threaten,droht/drohte/hat gedroht
+1298,retten,,verb,to save/rescue,rettet/rettete/hat gerettet
+1299,verteidigen,,verb,to defend,verteidigt/verteidigte/hat verteidigt
+1300,angreifen,,verb,to attack,greift an/griff an/hat angegriffen
+1301,besiegen,,verb,to defeat,besiegt/besiegte/hat besiegt
+1302,erobern,,verb,to conquer,erobert/eroberte/hat erobert
+1303,regieren,,verb,to govern,regiert/regierte/hat regiert
+1304,abstimmen,,verb,to vote,stimmt ab/stimmte ab/hat abgestimmt
