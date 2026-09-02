@@ -13,7 +13,7 @@
  */
 
 import * as Speech from 'expo-speech';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
     Platform,
     Pressable,
@@ -117,6 +117,7 @@ export default function ReaderScreen() {
     } | null>(null);
     const [saveSuccess, setSaveSuccess] = useState(false);
     const [isSpeaking, setIsSpeaking] = useState(false);
+    const abortControllerRef = useRef<AbortController | null>(null);
 
     // Stop any in-flight speech if the screen unmounts.
     useEffect(() => {
@@ -138,6 +139,9 @@ export default function ReaderScreen() {
             setError(null);
             setSaveSuccess(false);
 
+            const abortController = new AbortController();
+            abortControllerRef.current = abortController;
+
             try {
                 const result = await generateGermanParagraph(
                     {
@@ -148,6 +152,7 @@ export default function ReaderScreen() {
                     cefrLevel,
                     topic,
                     length,
+                    abortController.signal
                 );
                 setParagraph(result);
                 setLastMeta({ cefr: cefrLevel, topic });
@@ -162,14 +167,27 @@ export default function ReaderScreen() {
                     data: result,
                 });
             } catch (err: unknown) {
+                if (err instanceof Error && err.name === 'AbortError') {
+                    // Request was cancelled
+                    return;
+                }
                 const message = err instanceof Error ? err.message : String(err);
                 setError(message);
             } finally {
                 setIsLoading(false);
+                abortControllerRef.current = null;
             }
         },
         [settings],
     );
+
+    const handleCancel = useCallback(() => {
+        if (abortControllerRef.current) {
+            abortControllerRef.current.abort();
+            abortControllerRef.current = null;
+        }
+        setIsLoading(false);
+    }, []);
 
     const handleSave = useCallback(async () => {
         if (!paragraph || !lastMeta) return;
@@ -238,7 +256,7 @@ export default function ReaderScreen() {
                     </Pressable>
                     {formVisible && (
                         <View style={styles.formBody}>
-                            <GenerateForm isLoading={isLoading} onGenerate={handleGenerate} />
+                            <GenerateForm isLoading={isLoading} onGenerate={handleGenerate} onCancel={handleCancel} />
                         </View>
                     )}
                 </ThemedView>

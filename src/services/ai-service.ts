@@ -96,6 +96,7 @@ export async function fetchModels(
 export async function generateCompletion(
     config: AIConfig,
     messages: ChatMessage[],
+    signal?: AbortSignal,
 ): Promise<string> {
     const url = `${BASE_URLS[config.provider]}/chat/completions`;
 
@@ -122,7 +123,7 @@ export async function generateCompletion(
         seed: Math.floor(Math.random() * 2_147_483_647),
     });
 
-    const response = await fetch(url, { method: 'POST', headers, body });
+    const response = await fetch(url, { method: 'POST', headers, body, signal });
 
     if (!response.ok) {
         const errorText = await response.text();
@@ -168,6 +169,7 @@ export async function generateGermanParagraph(
     cefrLevel: string,
     topic: string,
     length: ParagraphLength,
+    signal?: AbortSignal,
 ): Promise<GeneratedParagraph> {
     const wordCount = LENGTH_WORDS[length];
 
@@ -189,7 +191,7 @@ Return only the JSON object described in the system prompt.`;
     const raw = await generateCompletion(config, [
         { role: 'system', content: systemPrompt },
         { role: 'user', content: userPrompt },
-    ]);
+    ], signal);
 
     // Robustly parse JSON — strip possible markdown fences if the model adds them.
     const jsonStr = raw

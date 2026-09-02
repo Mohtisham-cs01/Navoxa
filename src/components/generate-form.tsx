@@ -55,14 +55,16 @@ const SUGGESTED_TOPICS = [
 interface GenerateFormProps {
     isLoading: boolean;
     onGenerate: (cefrLevel: string, topic: string, length: ParagraphLength) => void;
+    onCancel?: () => void;
 }
 
-export function GenerateForm({ isLoading, onGenerate }: GenerateFormProps) {
+export function GenerateForm({ isLoading, onGenerate, onCancel }: GenerateFormProps) {
     const theme = useTheme();
 
     const [cefrLevel, setCefrLevel] = useState<string>('A2');
     const [topic, setTopic] = useState('');
     const [length, setLength] = useState<ParagraphLength>('short');
+    const [topicError, setTopicError] = useState<string | null>(null);
 
     // Restore last used values from storage.
     useEffect(() => {
@@ -74,14 +76,32 @@ export function GenerateForm({ isLoading, onGenerate }: GenerateFormProps) {
     }, []);
 
     const handleGenerate = useCallback(async () => {
-        const effectiveTopic = topic.trim() || 'Alltag';
+        const effectiveTopic = topic.trim();
+        
+        if (!effectiveTopic) {
+            setTopicError('Please enter or select a topic.');
+            return;
+        }
+        
+        if (effectiveTopic.length > 100) {
+            setTopicError('Topic is too long (max 100 characters).');
+            return;
+        }
+        
+        setTopicError(null);
         await saveLastForm({ cefrLevel, topic: effectiveTopic, length });
         onGenerate(cefrLevel, effectiveTopic, length);
     }, [cefrLevel, topic, length, onGenerate]);
 
+    const handleTopicChange = useCallback((text: string) => {
+        setTopic(text);
+        if (topicError) setTopicError(null);
+    }, [topicError]);
+
     const handleTopicChip = useCallback((t: string) => {
         setTopic(t);
-    }, []);
+        if (topicError) setTopicError(null);
+    }, [topicError]);
 
     // ── Cool loading animation ──
     const spinAnim = useRef(new Animated.Value(0)).current;
@@ -174,13 +194,21 @@ export function GenerateForm({ isLoading, onGenerate }: GenerateFormProps) {
             <Text style={[styles.label, { color: theme.textSecondary }]}>Topic</Text>
             <TextInput
                 value={topic}
-                onChangeText={setTopic}
+                onChangeText={handleTopicChange}
                 placeholder="Type your own topic…"
                 placeholderTextColor={theme.textSecondary}
-                style={[styles.input, inputStyle]}
+                style={[
+                    styles.input,
+                    inputStyle,
+                    topicError ? { borderColor: '#FF453A', borderWidth: 1 } : {}
+                ]}
+                maxLength={100}
                 returnKeyType="done"
                 accessibilityLabel="Topic input"
             />
+            {topicError && (
+                <Text style={styles.errorText}>{topicError}</Text>
+            )}
             <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
@@ -242,45 +270,93 @@ export function GenerateForm({ isLoading, onGenerate }: GenerateFormProps) {
                 })}
             </View>
 
-            {/* ── Generate button with animated loader ── */}
-            <Pressable
-                onPress={handleGenerate}
-                disabled={isLoading}
-                style={({ pressed }) => [
-                    styles.generateBtn,
-                    {
-                        backgroundColor: isLoading
-                            ? theme.backgroundElement
-                            : pressed
-                                ? theme.backgroundSelected
-                                : theme.text,
-                        opacity: isLoading ? 0.85 : 1,
-                    },
-                ]}
-                accessibilityLabel="Generate paragraph"
-            >
-                {isLoading ? (
-                    <View style={styles.loaderContainer}>
-                        <Animated.View
-                            style={{
-                                transform: [
-                                    { rotate: spin },
-                                    { scale: pulseAnim },
-                                ],
-                            }}
-                        >
-                            <Text style={styles.loaderIcon}>⏳</Text>
-                        </Animated.View>
-                        <Text style={[styles.loaderText, { color: theme.background }]}>
-                            Generating...
+            {/* ── Generate & Cancel buttons ── */}
+            {isLoading && onCancel ? (
+                <View style={{ flexDirection: 'row', gap: 10 }}>
+                    <Pressable
+                        disabled={true}
+                        style={[
+                            styles.generateBtn,
+                            {
+                                backgroundColor: theme.backgroundElement,
+                                opacity: 0.85,
+                                flex: 1,
+                            },
+                        ]}
+                        accessibilityLabel="Generating paragraph"
+                    >
+                        <View style={styles.loaderContainer}>
+                            <Animated.View
+                                style={{
+                                    transform: [
+                                        { rotate: spin },
+                                        { scale: pulseAnim },
+                                    ],
+                                }}
+                            >
+                                <Text style={styles.loaderIcon}>⏳</Text>
+                            </Animated.View>
+                            <Text style={[styles.loaderText, { color: theme.background }]}>
+                                Generating...
+                            </Text>
+                        </View>
+                    </Pressable>
+                    <Pressable
+                        onPress={onCancel}
+                        style={({ pressed }) => [
+                            styles.generateBtn,
+                            {
+                                backgroundColor: pressed ? '#FF453A88' : '#FF453A',
+                                paddingHorizontal: 20,
+                            },
+                        ]}
+                        accessibilityLabel="Cancel generation"
+                    >
+                        <Text style={[styles.generateBtnText, { color: 'white' }]}>
+                            Cancel
                         </Text>
-                    </View>
-                ) : (
-                    <Text style={[styles.generateBtnText, { color: theme.background }]}>
-                        ✨ Generate
-                    </Text>
-                )}
-            </Pressable>
+                    </Pressable>
+                </View>
+            ) : (
+                <Pressable
+                    onPress={handleGenerate}
+                    disabled={isLoading}
+                    style={({ pressed }) => [
+                        styles.generateBtn,
+                        {
+                            backgroundColor: isLoading
+                                ? theme.backgroundElement
+                                : pressed
+                                    ? theme.backgroundSelected
+                                    : theme.text,
+                            opacity: isLoading ? 0.85 : 1,
+                        },
+                    ]}
+                    accessibilityLabel="Generate paragraph"
+                >
+                    {isLoading ? (
+                        <View style={styles.loaderContainer}>
+                            <Animated.View
+                                style={{
+                                    transform: [
+                                        { rotate: spin },
+                                        { scale: pulseAnim },
+                                    ],
+                                }}
+                            >
+                                <Text style={styles.loaderIcon}>⏳</Text>
+                            </Animated.View>
+                            <Text style={[styles.loaderText, { color: theme.background }]}>
+                                Generating...
+                            </Text>
+                        </View>
+                    ) : (
+                        <Text style={[styles.generateBtnText, { color: theme.background }]}>
+                            ✨ Generate
+                        </Text>
+                    )}
+                </Pressable>
+            )}
         </View>
     );
 }
@@ -316,6 +392,13 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         fontSize: 15,
         borderWidth: 1,
+    },
+    errorText: {
+        color: '#FF453A',
+        fontSize: 12,
+        marginTop: -4,
+        marginLeft: 4,
+        fontWeight: '500',
     },
     lengthRow: {
         flexDirection: 'row',
