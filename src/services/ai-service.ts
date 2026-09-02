@@ -53,14 +53,24 @@ const FALLBACK_MODELS: Record<Provider, ModelInfo[]> = {
 
 // ─── Model listing ─────────────────────────────────────────────────────────
 
+const modelCache: Record<string, { timestamp: number; models: ModelInfo[] }> = {};
+const CACHE_TTL_MS = 1000 * 60 * 60; // 1 hour
+
 /**
  * Fetches available models from the selected provider.
  * Falls back to a hardcoded list on any error.
+ * Results are cached in memory for 1 hour.
  */
 export async function fetchModels(
     provider: Provider,
     apiKey: string,
 ): Promise<ModelInfo[]> {
+    const cacheKey = `${provider}-${apiKey}`;
+    const cached = modelCache[cacheKey];
+    if (cached && Date.now() - cached.timestamp < CACHE_TTL_MS) {
+        return cached.models;
+    }
+
     try {
         const url = `${BASE_URLS[provider]}/models`;
         const headers: Record<string, string> = {
@@ -74,13 +84,30 @@ export async function fetchModels(
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         const json = await response.json();
-        // All three providers return { data: [{ id, ... }] }
-        const rawModels: { id: string; name?: string }[] = json.data ?? [];
+        let rawModels: any[] = json.data ?? [];
 
-        return rawModels.map((m) => ({
-            id: m.id,
-            name: m.name ?? m.id,
-        }));
+        // Ensure we only list language models (LLMs) that output text.
+        // Providers like Pollinations include image/video models in their list.
+        rawModels = rawModels.filter((m: any) => {
+            if (Array.isArray(m.output_modalities) && !m.output_modalities.includes('text')) {
+                return false;
+            }
+            if (Array.isArray(m.input_modalities) && !m.input_modalities.includes('text')) {
+                return false;
+            }
+            return true;
+        });
+
+        const models = rawModels
+            .map((m) => ({
+                id: m.id,
+                name: m.name ?? m.id,
+            }))
+            .sort((a, b) => a.name.localeCompare(b.name));
+            
+        modelCache[cacheKey] = { timestamp: Date.now(), models };
+        
+        return models;
     } catch {
         // Return fallbacks silently so the UI never breaks.
         return FALLBACK_MODELS[provider];
