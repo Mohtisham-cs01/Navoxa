@@ -239,3 +239,230 @@ Return only the JSON object described in the system prompt.`;
 
     return parsed;
 }
+
+// ─── Dictionary word generation ────────────────────────────────────────────
+
+/**
+ * Raw shape we expect from the LLM for each word.
+ * Validated structurally before any DB writes.
+ */
+export interface LLMGeneratedWord {
+    word: string;
+    article: string | null;
+    pos: string;
+    meaning: string;
+    sentences: Array<{
+        sentence: string;
+        tense: string;       // "present" | "past" | "future" | "question" | "conditional" | "imperative"
+        translation: string;
+    }>;
+}
+
+// Tenses we ask the model to cover for every word
+const WORD_TENSES = ['present', 'past', 'future', 'question', 'conditional', 'imperative'];
+
+/**
+ * Asks the LLM to generate `count` German vocabulary words at the given
+ * CEFR level on the given topic, each with example sentences in multiple tenses.
+ */
+export async function generateDictionaryWords(
+    config: AIConfig,
+    count: number = 8,
+    cefrLevel: string = 'B1',
+    topic: string = 'general vocabulary',
+    signal?: AbortSignal,
+): Promise<LLMGeneratedWord[]> {
+    const systemPrompt = `You are a German language teacher creating vocabulary for learners.
+Always respond with a SINGLE valid JSON object — no markdown, no code fences.
+The object must have this exact shape:
+{
+  "words": [
+    {
+      "word": "<German word>",
+      "article": "<der|die|das or null>",
+      "pos": "<noun|verb|adjective|adverb|other>",
+      "meaning": "<concise English translation>",
+      "sentences": [
+        { "sentence": "<German example>", "tense": "<tense name>", "translation": "<English>" }
+      ]
+    }
+  ]
+}
+Rules:
+- Generate exactly ${count} unique words suitable for a ${cefrLevel} learner.
+- For each word include one sentence per tense from: ${WORD_TENSES.join(', ')}.
+- Sentences must be natural, everyday German — not textbook robotic.
+- For nouns always set the article (der/die/das). For verbs/adjectives set article to null.`;
+
+    const userPrompt = `Generate ${count} German vocabulary words related to: "${topic}".
+Return only the JSON object described by the system prompt.`;
+
+    const raw = await generateCompletion(
+        config,
+        [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userPrompt },
+        ],
+        signal,
+    );
+
+    const jsonStr = raw.replace(/^```(?:json)?/m, '').replace(/```$/m, '').trim();
+
+    let parsed: { words: any[] };
+    try {
+        parsed = JSON.parse(jsonStr);
+    } catch {
+        throw new Error('Could not parse word generation response as JSON. Please try again.');
+    }
+
+    if (!Array.isArray(parsed?.words) || parsed.words.length === 0) {
+        throw new Error('AI returned an empty or malformed word list. Please try again.');
+    }
+
+    const validated: LLMGeneratedWord[] = [];
+    for (const w of parsed.words) {
+        if (!w.word || !w.meaning || !Array.isArray(w.sentences)) continue;
+        const cleanedSentences = w.sentences.filter(
+            (s: any) => s.sentence && s.tense && s.translation,
+        );
+        if (cleanedSentences.length === 0) continue;
+        validated.push({
+            word: String(w.word).trim(),
+            article: w.article ? String(w.article).trim() : null,
+            pos: String(w.pos ?? 'other').trim(),
+            meaning: String(w.meaning).trim(),
+            sentences: cleanedSentences.map((s: any) => ({
+                sentence: String(s.sentence).trim(),
+                tense: String(s.tense).trim().toLowerCase(),
+                translation: String(s.translation).trim(),
+            })),
+        });
+    }
+
+    if (validated.length === 0) {
+        throw new Error('None of the generated words passed validation. Please try again.');
+    }
+
+    return validated;
+}
+
+/**
+ * Asks the LLM to generate additional example sentences for a specific
+ * German word the user already has in their dictionary.
+ */
+export async function generateMoreSentences(
+    config: AIConfig,
+    word: string,
+    meaning: string,
+    signal?: AbortSignal,
+): Promise<Array<{ sentence: string; tense: string; translation: string }>> {
+    const systemPrompt = `You are a German language teacher.
+Always respond with a SINGLE valid JSON object — no markdown, no code fences.
+The object must have this shape:
+{
+  "sentences": [
+    { "sentence": "<German sentence>", "tense": "<tense name>", "translation": "<English>" }
+  ]
+}`;
+
+    const userPrompt = `Generate 6 new example sentences for the German word "${word}" (meaning: ${meaning}).
+Cover these tenses: ${WORD_TENSES.join(', ')}.
+Make sentences vivid and varied. Return only the JSON object.`;
+
+    const raw = await generateCompletion(
+        config,
+        [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userPrompt },
+        ],
+        signal,
+    );
+
+    const jsonStr = raw.replace(/^```(?:json)?/m, '').replace(/```$/m, '').trim();
+
+    let parsed: { sentences: any[] };
+    try {
+        parsed = JSON.parse(jsonStr);
+    } catch {
+        throw new Error('Could not parse sentences response as JSON. Please try again.');
+    }
+
+    if (!Array.isArray(parsed?.sentences)) {
+        throw new Error('AI returned a malformed sentences list. Please try again.');
+    }
+
+    return parsed.sentences
+        .filter((s: any) => s.sentence && s.tense && s.translation)
+        .map((s: any) => ({
+            sentence: String(s.sentence).trim(),
+            tense: String(s.tense).trim().toLowerCase(),
+            translation: String(s.translation).trim(),
+        }));
+}
+
+/**
+ * Asks the LLM to generate example sentences for a BATCH of words at once.
+ * Useful to save API calls when populating multiple dictionary words.
+ * Returns a map of word -> array of sentences.
+ */
+export async function generateBatchSentences(
+    config: AIConfig,
+    words: Array<{ word: string; meaning: string }>,
+    signal?: AbortSignal,
+): Promise<Record<string, Array<{ sentence: string; tense: string; translation: string }>>> {
+    if (words.length === 0) return {};
+
+    const systemPrompt = `You are a German language teacher.
+Always respond with a SINGLE valid JSON object — no markdown, no code fences.
+The object must have this shape, where the keys are the exact German words requested:
+{
+  "<German Word>": [
+    { "sentence": "<German sentence>", "tense": "<tense name>", "translation": "<English>" }
+  ]
+}`;
+
+    const wordsListStr = words.map(w => `- ${w.word} (meaning: ${w.meaning})`).join('\n');
+    const userPrompt = `Generate 6 example sentences for EACH of the following German words.
+Cover these tenses for each word: ${WORD_TENSES.join(', ')}.
+Make sentences vivid and varied. Return only the JSON object.
+
+Words:
+${wordsListStr}`;
+
+    const raw = await generateCompletion(
+        config,
+        [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userPrompt },
+        ],
+        signal,
+    );
+
+    const jsonStr = raw.replace(/^```(?:json)?/m, '').replace(/```$/m, '').trim();
+
+    let parsed: Record<string, any[]>;
+    try {
+        parsed = JSON.parse(jsonStr);
+    } catch {
+        throw new Error('Could not parse batch sentences response as JSON. Please try again.');
+    }
+
+    const result: Record<string, Array<{ sentence: string; tense: string; translation: string }>> = {};
+
+    for (const [wordKey, sentences] of Object.entries(parsed)) {
+        if (!Array.isArray(sentences)) continue;
+        const validSentences = sentences
+            .filter((s: any) => s.sentence && s.tense && s.translation)
+            .map((s: any) => ({
+                sentence: String(s.sentence).trim(),
+                tense: String(s.tense).trim().toLowerCase(),
+                translation: String(s.translation).trim(),
+            }));
+        if (validSentences.length > 0) {
+            result[wordKey] = validSentences;
+        }
+    }
+
+    return result;
+}
+

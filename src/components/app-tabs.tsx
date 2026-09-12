@@ -79,6 +79,16 @@ export default function AppTabs() {
       />
 
       <Tabs.Screen
+        name="dictionary"
+        options={{
+          title: 'Wörterbuch',
+          tabBarIcon: ({ size }) => (
+            <EmojiTabIcon emoji="📚" size={size} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
         name="settings"
         options={{
           title: 'Settings',
@@ -87,6 +97,7 @@ export default function AppTabs() {
           ),
         }}
       />
+
     </Tabs>
   );
 }

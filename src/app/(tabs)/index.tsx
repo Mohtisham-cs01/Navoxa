@@ -9,6 +9,8 @@ import { useSettings } from '@/context/settings-context';
 import { useTheme } from '@/hooks/use-theme';
 import { getRandomWord, initDatabase, type DBWord } from '@/services/database-service';
 import { speakGermanWord } from '@/services/tts-service';
+import { generateBatchSentences } from '@/services/ai-service';
+import { getWordsNeedingSentences, saveWordWithSentences, getSentencesForWord, checkWordExists, type GeneratedSentence } from '@/services/dictionary-service';
 
 export default function HomeScreen() {
   const theme = useTheme();
@@ -16,6 +18,10 @@ export default function HomeScreen() {
   const [word, setWord] = useState<DBWord | null>(null);
   const [loading, setLoading] = useState(true);
   const [isSpeaking, setIsSpeaking] = useState(false);
+
+  // Generated sentences state
+  const [isGeneratingSentences, setIsGeneratingSentences] = useState(false);
+  const [sentences, setSentences] = useState<GeneratedSentence[]>([]);
 
   const lastWordTimeRef = useRef(settings.lastWordTime);
   lastWordTimeRef.current = settings.lastWordTime;
@@ -25,6 +31,16 @@ export default function HomeScreen() {
     const newWord = await getRandomWord();
     if (newWord) {
       setWord(newWord);
+      
+      // Check if we already have sentences for this word
+      const dictWordId = await checkWordExists(newWord.word);
+      if (dictWordId) {
+        const existing = await getSentencesForWord(dictWordId);
+        setSentences(existing);
+      } else {
+        setSentences([]);
+      }
+
       await updateSettings({
         currentWordId: newWord.id,
         lastWordTime: Date.now()
@@ -67,6 +83,15 @@ export default function HomeScreen() {
                 meaning: row.meaning,
                 examples: row.examples,
               });
+
+              // Check if we already have sentences for this word
+              const dictWordId = await checkWordExists(row.word);
+              if (dictWordId) {
+                const existing = await getSentencesForWord(dictWordId);
+                setSentences(existing);
+              } else {
+                setSentences([]);
+              }
             } else {
               await loadNewWord();
             }
@@ -121,6 +146,66 @@ export default function HomeScreen() {
       setTimeout(() => setIsSpeaking(false), 2000);
     }
   }, [word, isSpeaking]);
+
+  const handleGenerateSentences = useCallback(async () => {
+    if (!word) return;
+    if (!settings.apiKey && settings.provider !== 'pollinations') {
+      alert('Please add your API key in Settings first.');
+      return;
+    }
+
+    setIsGeneratingSentences(true);
+    try {
+      // Fetch up to 3 other words needing sentences
+      const otherWords = await getWordsNeedingSentences(3);
+      
+      const config = {
+        provider: settings.provider,
+        model: settings.model,
+        apiKey: settings.apiKey,
+      };
+
+      // Prepare batch list (current word + others)
+      const batchList = [
+        { word: word.word, meaning: word.meaning },
+        ...otherWords.map(w => ({ word: w.word, meaning: w.meaning }))
+      ];
+
+      // De-duplicate by word in case the current word is already in the dictionary needing sentences
+      const uniqueBatch = Array.from(new Map(batchList.map(item => [item.word, item])).values());
+
+      const batchResult = await generateBatchSentences(config, uniqueBatch);
+
+      let newlyGeneratedForCurrent = 0;
+
+      // Save to dictionary
+      for (const [wKey, genSentences] of Object.entries(batchResult)) {
+        const item = uniqueBatch.find(i => i.word === wKey);
+        if (!item) continue;
+
+        const wordId = await saveWordWithSentences({
+          word: wKey,
+          meaning: item.meaning,
+          sentences: genSentences,
+        });
+
+        // If this is the current word, update UI state
+        if (wKey.toLowerCase() === word.word.toLowerCase()) {
+          const updatedSentences = await getSentencesForWord(wordId);
+          setSentences(updatedSentences);
+          newlyGeneratedForCurrent = genSentences.length;
+        }
+      }
+
+      if (newlyGeneratedForCurrent === 0 && Object.keys(batchResult).length === 0) {
+        alert('Could not generate sentences. Please try again.');
+      }
+    } catch (err: any) {
+      alert(err?.message ?? 'Failed to generate sentences.');
+    } finally {
+      setIsGeneratingSentences(false);
+    }
+  }, [word, settings]);
 
   if (loading || !isLoaded) {
     return (
@@ -265,6 +350,50 @@ export default function HomeScreen() {
                 </Text>
               </>
             )}
+
+            {sentences.length > 0 && (
+              <>
+                <View style={[styles.divider, { backgroundColor: theme.textSecondary, opacity: 0.2 }]} />
+                <Text style={[styles.sectionTitle, { color: theme.textSecondary }]}>GENERATED SENTENCES</Text>
+                <View style={styles.sentencesList}>
+                  {sentences.map((s, idx) => (
+                    <View key={s.id || idx} style={[styles.sentenceRow, { backgroundColor: theme.background }]}>
+                      <View style={styles.sentenceTop}>
+                        <View style={[styles.tenseBadge, { backgroundColor: theme.backgroundSelected }]}>
+                          <Text style={[styles.tenseText, { color: theme.textSecondary }]}>{s.tense.toUpperCase()}</Text>
+                        </View>
+                        <Text style={[styles.sentenceText, { color: theme.text }]}>{s.sentence}</Text>
+                      </View>
+                      <Text style={[styles.translationText, { color: theme.textSecondary }]}>{s.translation}</Text>
+                    </View>
+                  ))}
+                </View>
+              </>
+            )}
+
+            <Pressable
+              onPress={handleGenerateSentences}
+              disabled={isGeneratingSentences}
+              style={({ pressed }) => [
+                styles.practiceBtn,
+                { backgroundColor: isGeneratingSentences ? theme.backgroundElement : '#4F9EFF1A', borderColor: '#4F9EFF55' },
+                pressed && { opacity: 0.8 }
+              ]}
+            >
+              {isGeneratingSentences ? (
+                <View style={styles.practiceBtnContent}>
+                  <ActivityIndicator size="small" color="#4F9EFF" />
+                  <Text style={[styles.practiceBtnText, { color: '#4F9EFF' }]}>Generating...</Text>
+                </View>
+              ) : (
+                <View style={styles.practiceBtnContent}>
+                  <Text style={styles.practiceBtnEmoji}>✨</Text>
+                  <Text style={[styles.practiceBtnText, { color: '#4F9EFF' }]}>
+                    {sentences.length > 0 ? "Add More Sentences" : "Generate Sentences"}
+                  </Text>
+                </View>
+              )}
+            </Pressable>
           </View>
 
           {/* Next Random Word – now stretched to bottom when content is short */}
@@ -434,5 +563,60 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '700',
     letterSpacing: 0.5,
+  },
+  practiceBtn: {
+    marginTop: Spacing.five,
+    borderWidth: 1,
+    borderRadius: 16,
+    paddingVertical: 14,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  practiceBtnContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  practiceBtnEmoji: {
+    fontSize: 20,
+  },
+  practiceBtnText: {
+    fontSize: 16,
+    fontWeight: '700',
+  },
+  sentencesList: {
+    gap: 12,
+  },
+  sentenceRow: {
+    padding: 12,
+    borderRadius: 12,
+  },
+  sentenceTop: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: 8,
+    marginBottom: 4,
+  },
+  tenseBadge: {
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+  },
+  tenseText: {
+    fontSize: 10,
+    fontWeight: '800',
+    letterSpacing: 0.5,
+  },
+  sentenceText: {
+    flex: 1,
+    fontSize: 15,
+    lineHeight: 22,
+    fontWeight: '500',
+  },
+  translationText: {
+    fontSize: 14,
+    fontStyle: 'italic',
+    marginTop: 2,
+    paddingLeft: 4,
   },
 });

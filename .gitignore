@@ -41,3 +41,16 @@ example
 # generated native folders
 /ios
 /android
+
+# Logs
+*.log
+expo_log.txt
+
+# Temporary JSON dumps
+_.json
+__.json
+
+# Environment variables
+.env
+.env.*
+!.env.example
