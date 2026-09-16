@@ -14,6 +14,7 @@ const KEYS = {
     SETTINGS: '@german_app/settings',
     SAVED_PARAGRAPHS: '@german_app/saved_paragraphs',
     LAST_FORM: '@german_app/last_form',
+    PENDING_WORDS: '@german_app/pending_words',
 } as const;
 
 // ─── Types ─────────────────────────────────────────────────────────────────
@@ -41,6 +42,11 @@ export interface SavedParagraph {
     cefrLevel: string;
     topic: string;
     data: GeneratedParagraph;
+}
+
+export interface PendingWord {
+    word: string;
+    meaning: string;
 }
 
 // ─── Settings ──────────────────────────────────────────────────────────────
@@ -104,8 +110,8 @@ export async function loadSavedParagraphs(): Promise<SavedParagraph[]> {
 
 export async function saveParagraph(entry: SavedParagraph): Promise<void> {
     const existing = await loadSavedParagraphs();
-    // Prepend new, keep only the 10 most recent
-    const updated = [entry, ...existing].slice(0, 10);
+    // Prepend new, keep up to 100 for offline reading
+    const updated = [entry, ...existing].slice(0, 100);
     await AsyncStorage.setItem(KEYS.SAVED_PARAGRAPHS, JSON.stringify(updated));
 }
 
@@ -117,4 +123,28 @@ export async function deleteSavedParagraph(id: string): Promise<void> {
 
 export async function clearAllData(): Promise<void> {
     await AsyncStorage.multiRemove(Object.values(KEYS));
+}
+
+// ─── Pending Words (from Reader) ────────────────────────────────────────────
+
+export async function getPendingWords(): Promise<PendingWord[]> {
+    try {
+        const raw = await AsyncStorage.getItem(KEYS.PENDING_WORDS);
+        if (!raw) return [];
+        return JSON.parse(raw);
+    } catch {
+        return [];
+    }
+}
+
+export async function addPendingWord(word: PendingWord): Promise<void> {
+    const existing = await getPendingWords();
+    if (!existing.find(w => w.word === word.word)) {
+        existing.push(word);
+        await AsyncStorage.setItem(KEYS.PENDING_WORDS, JSON.stringify(existing));
+    }
+}
+
+export async function clearPendingWords(): Promise<void> {
+    await AsyncStorage.removeItem(KEYS.PENDING_WORDS);
 }

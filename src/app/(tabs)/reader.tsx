@@ -36,7 +36,8 @@ import {
     type GeneratedParagraph,
     type ParagraphLength,
 } from '@/services/ai-service';
-import { saveParagraph } from '@/services/storage-service';
+import { saveParagraph, loadSavedParagraphs, type SavedParagraph } from '@/services/storage-service';
+import { useFocusEffect } from 'expo-router';
 
 // ── TTS helpers (inline, no separate service file) ───────────────────
 const GERMAN_LOCALE = 'de-DE';
@@ -117,7 +118,14 @@ export default function ReaderScreen() {
     } | null>(null);
     const [saveSuccess, setSaveSuccess] = useState(false);
     const [isSpeaking, setIsSpeaking] = useState(false);
+    const [savedParagraphs, setSavedParagraphs] = useState<SavedParagraph[]>([]);
     const abortControllerRef = useRef<AbortController | null>(null);
+
+    useFocusEffect(
+        useCallback(() => {
+            loadSavedParagraphs().then(setSavedParagraphs).catch(console.error);
+        }, [])
+    );
 
     // Stop any in-flight speech if the screen unmounts.
     useEffect(() => {
@@ -274,15 +282,67 @@ export default function ReaderScreen() {
 
                 {/* ── Empty / prompt state ── */}
                 {!paragraph && !error && !isLoading && (
-                    <ThemedView style={styles.emptyState}>
-                        <Text style={styles.emptyEmoji}>📖</Text>
-                        <ThemedText style={styles.emptyText} themeColor="textSecondary">
-                            Configure your options above and tap{' '}
-                            <ThemedText style={styles.emptyTextBold}>✨ Generate</ThemedText>{' '}
-                            to create a reading passage.{'\n\n'}Tap any word to see its
-                            meaning and hear it spoken.
-                        </ThemedText>
-                    </ThemedView>
+                    <View style={{ gap: Spacing.four }}>
+                        <ThemedView style={styles.emptyState}>
+                            <Text style={styles.emptyEmoji}>📖</Text>
+                            <ThemedText style={styles.emptyText} themeColor="textSecondary">
+                                Configure your options above and tap{' '}
+                                <ThemedText style={styles.emptyTextBold}>✨ Generate</ThemedText>{' '}
+                                to create a reading passage.{'\n\n'}Tap any word to see its
+                                meaning and hear it spoken.
+                            </ThemedText>
+                        </ThemedView>
+
+                        {/* ── Saved Paragraphs List ── */}
+                        {savedParagraphs.length > 0 && (
+                            <ThemedView style={styles.savedContainer}>
+                                <ThemedText style={styles.savedTitle}>Saved Readings</ThemedText>
+                                {savedParagraphs.map((p) => (
+                                    <Pressable
+                                        key={p.id}
+                                        style={({ pressed }) => [
+                                            styles.savedCard,
+                                            {
+                                                backgroundColor: pressed
+                                                    ? theme.backgroundSelected
+                                                    : theme.backgroundElement,
+                                            },
+                                        ]}
+                                        onPress={() => {
+                                            setParagraph(p.data);
+                                            setLastMeta({ cefr: p.cefrLevel, topic: p.topic });
+                                            setFormVisible(false);
+                                        }}
+                                    >
+                                        <View style={styles.savedCardMeta}>
+                                            <View
+                                                style={[
+                                                    styles.badge,
+                                                    { backgroundColor: theme.backgroundSelected },
+                                                ]}
+                                            >
+                                                <Text style={[styles.badgeText, { color: theme.text }]}>
+                                                    {p.cefrLevel}
+                                                </Text>
+                                            </View>
+                                            <Text
+                                                style={[styles.savedCardTopic, { color: theme.text }]}
+                                                numberOfLines={1}
+                                            >
+                                                {p.topic || 'No topic'}
+                                            </Text>
+                                        </View>
+                                        <Text
+                                            style={[styles.savedCardPreview, { color: theme.textSecondary }]}
+                                            numberOfLines={2}
+                                        >
+                                            {extractGermanText(p.data)}
+                                        </Text>
+                                    </Pressable>
+                                ))}
+                            </ThemedView>
+                        )}
+                    </View>
                 )}
 
                 {/* ── Paragraph ── */}
@@ -430,6 +490,36 @@ const styles = StyleSheet.create({
     },
     emptyTextBold: {
         fontWeight: '700',
+    },
+    savedContainer: {
+        gap: Spacing.three,
+        marginTop: Spacing.two,
+    },
+    savedTitle: {
+        fontSize: 18,
+        fontWeight: '700',
+        paddingHorizontal: Spacing.two,
+    },
+    savedCard: {
+        borderRadius: 16,
+        padding: Spacing.three,
+        gap: Spacing.two,
+        borderWidth: 1,
+        borderColor: '#00000010',
+    },
+    savedCardMeta: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: Spacing.two,
+    },
+    savedCardTopic: {
+        fontSize: 15,
+        fontWeight: '600',
+        flex: 1,
+    },
+    savedCardPreview: {
+        fontSize: 14,
+        lineHeight: 20,
     },
     paragraphCard: {
         borderRadius: 16,

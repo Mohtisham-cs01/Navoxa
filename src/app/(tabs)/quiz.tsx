@@ -19,14 +19,22 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import * as Speech from 'expo-speech';
+
 import { ThemedView } from '@/components/themed-view';
 import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
-import { getRandomNoun, type DBWord } from '@/services/database-service';
+import { getNextNoun, markNounFailed, markNounPassed, type DBWord } from '@/services/database-service';
 
 const ARTICLES = ['der', 'die', 'das'] as const;
 const GREEN = '#22c55e';
 const RED = '#ef4444';
+
+function isCorrectArticle(guessed: string, correctArticleRaw: string | null | undefined): boolean {
+    if (!correctArticleRaw) return false;
+    const validArticles = correctArticleRaw.toLowerCase().split(/[\s/,]+/).map(a => a.trim()).filter(Boolean);
+    return validArticles.includes(guessed.toLowerCase());
+}
 
 export default function QuizScreen() {
     const theme = useTheme();
@@ -47,7 +55,7 @@ export default function QuizScreen() {
         setChosen(null);
         Animated.timing(fadeAnim, { toValue: 0, duration: 150, useNativeDriver: true }).start(
             async () => {
-                const w = await getRandomNoun();
+                const w = await getNextNoun();
                 setNoun(w);
                 setLoading(false);
                 scaleAnim.setValue(0.92);
@@ -59,7 +67,19 @@ export default function QuizScreen() {
         );
     }, [fadeAnim, scaleAnim]);
 
-    useEffect(() => { loadNoun(); }, []);
+    useEffect(() => {
+        loadNoun();
+        return () => {
+            Speech.stop();
+        };
+    }, []);
+
+    const speakWord = useCallback(() => {
+        if (!noun) return;
+        const textToSpeak = (noun.word || '').replace(/^(der|die|das)\s+/i, '');
+        Speech.stop();
+        Speech.speak(textToSpeak, { language: 'de-DE' });
+    }, [noun]);
 
     const triggerShake = useCallback(() => {
         Animated.sequence([
@@ -73,11 +93,18 @@ export default function QuizScreen() {
 
     const handleGuess = useCallback((article: string) => {
         if (chosen || !noun) return;
-        const correct = noun.article?.toLowerCase() === article;
+        const correct = isCorrectArticle(article, noun.article);
         setChosen(article);
         setTotal(t => t + 1);
-        if (correct) { setScore(s => s + 1); setStreak(s => s + 1); }
-        else { setStreak(0); triggerShake(); }
+        if (correct) { 
+            setScore(s => s + 1); 
+            setStreak(s => s + 1); 
+            markNounPassed(noun.id);
+        } else { 
+            setStreak(0); 
+            triggerShake(); 
+            markNounFailed(noun);
+        }
     }, [chosen, noun, triggerShake]);
 
     /**
@@ -89,7 +116,7 @@ export default function QuizScreen() {
      */
     const btnStyle = useCallback((art: string) => {
         if (!chosen) return { bg: theme.backgroundElement, text: theme.text };
-        const isCorrect = noun?.article?.toLowerCase() === art;
+        const isCorrect = isCorrectArticle(art, noun?.article);
         const isPicked = chosen === art;
         if (isCorrect) return { bg: GREEN, text: '#fff' };
         if (isPicked && !isCorrect) return { bg: RED, text: '#fff' };
@@ -152,9 +179,18 @@ export default function QuizScreen() {
                                 <Text style={[styles.chipText, { color: theme.textSecondary }]}>Nomen · noun</Text>
                             </View>
                             {/* Word WITHOUT article */}
-                            <Text style={[styles.word, { color: theme.text }]} adjustsFontSizeToFit numberOfLines={2}>
-                                {(noun.word || '').replace(/^(der|die|das)\s+/i, '')}
-                            </Text>
+                            <View style={styles.wordRow}>
+                                <Text style={[styles.word, { color: theme.text }]} adjustsFontSizeToFit numberOfLines={2}>
+                                    {(noun.word || '').replace(/^(der|die|das)\s+/i, '')}
+                                </Text>
+                                <Pressable
+                                    onPress={speakWord}
+                                    style={({ pressed }) => [styles.speakBtn, { opacity: pressed ? 0.6 : 1 }]}
+                                    accessibilityLabel="Hear word spoken"
+                                >
+                                    <Text style={styles.speakIcon}>🔊</Text>
+                                </Pressable>
+                            </View>
                             {noun.meaning ? (
                                 <Text style={[styles.hint, { color: theme.textSecondary }]}>{noun.meaning}</Text>
                             ) : null}
@@ -163,13 +199,13 @@ export default function QuizScreen() {
                             {chosen && (
                                 <View style={[
                                     styles.banner,
-                                    { backgroundColor: noun.article?.toLowerCase() === chosen ? '#dcfce7' : '#fee2e2' },
+                                    { backgroundColor: isCorrectArticle(chosen, noun.article) ? '#dcfce7' : '#fee2e2' },
                                 ]}>
                                     <Text style={[
                                         styles.bannerText,
-                                        { color: noun.article?.toLowerCase() === chosen ? '#15803d' : '#b91c1c' },
+                                        { color: isCorrectArticle(chosen, noun.article) ? '#15803d' : '#b91c1c' },
                                     ]}>
-                                        {noun.article?.toLowerCase() === chosen
+                                        {isCorrectArticle(chosen, noun.article)
                                             ? `✓  Richtig! — ${noun.article}`
                                             : `✗  Falsch — it's "${noun.article}"`}
                                     </Text>
@@ -233,6 +269,9 @@ const styles = StyleSheet.create({
     cardCenter: { alignItems: 'center', justifyContent: 'center', minHeight: 160 },
     chip: { alignSelf: 'flex-start', paddingHorizontal: 12, paddingVertical: 4, borderRadius: 20 },
     chipText: { fontSize: 12, fontWeight: '700', letterSpacing: 0.5 },
+    wordRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: Spacing.two },
+    speakBtn: { padding: Spacing.one },
+    speakIcon: { fontSize: 28 },
     word: { fontSize: 38, fontWeight: '900', letterSpacing: -0.5 },
     hint: { fontSize: 16, lineHeight: 24 },
     banner: { borderRadius: 10, paddingVertical: 10, paddingHorizontal: 14, alignItems: 'center' },

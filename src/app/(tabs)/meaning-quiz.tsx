@@ -22,10 +22,12 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import * as Speech from 'expo-speech';
+
 import { ThemedView } from '@/components/themed-view';
 import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
-import { getRandomWord, getFourOptions, type DBWord } from '@/services/database-service';
+import { getNextWord, getFourOptions, markWordFailed, markWordPassed, type DBWord } from '@/services/database-service';
 
 const GREEN = '#22c55e';
 const RED = '#ef4444';
@@ -53,7 +55,7 @@ export default function MeaningQuizScreen() {
         Animated.timing(fadeAnim, { toValue: 0, duration: 150, useNativeDriver: true }).start(
             async () => {
                 try {
-                    const correct = await getRandomWord();
+                    const correct = await getNextWord();
                     if (!correct) { setLoading(false); return; }
                     const opts = await getFourOptions(correct);
                     setWord(correct);
@@ -69,7 +71,18 @@ export default function MeaningQuizScreen() {
         );
     }, [fadeAnim, scaleAnim]);
 
-    useEffect(() => { loadQuestion(); }, []);
+    useEffect(() => {
+        loadQuestion();
+        return () => {
+            Speech.stop();
+        };
+    }, []);
+
+    const speakWord = useCallback(() => {
+        if (!word) return;
+        Speech.stop();
+        Speech.speak(word.word, { language: 'de-DE' });
+    }, [word]);
 
     const triggerShake = useCallback(() => {
         Animated.sequence([
@@ -86,8 +99,15 @@ export default function MeaningQuizScreen() {
         const correct = optId === word.id;
         setChosen(optId);
         setTotal(t => t + 1);
-        if (correct) { setScore(s => s + 1); setStreak(s => s + 1); }
-        else { setStreak(0); triggerShake(); }
+        if (correct) { 
+            setScore(s => s + 1); 
+            setStreak(s => s + 1); 
+            markWordPassed(word.id);
+        } else { 
+            setStreak(0); 
+            triggerShake(); 
+            markWordFailed(word);
+        }
     }, [chosen, word, triggerShake]);
 
     /** Green for correct option, Red for wrong pick, dimmed for rest */
@@ -161,9 +181,18 @@ export default function MeaningQuizScreen() {
                             </View>
 
                             {/* The German word */}
-                            <Text style={[styles.word, { color: theme.text }]} adjustsFontSizeToFit numberOfLines={2}>
-                                {word.word}
-                            </Text>
+                            <View style={styles.wordRow}>
+                                <Text style={[styles.word, { color: theme.text }]} adjustsFontSizeToFit numberOfLines={2}>
+                                    {word.word}
+                                </Text>
+                                <Pressable
+                                    onPress={speakWord}
+                                    style={({ pressed }) => [styles.speakBtn, { opacity: pressed ? 0.6 : 1 }]}
+                                    accessibilityLabel="Hear word spoken"
+                                >
+                                    <Text style={styles.speakIcon}>🔊</Text>
+                                </Pressable>
+                            </View>
 
                             {/* Example if available */}
                             {word.examples ? (
@@ -241,6 +270,9 @@ const styles = StyleSheet.create({
     cardCenter: { alignItems: 'center', justifyContent: 'center', minHeight: 140 },
     chip: { alignSelf: 'flex-start', paddingHorizontal: 12, paddingVertical: 4, borderRadius: 20 },
     chipText: { fontSize: 12, fontWeight: '700', letterSpacing: 0.5 },
+    wordRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: Spacing.two },
+    speakBtn: { padding: Spacing.one },
+    speakIcon: { fontSize: 28 },
     word: { fontSize: 36, fontWeight: '900', letterSpacing: -0.5 },
     example: { fontSize: 14, lineHeight: 20, fontStyle: 'italic' },
     banner: { borderRadius: 10, paddingVertical: 10, paddingHorizontal: 14, alignItems: 'center' },

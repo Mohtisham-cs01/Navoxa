@@ -20,6 +20,8 @@ import {
 import type { WordMeaning } from '@/services/ai-service';
 import { speakGermanWord } from '@/services/tts-service';
 import { useTheme } from '@/hooks/use-theme';
+import { addPendingWord, getPendingWords } from '@/services/storage-service';
+import { checkWordExists } from '@/services/dictionary-service';
 
 interface WordPopupProps {
     word: WordMeaning | null;
@@ -31,8 +33,24 @@ export function WordPopup({ word, onClose }: WordPopupProps) {
     const scaleAnim = useRef(new Animated.Value(0.85)).current;
     const opacityAnim = useRef(new Animated.Value(0)).current;
     const [isSpeaking, setIsSpeaking] = React.useState(false);
+    const [isQueued, setIsQueued] = React.useState(false);
 
     const visible = word !== null;
+
+    useEffect(() => {
+        if (word) {
+            Promise.all([
+                checkWordExists(word.word),
+                getPendingWords()
+            ]).then(([dbExists, pending]) => {
+                if (dbExists || pending.some(p => p.word === word.word)) {
+                    setIsQueued(true);
+                } else {
+                    setIsQueued(false);
+                }
+            }).catch(() => setIsQueued(false));
+        }
+    }, [word]);
 
     useEffect(() => {
         if (visible) {
@@ -65,6 +83,12 @@ export function WordPopup({ word, onClose }: WordPopupProps) {
             setTimeout(() => setIsSpeaking(false), 2000);
         }
     }, [word, isSpeaking]);
+
+    const handleQueue = useCallback(async () => {
+        if (!word || isQueued) return;
+        await addPendingWord(word);
+        setIsQueued(true);
+    }, [word, isQueued]);
 
     if (!word) return null;
 
@@ -120,25 +144,47 @@ export function WordPopup({ word, onClose }: WordPopupProps) {
                             {word.meaning}
                         </Text>
 
-                        {/* Speak button */}
-                        <Pressable
-                            onPress={handleSpeak}
-                            style={({ pressed }) => [
-                                styles.speakBtn,
-                                { backgroundColor: pressed ? theme.backgroundSelected : theme.backgroundElement },
-                                styles.speakBtnBorder,
-                            ]}
-                            accessibilityLabel={`Pronounce ${word.word}`}
-                        >
-                            {isSpeaking ? (
-                                <ActivityIndicator size="small" color={theme.text} />
-                            ) : (
-                                <Text style={styles.speakBtnIcon}>🔊</Text>
-                            )}
-                            <Text style={[styles.speakBtnLabel, { color: theme.text }]}>
-                                {isSpeaking ? 'Speaking…' : 'Pronounce'}
-                            </Text>
-                        </Pressable>
+                        {/* Actions Row */}
+                        <View style={{ flexDirection: 'row', gap: 12, marginTop: 4 }}>
+                            {/* Speak button */}
+                            <Pressable
+                                onPress={handleSpeak}
+                                style={({ pressed }) => [
+                                    styles.speakBtn,
+                                    { backgroundColor: pressed ? theme.backgroundSelected : theme.backgroundElement },
+                                    styles.speakBtnBorder,
+                                    { flex: 1, justifyContent: 'center' }
+                                ]}
+                                accessibilityLabel={`Pronounce ${word.word}`}
+                            >
+                                {isSpeaking ? (
+                                    <ActivityIndicator size="small" color={theme.text} />
+                                ) : (
+                                    <Text style={styles.speakBtnIcon}>🔊</Text>
+                                )}
+                                <Text style={[styles.speakBtnLabel, { color: theme.text }]} numberOfLines={1}>
+                                    {isSpeaking ? 'Speaking…' : 'Pronounce'}
+                                </Text>
+                            </Pressable>
+
+                            {/* Queue button */}
+                            <Pressable
+                                onPress={handleQueue}
+                                disabled={isQueued}
+                                style={({ pressed }) => [
+                                    styles.speakBtn,
+                                    { backgroundColor: isQueued ? theme.backgroundSelected : pressed ? theme.backgroundSelected : theme.backgroundElement },
+                                    styles.speakBtnBorder,
+                                    { flex: 1.2, justifyContent: 'center' }
+                                ]}
+                                accessibilityLabel={`Queue ${word.word} for Dictionary`}
+                            >
+                                <Text style={styles.speakBtnIcon}>{isQueued ? '✅' : '➕'}</Text>
+                                <Text style={[styles.speakBtnLabel, { color: isQueued ? theme.textSecondary : theme.text }]} numberOfLines={1} adjustsFontSizeToFit>
+                                    {isQueued ? 'Saved' : 'Add to DB'}
+                                </Text>
+                            </Pressable>
+                        </View>
                     </Animated.View>
                 </Pressable>
             </Pressable>
@@ -197,12 +243,10 @@ const styles = StyleSheet.create({
     speakBtn: {
         flexDirection: 'row',
         alignItems: 'center',
-        gap: 8,
-        marginTop: 4,
+        gap: 6,
         paddingVertical: 10,
-        paddingHorizontal: 16,
+        paddingHorizontal: 8,
         borderRadius: 12,
-        alignSelf: 'flex-start',
     },
     speakBtnBorder: {
         borderWidth: StyleSheet.hairlineWidth,

@@ -35,11 +35,13 @@ import {
     Alert,
 } from 'react-native';
 
+import { useFocusEffect } from 'expo-router';
 import { useSettings } from '@/context/settings-context';
 import { useTheme } from '@/hooks/use-theme';
 import {
     generateDictionaryWords,
     generateMoreSentences,
+    generateSpecificDictionaryWords,
     type LLMGeneratedWord,
 } from '@/services/ai-service';
 import {
@@ -51,6 +53,7 @@ import {
     type GeneratedWord,
     type GeneratedSentence,
 } from '@/services/dictionary-service';
+import { getPendingWords, clearPendingWords, type PendingWord } from '@/services/storage-service';
 
 // ─── Tense badge colours ────────────────────────────────────────────────────
 
@@ -360,7 +363,9 @@ export default function DictionaryScreen() {
     const theme = useTheme();
 
     const [words, setWords] = useState<GeneratedWord[]>([]);
+    const [pendingWords, setPendingWords] = useState<PendingWord[]>([]);
     const [isGenerating, setIsGenerating] = useState(false);
+    const [isProcessingPending, setIsProcessingPending] = useState(false);
     const [isFetchingMore, setIsFetchingMore] = useState<number | null>(null); // word id being processed
     const [error, setError] = useState<string | null>(null);
     const [successMsg, setSuccessMsg] = useState<string | null>(null);
@@ -372,9 +377,19 @@ export default function DictionaryScreen() {
         setWords(rows);
     }, []);
 
+    const loadPending = useCallback(async () => {
+        setPendingWords(await getPendingWords());
+    }, []);
+
     useEffect(() => {
         loadWords();
     }, [loadWords]);
+
+    useFocusEffect(
+        useCallback(() => {
+            loadPending();
+        }, [loadPending])
+    );
 
     // ── Show a brief success banner ──
     const showSuccess = useCallback((msg: string) => {
@@ -442,6 +457,57 @@ export default function DictionaryScreen() {
         },
         [settings, loadWords, showSuccess],
     );
+
+    const handleProcessPending = useCallback(async () => {
+        if (!settings.apiKey && settings.provider !== 'pollinations') {
+            setError('Please add your API key in Settings first.');
+            return;
+        }
+
+        setError(null);
+        setIsProcessingPending(true);
+        abortRef.current = new AbortController();
+
+        try {
+            const config = {
+                provider: settings.provider,
+                model: settings.model,
+                apiKey: settings.apiKey,
+            };
+
+            const generated = await generateSpecificDictionaryWords(
+                config,
+                pendingWords,
+                abortRef.current.signal,
+            );
+
+            let newWords = 0;
+            let addedSentences = 0;
+            for (const w of generated) {
+                const existingId = await checkWordExists(w.word);
+                await saveWordWithSentences({
+                    word: w.word,
+                    article: w.article,
+                    pos: w.pos,
+                    meaning: w.meaning,
+                    sentences: w.sentences,
+                });
+                if (!existingId) newWords++;
+                else addedSentences += w.sentences.length;
+            }
+
+            await clearPendingWords();
+            await loadPending();
+            await loadWords();
+            showSuccess(`Processed queued words: ${newWords} added, ${addedSentences} new sentences.`);
+        } catch (err: any) {
+            if (err?.name === 'AbortError') return;
+            setError(err?.message ?? 'Failed to process pending words.');
+        } finally {
+            setIsProcessingPending(false);
+            abortRef.current = null;
+        }
+    }, [settings, pendingWords, loadWords, loadPending, showSuccess]);
 
     const handleCancel = useCallback(() => {
         abortRef.current?.abort();
@@ -560,6 +626,42 @@ export default function DictionaryScreen() {
             {successMsg && (
                 <View style={styles.successBanner}>
                     <Text style={styles.successBannerText}>✅ {successMsg}</Text>
+                </View>
+            )}
+
+            {/* Pending Words queue banner */}
+            {pendingWords.length > 0 && (
+                <View style={[styles.generatorBar, { backgroundColor: theme.backgroundElement, marginBottom: 12, marginHorizontal: 16 }]}>
+                    <Text style={[styles.generatorTitle, { color: theme.text }]}>
+                        📥 {pendingWords.length} {pendingWords.length === 1 ? 'word' : 'words'} queued
+                    </Text>
+                    <Text style={[styles.barLabel, { color: theme.textSecondary, marginBottom: 8 }]}>
+                        You saved words while reading. Ready to fetch their forms?
+                    </Text>
+                    
+                    {isProcessingPending ? (
+                        <View style={styles.generatingRow}>
+                            <ActivityIndicator size="small" color={theme.text} />
+                            <Text style={[styles.generatingText, { color: theme.textSecondary, marginLeft: 8 }]}>
+                                Processing words via AI…
+                            </Text>
+                            <Pressable onPress={handleCancel} style={styles.cancelBtn}>
+                                <Text style={styles.cancelBtnText}>Cancel</Text>
+                            </Pressable>
+                        </View>
+                    ) : (
+                        <Pressable
+                            onPress={handleProcessPending}
+                            style={({ pressed }) => [
+                                styles.generateBtn,
+                                { backgroundColor: pressed ? theme.backgroundSelected : theme.text },
+                            ]}
+                        >
+                            <Text style={[styles.generateBtnText, { color: theme.background }]}>
+                                ✨ Process Queued Words
+                            </Text>
+                        </Pressable>
+                    )}
                 </View>
             )}
 

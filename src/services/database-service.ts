@@ -140,3 +140,74 @@ export async function getRandomNoun(): Promise<DBWord | null> {
     }
 }
 
+// ─── Spaced Repetition (Retry Queue) ───────────────────────────────────────
+
+interface RetryItem {
+    word: DBWord;
+    delay: number;
+}
+
+let nounRetryQueue: RetryItem[] = [];
+let wordRetryQueue: RetryItem[] = [];
+
+function getRandomDelay() {
+    return Math.floor(Math.random() * 6) + 5; // 5 to 10
+}
+
+// -- Noun (Artikel) Quiz --
+
+export function markNounFailed(noun: DBWord) {
+    const existing = nounRetryQueue.find(item => item.word.id === noun.id);
+    if (existing) {
+        existing.delay = getRandomDelay();
+    } else {
+        nounRetryQueue.push({ word: noun, delay: getRandomDelay() });
+    }
+}
+
+export function markNounPassed(id: number) {
+    nounRetryQueue = nounRetryQueue.filter(item => item.word.id !== id);
+}
+
+export async function getNextNoun(): Promise<DBWord | null> {
+    // Decrement delay for all items
+    nounRetryQueue.forEach(item => { if (item.delay > 0) item.delay--; });
+
+    // Find first item ready to be reviewed
+    const readyItem = nounRetryQueue.find(item => item.delay <= 0);
+    if (readyItem) {
+        readyItem.delay = getRandomDelay(); // Reset delay in case they skip/unmount
+        return readyItem.word;
+    }
+
+    return getRandomNoun();
+}
+
+// -- Meaning (Bedeutung) Quiz --
+
+export function markWordFailed(word: DBWord) {
+    const existing = wordRetryQueue.find(item => item.word.id === word.id);
+    if (existing) {
+        existing.delay = getRandomDelay();
+    } else {
+        wordRetryQueue.push({ word, delay: getRandomDelay() });
+    }
+}
+
+export function markWordPassed(id: number) {
+    wordRetryQueue = wordRetryQueue.filter(item => item.word.id !== id);
+}
+
+export async function getNextWord(): Promise<DBWord | null> {
+    wordRetryQueue.forEach(item => { if (item.delay > 0) item.delay--; });
+
+    const readyItem = wordRetryQueue.find(item => item.delay <= 0);
+    if (readyItem) {
+        readyItem.delay = getRandomDelay();
+        return readyItem.word;
+    }
+
+    return getRandomWord();
+}
+
+
