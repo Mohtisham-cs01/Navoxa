@@ -1,0 +1,5668 @@
+{
+  "source": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+  "page_range": "9-27",
+  "section": "Alphabetische Wortliste",
+  "notes": "Each 'word' is the German lemma as printed (e.g. 'der Tisch,-e' or 'abfahren'). 'sentences' is an ordered list of example sentences demonstrating that word in context, exactly as printed in the PDF. | 'meaning' field added: concise English translation of each German word/expression.",
+  "count": 688,
+  "entries": [
+    {
+      "page": 9,
+      "word": "ab",
+      "sentences": [
+        "Ab morgen muss ich arbeiten."
+      ],
+      "meaning": "from / starting from"
+    },
+    {
+      "page": 9,
+      "word": "aber",
+      "sentences": [
+        "Ich bin oft im Büro, aber nur für wenige Stunden."
+      ],
+      "meaning": "but"
+    },
+    {
+      "page": 9,
+      "word": "abfahren",
+      "sentences": [
+        "Wir fahren um zwölf Uhr ab."
+      ],
+      "meaning": "to depart, to leave"
+    },
+    {
+      "page": 9,
+      "word": "die Abfahrt",
+      "sentences": [
+        "Vor der Abfahrt rufe ich an."
+      ],
+      "meaning": "departure"
+    },
+    {
+      "page": 9,
+      "word": "abgeben",
+      "sentences": [
+        "Ich muss meine Schlüssel abgeben."
+      ],
+      "meaning": "to hand in, to submit"
+    },
+    {
+      "page": 9,
+      "word": "abholen",
+      "sentences": [
+        "Wann kann ich den Schrank bei dir abholen?",
+        "Wir müssen noch meinen Bruder abholen."
+      ],
+      "meaning": "to pick up, to collect"
+    },
+    {
+      "page": 9,
+      "word": "der Absender",
+      "sentences": [
+        "Da ist ein Brief für dich ohne Absender."
+      ],
+      "meaning": "sender"
+    },
+    {
+      "page": 9,
+      "word": "Achtung",
+      "sentences": [
+        "Achtung! Das dürfen Sie nicht tun."
+      ],
+      "meaning": "attention! caution!"
+    },
+    {
+      "page": 9,
+      "word": "die Adresse,-en",
+      "sentences": [
+        "Können Sie mir seine Adresse sagen?"
+      ],
+      "meaning": "address"
+    },
+    {
+      "page": 9,
+      "word": "all-",
+      "sentences": [
+        "Alles Gute!",
+        "Das ist alles.",
+        "Sind alle da?",
+        "Alle Freunde kommen.",
+        "Hast du alles?"
+      ],
+      "meaning": "all"
+    },
+    {
+      "page": 9,
+      "word": "allein",
+      "sentences": [
+        "Er kommt allein."
+      ],
+      "meaning": "alone"
+    },
+    {
+      "page": 9,
+      "word": "also",
+      "sentences": [
+        "Also, es ist so: ...",
+        "Er hat Zeit, also muss er uns helfen."
+      ],
+      "meaning": "so, therefore"
+    },
+    {
+      "page": 9,
+      "word": "alt",
+      "sentences": [
+        "Wie alt sind Sie?",
+        "Sie sehen aber nicht so alt aus.",
+        "Mein Auto ist schon sehr alt.",
+        "Wir wohnen in einem sehr alten Haus.",
+        "Köln ist eine alte Stadt."
+      ],
+      "meaning": "old"
+    },
+    {
+      "page": 9,
+      "word": "das Alter",
+      "sentences": [
+        "Alter: 26 Jahre."
+      ],
+      "meaning": "age"
+    },
+    {
+      "page": 9,
+      "word": "an",
+      "sentences": [
+        "Fahren Sie an der nächsten Straße nach rechts.",
+        "Wir treffen uns am Bahnhof.",
+        "Am nächsten Montag geht es leider nicht."
+      ],
+      "meaning": "at, on, to"
+    },
+    {
+      "page": 9,
+      "word": "anbieten",
+      "sentences": [
+        "Was darf ich dir anbieten?"
+      ],
+      "meaning": "to offer"
+    },
+    {
+      "page": 9,
+      "word": "das Angebot, -e",
+      "sentences": [
+        "Heute sind Sportschuhe im Angebot."
+      ],
+      "meaning": "offer"
+    },
+    {
+      "page": 9,
+      "word": "ander-",
+      "sentences": [
+        "WiIlst du diese Jacke? – Nein, ich möchte die andere."
+      ],
+      "meaning": "other"
+    },
+    {
+      "page": 9,
+      "word": "anfangen",
+      "sentences": [
+        "Hier fängt die Bahnhofstraße an.",
+        "Der Unterricht fängt gleich an."
+      ],
+      "meaning": "to begin, to start"
+    },
+    {
+      "page": 9,
+      "word": "der Anfang",
+      "sentences": [
+        "Sie wohnt am Anfang der Straße.",
+        "Wir machen Anfang Juli Urlaub."
+      ],
+      "meaning": "beginning"
+    },
+    {
+      "page": 9,
+      "word": "anklicken",
+      "sentences": [
+        "Da musst du dieses Wort anklicken."
+      ],
+      "meaning": "to click on"
+    },
+    {
+      "page": 9,
+      "word": "ankommen",
+      "sentences": [
+        "Wann kommt dieser Zug in Hamburg an?"
+      ],
+      "meaning": "to arrive"
+    },
+    {
+      "page": 9,
+      "word": "die Ankunft",
+      "sentences": [
+        "Auf diesem Plan steht nur die Ankunft(-szeit) der Züge."
+      ],
+      "meaning": "arrival"
+    },
+    {
+      "page": 9,
+      "word": "ankreuzen",
+      "sentences": [
+        "Auf dem Formular müssen Sie an mehreren Stellen etwas ankreuzen."
+      ],
+      "meaning": "to tick / check (a box)"
+    },
+    {
+      "page": 9,
+      "word": "anmachen",
+      "sentences": [
+        "Mach bitte das Licht an!"
+      ],
+      "meaning": "to switch on, turn on"
+    },
+    {
+      "page": 9,
+      "word": "(sich) anmelden",
+      "sentences": [
+        "Wo kann ich mich anmelden?"
+      ],
+      "meaning": "to register, sign up"
+    },
+    {
+      "page": 9,
+      "word": "die Anmeldung",
+      "sentences": [
+        "Eine Anmeldung für diesen Kurs ist nicht mehr möglich."
+      ],
+      "meaning": "registration"
+    },
+    {
+      "page": 9,
+      "word": "die Anrede",
+      "sentences": [
+        "Schreiben Sie auch eine Anrede und einen Gruß."
+      ],
+      "meaning": "form of address, salutation"
+    },
+    {
+      "page": 9,
+      "word": "anrufen",
+      "sentences": [
+        "Kann man Sie anrufen?",
+        "Peter ruft kurz seine Freundin an."
+      ],
+      "meaning": "to call (on the phone)"
+    },
+    {
+      "page": 9,
+      "word": "der Anruf, -e",
+      "sentences": [
+        "Sie bekommt viele Anrufe auf ihrem Handy."
+      ],
+      "meaning": "phone call"
+    },
+    {
+      "page": 9,
+      "word": "der Anruf-",
+      "sentences": [
+        "Wir sind im Moment nicht da. Sprechen Sie bitte auf"
+      ],
+      "meaning": "answer- (prefix, part of 'Anrufbeantworter')"
+    },
+    {
+      "page": 9,
+      "word": "beantworter",
+      "sentences": [
+        "den Anrufbeantworter."
+      ],
+      "meaning": "-machine/-phone (part of 'Anrufbeantworter' = answering machine)"
+    },
+    {
+      "page": 10,
+      "word": "die Ansage, -n",
+      "sentences": [
+        "Hören Sie die Ansagen."
+      ],
+      "meaning": "announcement"
+    },
+    {
+      "page": 10,
+      "word": "der Anschluss",
+      "sentences": [
+        "In Mannheim haben Sie Anschluss nach Saarbrücken.",
+        "Ist das die Anmeldung für einen Telefonanschluss?"
+      ],
+      "meaning": "connection"
+    },
+    {
+      "page": 10,
+      "word": "an sein",
+      "sentences": [
+        "Heute Nacht war das Licht an."
+      ],
+      "meaning": "to be on/switched on"
+    },
+    {
+      "page": 10,
+      "word": "antworten",
+      "sentences": [
+        "Er antwortet nicht."
+      ],
+      "meaning": "to answer"
+    },
+    {
+      "page": 10,
+      "word": "die Antwort, -en",
+      "sentences": [
+        "Er gibt leider keine Antwort."
+      ],
+      "meaning": "answer"
+    },
+    {
+      "page": 10,
+      "word": "die Anzeige, -n",
+      "sentences": [
+        "Ich habe Ihre Anzeige in der Zeitung gelesen."
+      ],
+      "meaning": "advertisement, notice, ad"
+    },
+    {
+      "page": 10,
+      "word": "(sich) anziehen",
+      "sentences": [
+        "Ich muss mich noch anziehen."
+      ],
+      "meaning": "to get dressed"
+    },
+    {
+      "page": 10,
+      "word": "das Apartment, -s",
+      "sentences": [
+        "Wir haben ein Apartment gemietet."
+      ],
+      "meaning": "apartment"
+    },
+    {
+      "page": 10,
+      "word": "der Apfel, -Ä",
+      "sentences": [
+        "Ein Pfund Äpfel bitte."
+      ],
+      "meaning": "apple"
+    },
+    {
+      "page": 10,
+      "word": "der Appetit",
+      "sentences": [
+        "Guten Appetit!"
+      ],
+      "meaning": "appetite"
+    },
+    {
+      "page": 10,
+      "word": "arbeiten",
+      "sentences": [
+        "Wo arbeiten Sie?"
+      ],
+      "meaning": "to work"
+    },
+    {
+      "page": 10,
+      "word": "die Arbeit, -en",
+      "sentences": [
+        "Mein Bruder sucht Arbeit."
+      ],
+      "meaning": "work, job"
+    },
+    {
+      "page": 10,
+      "word": "arbeitslos",
+      "sentences": [
+        "Es gibt bei uns viele Leute, die schon lange arbeitslos sind."
+      ],
+      "meaning": "unemployed"
+    },
+    {
+      "page": 10,
+      "word": "der Arbeitsplatz, -ä,",
+      "sentences": [
+        "e An meinem Arbeitsplatz fehlt ein Drucker."
+      ],
+      "meaning": "workplace, job"
+    },
+    {
+      "page": 10,
+      "word": "der Arm, -e",
+      "sentences": [
+        "Mein Arm tut weh."
+      ],
+      "meaning": "arm"
+    },
+    {
+      "page": 10,
+      "word": "der Arzt, -Ä, e",
+      "sentences": [
+        "Morgen habe ich einen Termin bei meiner Ärztin."
+      ],
+      "meaning": "doctor"
+    },
+    {
+      "page": 10,
+      "word": "auch",
+      "sentences": [
+        "Ich bin auch Spanier."
+      ],
+      "meaning": "also, too"
+    },
+    {
+      "page": 10,
+      "word": "auf",
+      "sentences": [
+        "Die Kinder spielen auf der Straße.",
+        "Auf Wiedersehen.",
+        "Wie heißt das auf Deutsch?"
+      ],
+      "meaning": "on, at, in"
+    },
+    {
+      "page": 10,
+      "word": "die Aufgabe, -n",
+      "sentences": [
+        "Das ist eine schwere Aufgabe."
+      ],
+      "meaning": "task, exercise"
+    },
+    {
+      "page": 10,
+      "word": "aufhören",
+      "sentences": [
+        "Der Kurs hört in einer Woche auf.",
+        "Hier hört die Bahnhofstraße auf."
+      ],
+      "meaning": "to stop (doing something)"
+    },
+    {
+      "page": 10,
+      "word": "auf sein",
+      "sentences": [
+        "Du brauchst den Schlüssel nicht. Die Wohnung ist auf."
+      ],
+      "meaning": "to be open"
+    },
+    {
+      "page": 10,
+      "word": "aufstehen",
+      "sentences": [
+        "Ich muss immer um vier Uhr aufstehen.",
+        "Soll ich aufstehen?"
+      ],
+      "meaning": "to get up, stand up"
+    },
+    {
+      "page": 10,
+      "word": "der Aufzug, -ü, e",
+      "sentences": [
+        "In diesem Haus gibt es keinen Aufzug."
+      ],
+      "meaning": "elevator, lift"
+    },
+    {
+      "page": 10,
+      "word": "das Auge, -n",
+      "sentences": [
+        "Er hat blaue Augen."
+      ],
+      "meaning": "eye"
+    },
+    {
+      "page": 10,
+      "word": "aus",
+      "sentences": [
+        "Er kommt aus Brasilien."
+      ],
+      "meaning": "out of, from"
+    },
+    {
+      "page": 10,
+      "word": "der Ausflug",
+      "sentences": [
+        "Morgen machen wir einen Ausflug nach Heidelberg."
+      ],
+      "meaning": "excursion, day trip"
+    },
+    {
+      "page": 10,
+      "word": "ausfüllen",
+      "sentences": [
+        "Füllen Sie bitte dieses Formular aus."
+      ],
+      "meaning": "to fill out (a form)"
+    },
+    {
+      "page": 10,
+      "word": "der Ausgang",
+      "sentences": [
+        "Wo ist der Ausgang?"
+      ],
+      "meaning": "exit"
+    },
+    {
+      "page": 10,
+      "word": "die Auskunft, -ü, e",
+      "sentences": [
+        "Können Sie mir eine Auskunft geben?"
+      ],
+      "meaning": "information (desk)"
+    },
+    {
+      "page": 10,
+      "word": "das Ausland",
+      "sentences": [
+        "Fahren Sie ins Ausland?"
+      ],
+      "meaning": "foreign country, abroad"
+    },
+    {
+      "page": 10,
+      "word": "der Ausländer, -",
+      "sentences": [
+        "SInd Sie Ausländerin?"
+      ],
+      "meaning": "foreigner"
+    },
+    {
+      "page": 10,
+      "word": "ausländisch",
+      "sentences": [
+        "Leider habe ich nur ausländisches Geld."
+      ],
+      "meaning": "foreign"
+    },
+    {
+      "page": 10,
+      "word": "ausmachen",
+      "sentences": [
+        "Mach bitte das Licht aus!"
+      ],
+      "meaning": "to switch off; to arrange/agree on"
+    },
+    {
+      "page": 10,
+      "word": "die Aussage, -n",
+      "sentences": [
+        "Ist die Aussage richtig oder falsch?"
+      ],
+      "meaning": "statement"
+    },
+    {
+      "page": 10,
+      "word": "aussehen",
+      "sentences": [
+        "Das sieht schön aus."
+      ],
+      "meaning": "to look, to appear"
+    },
+    {
+      "page": 10,
+      "word": "aus sein",
+      "sentences": [
+        "Das Licht ist aus.",
+        "Die Schule ist aus."
+      ],
+      "meaning": "to be off, to be over"
+    },
+    {
+      "page": 10,
+      "word": "aussteigen",
+      "sentences": [
+        "Wo muss ich aussteigen?"
+      ],
+      "meaning": "to get off (a vehicle)"
+    },
+    {
+      "page": 10,
+      "word": "der Ausweis",
+      "sentences": [
+        "Hier ist mein Ausweis."
+      ],
+      "meaning": "ID card"
+    },
+    {
+      "page": 10,
+      "word": "(sich) ausziehen",
+      "sentences": [
+        "Zieh die Schuhe aus, bitte!"
+      ],
+      "meaning": "to undress; to move out (of a home)"
+    },
+    {
+      "page": 10,
+      "word": "das Auto, -s",
+      "sentences": [
+        "Er kommt mit dem Auto."
+      ],
+      "meaning": "car"
+    },
+    {
+      "page": 10,
+      "word": "die Autobahn, -en",
+      "sentences": [
+        "Wo geht‘s hier bitte zur Autobahn?"
+      ],
+      "meaning": "motorway, highway"
+    },
+    {
+      "page": 10,
+      "word": "der Automat",
+      "sentences": [
+        "Die Fahrkarten gibt es nur am Automaten."
+      ],
+      "meaning": "vending machine"
+    },
+    {
+      "page": 10,
+      "word": "automatisch",
+      "sentences": [
+        "Du musst nichts machen. Das geht automatisch."
+      ],
+      "meaning": "automatic"
+    },
+    {
+      "page": 11,
+      "word": "das Baby, -s",
+      "sentences": [
+        "Mein Kind ist noch ein Baby."
+      ],
+      "meaning": "baby"
+    },
+    {
+      "page": 11,
+      "word": "die Bäckerei",
+      "sentences": [
+        "Ich geh mal schnell zur Bäckerei."
+      ],
+      "meaning": "bakery"
+    },
+    {
+      "page": 11,
+      "word": "das Bad",
+      "sentences": [
+        "Wir haben kein großes Bad."
+      ],
+      "meaning": "bath, bathroom"
+    },
+    {
+      "page": 11,
+      "word": "baden",
+      "sentences": [
+        "Ich bade nicht so gern, ich dusche lieber."
+      ],
+      "meaning": "to bathe"
+    },
+    {
+      "page": 11,
+      "word": "die Bahn",
+      "sentences": [
+        "Wir fahren lieber mit der Bahn.",
+        "Ich nehme die nächste Bahn."
+      ],
+      "meaning": "railway, train"
+    },
+    {
+      "page": 11,
+      "word": "der Bahnhof",
+      "sentences": [
+        "Komme ich hier zum Bahnhof?"
+      ],
+      "meaning": "train station"
+    },
+    {
+      "page": 11,
+      "word": "der Bahnsteig",
+      "sentences": [
+        "Auf welchem Bahnsteig fährt der Zug?"
+      ],
+      "meaning": "(train) platform"
+    },
+    {
+      "page": 11,
+      "word": "bald",
+      "sentences": [
+        "Ich komme bald."
+      ],
+      "meaning": "soon"
+    },
+    {
+      "page": 11,
+      "word": "der Balkon",
+      "sentences": [
+        "Die Wohnung hat auch einen kleinen Balkon."
+      ],
+      "meaning": "balcony"
+    },
+    {
+      "page": 11,
+      "word": "die Banane, -n",
+      "sentences": [
+        "Drei Bananen, bitte!"
+      ],
+      "meaning": "banana"
+    },
+    {
+      "page": 11,
+      "word": "die Bank",
+      "sentences": [
+        "Die Bank schließt schon um vier Uhr.",
+        "Er sitzt im Park auf einer Bank und liest."
+      ],
+      "meaning": "bank; bench"
+    },
+    {
+      "page": 11,
+      "word": "bar",
+      "sentences": [
+        "Muss ich bar zahlen oder geht‘s auch mit Karte?"
+      ],
+      "meaning": "in cash"
+    },
+    {
+      "page": 11,
+      "word": "der Bauch",
+      "sentences": [
+        "Seit gestern tut mir der Bauch weh."
+      ],
+      "meaning": "belly, stomach"
+    },
+    {
+      "page": 11,
+      "word": "der Baum, -ä, e",
+      "sentences": [
+        "Vorsicht, fahr nicht an den Baum!"
+      ],
+      "meaning": "tree"
+    },
+    {
+      "page": 11,
+      "word": "der Beamte, -n",
+      "sentences": [
+        "Fragen Sie die Beamtin an Schalter acht!"
+      ],
+      "meaning": "official, civil servant"
+    },
+    {
+      "page": 11,
+      "word": "bedeuten",
+      "sentences": [
+        "Was bedeutet das Wort?"
+      ],
+      "meaning": "to mean"
+    },
+    {
+      "page": 11,
+      "word": "beginnen",
+      "sentences": [
+        "Das Spiel beginnt um 15.30 Uhr."
+      ],
+      "meaning": "to begin"
+    },
+    {
+      "page": 11,
+      "word": "bei",
+      "sentences": [
+        "Offenbach liegt bei Frankfurt.",
+        "Ich wohne bei meinen Eltern.",
+        "Bei uns regnet es heute.",
+        "Er arbeitet bei der Polizei."
+      ],
+      "meaning": "at, with, near"
+    },
+    {
+      "page": 11,
+      "word": "beide",
+      "sentences": [
+        "Beide Eltern arbeiten.",
+        "Wir kommen beide."
+      ],
+      "meaning": "both"
+    },
+    {
+      "page": 11,
+      "word": "das Bein, -e",
+      "sentences": [
+        "Mein rechtes Bein tut weh."
+      ],
+      "meaning": "leg"
+    },
+    {
+      "page": 11,
+      "word": "das Beispiel, -e",
+      "sentences": [
+        "Kannst du mir ein Beispiel sagen?"
+      ],
+      "meaning": "example"
+    },
+    {
+      "page": 11,
+      "word": "zum Beispiel/z. B.",
+      "sentences": [
+        "Viele meiner Verwandten, z. B. meine beiden Brüder, arbeiten auch hier."
+      ],
+      "meaning": "for example / e.g."
+    },
+    {
+      "page": 11,
+      "word": "bekannt",
+      "sentences": [
+        "Picasso ist sehr bekannt."
+      ],
+      "meaning": "known, familiar"
+    },
+    {
+      "page": 11,
+      "word": "der/die Bekannte, -n",
+      "sentences": [
+        "Ein Bekannter von mir heißt Klaus."
+      ],
+      "meaning": "acquaintance"
+    },
+    {
+      "page": 11,
+      "word": "bekommen",
+      "sentences": [
+        "Haben Sie meinen Brief bekommen?",
+        "Was bekommen Sie?",
+        "Dieses Medikament bekommen Sie in der Apotheke."
+      ],
+      "meaning": "to get, to receive"
+    },
+    {
+      "page": 11,
+      "word": "benutzen",
+      "sentences": [
+        "Die Aufzüge bitte nicht benutzen!"
+      ],
+      "meaning": "to use"
+    },
+    {
+      "page": 11,
+      "word": "der Beruf, -e",
+      "sentences": [
+        "Was sind Sie von Beruf?",
+        "Was ist Ihr Beruf?"
+      ],
+      "meaning": "profession, job"
+    },
+    {
+      "page": 11,
+      "word": "besetzt",
+      "sentences": [
+        "Die Nummer ist immer besetzt.",
+        "Der Platz ist besetzt."
+      ],
+      "meaning": "occupied, busy, taken"
+    },
+    {
+      "page": 11,
+      "word": "besichtigen",
+      "sentences": [
+        "Ich möchte gern den Dom besichtigen."
+      ],
+      "meaning": "to visit, view (sightseeing)"
+    },
+    {
+      "page": 11,
+      "word": "besser",
+      "sentences": [
+        "Es geht mir schon besser."
+      ],
+      "meaning": "better"
+    },
+    {
+      "page": 11,
+      "word": "best-",
+      "sentences": [
+        "Am besten treffen wir uns morgen."
+      ],
+      "meaning": "best"
+    },
+    {
+      "page": 11,
+      "word": "bestellen",
+      "sentences": [
+        "Wir möchten bestellen, bitte.",
+        "Dieses Buch haben wir nicht – sollen wir es für Sie bestellen?"
+      ],
+      "meaning": "to order"
+    },
+    {
+      "page": 11,
+      "word": "besuchen",
+      "sentences": [
+        "Darf ich dich besuchen?"
+      ],
+      "meaning": "to visit"
+    },
+    {
+      "page": 11,
+      "word": "das Bett, -en",
+      "sentences": [
+        "Wir brauchen noch ein Kinderbett."
+      ],
+      "meaning": "bed"
+    },
+    {
+      "page": 11,
+      "word": "bezahlen",
+      "sentences": [
+        "Wo muss ich bezahlen?"
+      ],
+      "meaning": "to pay"
+    },
+    {
+      "page": 11,
+      "word": "das Bier",
+      "sentences": [
+        "Noch ein Bier bitte."
+      ],
+      "meaning": "beer"
+    },
+    {
+      "page": 11,
+      "word": "das Bild, -er",
+      "sentences": [
+        "Hast du ein Bild von deinem Sohn?"
+      ],
+      "meaning": "picture"
+    },
+    {
+      "page": 11,
+      "word": "billig",
+      "sentences": [
+        "Die Jacke kostet nur 10 Euro! Die ist aber billig!"
+      ],
+      "meaning": "cheap"
+    },
+    {
+      "page": 12,
+      "word": "die Birne, -n",
+      "sentences": [
+        "Ein Kilo Birnen, bitte!"
+      ],
+      "meaning": "pear"
+    },
+    {
+      "page": 12,
+      "word": "bis",
+      "sentences": [
+        "Ich fahre nur bis Stuttgart.",
+        "Ich warte bis morgen."
+      ],
+      "meaning": "until"
+    },
+    {
+      "page": 12,
+      "word": "bisschen",
+      "sentences": [
+        "Ich spreche Englisch, Französisch und ein bisschen Deutsch."
+      ],
+      "meaning": "a little (bit)"
+    },
+    {
+      "page": 12,
+      "word": "bitte",
+      "sentences": [
+        "Eine Tasse Kaffee, bitte!",
+        "Sprechen Sie bitte leise!"
+      ],
+      "meaning": "please"
+    },
+    {
+      "page": 12,
+      "word": "die Bitte, -n",
+      "sentences": [
+        "Ich habe noch eine Bitte."
+      ],
+      "meaning": "request"
+    },
+    {
+      "page": 12,
+      "word": "bitten",
+      "sentences": [
+        "Darf ich Sie um etwas bitten?"
+      ],
+      "meaning": "to ask, to request"
+    },
+    {
+      "page": 12,
+      "word": "bitter",
+      "sentences": [
+        "Der Kaffee schmeckt bitter."
+      ],
+      "meaning": "bitter"
+    },
+    {
+      "page": 12,
+      "word": "bleiben",
+      "sentences": [
+        "Ich bleibe heute zu Hause.",
+        "Wir bleiben nur bis morgen."
+      ],
+      "meaning": "to stay, to remain"
+    },
+    {
+      "page": 12,
+      "word": "der Bleistift, -e",
+      "sentences": [
+        "Hast du einen Bleistift?"
+      ],
+      "meaning": "pencil"
+    },
+    {
+      "page": 12,
+      "word": "der Blick",
+      "sentences": [
+        "Von diesem Hotel hat man einen guten Blick auf den Rhein."
+      ],
+      "meaning": "view, glance"
+    },
+    {
+      "page": 12,
+      "word": "die Blume, -n",
+      "sentences": [
+        "Gefallen dir die Blumen?"
+      ],
+      "meaning": "flower"
+    },
+    {
+      "page": 12,
+      "word": "der Bogen",
+      "sentences": [
+        "Schreiben Sie Ihre Lösungen bitte auf den Antwortbogen."
+      ],
+      "meaning": "sheet (of paper); bow/arch"
+    },
+    {
+      "page": 12,
+      "word": "böse",
+      "sentences": [
+        "Sie ist böse auf mich."
+      ],
+      "meaning": "angry, bad, evil"
+    },
+    {
+      "page": 12,
+      "word": "brauchen",
+      "sentences": [
+        "Brauchst du die Zeitung noch?"
+      ],
+      "meaning": "to need"
+    },
+    {
+      "page": 12,
+      "word": "breit",
+      "sentences": [
+        "Wie breit ist der Schrank?"
+      ],
+      "meaning": "wide, broad"
+    },
+    {
+      "page": 12,
+      "word": "der Brief, -e",
+      "sentences": [
+        "Haben Sie einen Brief für mich?"
+      ],
+      "meaning": "letter"
+    },
+    {
+      "page": 12,
+      "word": "die Briefmarke, -n",
+      "sentences": [
+        "Kaufst du bitte Briefmarken bei der Post."
+      ],
+      "meaning": "stamp"
+    },
+    {
+      "page": 12,
+      "word": "bringen",
+      "sentences": [
+        "Bringen Sie mir bitte noch einen Kaffee!",
+        "Wir müssen ihn zum Arzt bringen."
+      ],
+      "meaning": "to bring"
+    },
+    {
+      "page": 12,
+      "word": "das Brot, -e",
+      "sentences": [
+        "Haben Sie auch Weißbrot?",
+        "Nimm noch ein paar Brote für die Fahrt mit."
+      ],
+      "meaning": "bread"
+    },
+    {
+      "page": 12,
+      "word": "das Brötchen, –",
+      "sentences": [
+        "Möchtest du Brötchen zum Frühstück?"
+      ],
+      "meaning": "bread roll"
+    },
+    {
+      "page": 12,
+      "word": "der Bruder, -ü",
+      "sentences": [
+        "Sein Bruder arbeitet auch hier."
+      ],
+      "meaning": "brother"
+    },
+    {
+      "page": 12,
+      "word": "das Buch, -ü, er",
+      "sentences": [
+        "Gute Bücher sind oft sehr teuer.",
+        "In diesem Wörterbuch finden Sie mehr als 20.000 Wörter."
+      ],
+      "meaning": "book"
+    },
+    {
+      "page": 12,
+      "word": "der Buchstabe, -n",
+      "sentences": [
+        "Diesen Buchstaben gibt es in meiner Sprache nicht."
+      ],
+      "meaning": "letter (of the alphabet)"
+    },
+    {
+      "page": 12,
+      "word": "buchstabieren",
+      "sentences": [
+        "Bitte buchstabieren Sie Ihren Namen."
+      ],
+      "meaning": "to spell"
+    },
+    {
+      "page": 12,
+      "word": "der Bus, -se",
+      "sentences": [
+        "Wann kommt der nächste Bus?"
+      ],
+      "meaning": "bus"
+    },
+    {
+      "page": 12,
+      "word": "die Butter",
+      "sentences": [
+        "Für mich bitte ein Brötchen mit Butter und Käse."
+      ],
+      "meaning": "butter"
+    },
+    {
+      "page": 12,
+      "word": "das Café, -s",
+      "sentences": [
+        "Sollen wir uns im Café treffen?"
+      ],
+      "meaning": "café"
+    },
+    {
+      "page": 12,
+      "word": "die CD, -s",
+      "sentences": [
+        "Bring bitte deine Lieblings-CD mit."
+      ],
+      "meaning": "CD"
+    },
+    {
+      "page": 12,
+      "word": "der Chef",
+      "sentences": [
+        "Wir haben eine neue Chefin."
+      ],
+      "meaning": "boss"
+    },
+    {
+      "page": 12,
+      "word": "circa/ca.",
+      "sentences": [
+        "Von Mainz nach Frankfurt sind es circa fünfzig Kilometer."
+      ],
+      "meaning": "approximately, about"
+    },
+    {
+      "page": 12,
+      "word": "der Computer, –",
+      "sentences": [
+        "Wann bekommst du deinen neuen Computer?"
+      ],
+      "meaning": "computer"
+    },
+    {
+      "page": 12,
+      "word": "da",
+      "sentences": [
+        "Da hinten ist er ja.",
+        "Wir sprechen gerade über Paul. Da kommt er ja gerade.",
+        "Ich nehme das da.",
+        "Ist Herr Klein schon da?"
+      ],
+      "meaning": "there; since, because"
+    },
+    {
+      "page": 12,
+      "word": "die Dame, -n",
+      "sentences": [
+        "Damen (an der Toilette) Sehr geehrte Damen und Herren!"
+      ],
+      "meaning": "lady"
+    },
+    {
+      "page": 13,
+      "word": "daneben",
+      "sentences": [
+        "Du kennst doch die Post. Daneben ist die Bank."
+      ],
+      "meaning": "next to it, beside it"
+    },
+    {
+      "page": 13,
+      "word": "danken",
+      "sentences": [
+        "Ich danke Ihnen für die Einladung."
+      ],
+      "meaning": "to thank"
+    },
+    {
+      "page": 13,
+      "word": "der Dank",
+      "sentences": [
+        "Vielen Dank!",
+        "Herzlichen Dank!"
+      ],
+      "meaning": "thanks"
+    },
+    {
+      "page": 13,
+      "word": "danke",
+      "sentences": [
+        "Soll ich Ihnen helfen? - Nein, danke!"
+      ],
+      "meaning": "thank you"
+    },
+    {
+      "page": 13,
+      "word": "dann",
+      "sentences": [
+        "Ich muss noch schnell zur Post, dann komme ich."
+      ],
+      "meaning": "then"
+    },
+    {
+      "page": 13,
+      "word": "das Datum",
+      "sentences": [
+        "Bitte schreiben Sie noch das Datum auf das Formular."
+      ],
+      "meaning": "date"
+    },
+    {
+      "page": 13,
+      "word": "dauern",
+      "sentences": [
+        "Wie lange dauert der Film?"
+      ],
+      "meaning": "to last, to take (time)"
+    },
+    {
+      "page": 13,
+      "word": "dein-",
+      "sentences": [
+        "Ist das dein Auto?",
+        "Ist das deins?"
+      ],
+      "meaning": "your"
+    },
+    {
+      "page": 13,
+      "word": "denn",
+      "sentences": [
+        "Ich kann nicht kommen, denn ich bin krank."
+      ],
+      "meaning": "because, for (also: then/so, in questions)"
+    },
+    {
+      "page": 13,
+      "word": "der, die, das",
+      "sentences": [
+        "Ich nehme das da.",
+        "Hier ist der Brief, den du suchst.",
+        "Die Fahrkarte bekommst du am Bahnhof."
+      ],
+      "meaning": "the (masc./fem./neut. definite article)"
+    },
+    {
+      "page": 13,
+      "word": "dich",
+      "sentences": [
+        "Die Blumen sind für dich."
+      ],
+      "meaning": "you (accusative, informal)"
+    },
+    {
+      "page": 13,
+      "word": "dies-",
+      "sentences": [
+        "Ich nehme lieber diesen Kuchen."
+      ],
+      "meaning": "this"
+    },
+    {
+      "page": 13,
+      "word": "dir",
+      "sentences": [
+        "Gefallen dir die Blumen?"
+      ],
+      "meaning": "to/for you (dative, informal)"
+    },
+    {
+      "page": 13,
+      "word": "die Disco",
+      "sentences": [
+        "Heute abend gehen wir in die Disco tanzen."
+      ],
+      "meaning": "disco, club"
+    },
+    {
+      "page": 13,
+      "word": "der Doktor",
+      "sentences": [
+        "Meine Tochter ist krank. Wir gehen zum Doktor."
+      ],
+      "meaning": "doctor"
+    },
+    {
+      "page": 13,
+      "word": "das Doppelzimmer",
+      "sentences": [
+        "Wollen Sie ein Doppelzimmer oder ein Einzelzimmer?"
+      ],
+      "meaning": "double room"
+    },
+    {
+      "page": 13,
+      "word": "das Dorf, -ö, er",
+      "sentences": [
+        "Meine Familie lebt in einem Dorf."
+      ],
+      "meaning": "village"
+    },
+    {
+      "page": 13,
+      "word": "dort, -her, -hin",
+      "sentences": [
+        "Deine Tasche kannst du dorthin stellen.",
+        "Dort ist unser Haus."
+      ],
+      "meaning": "there / from there / to there"
+    },
+    {
+      "page": 13,
+      "word": "draußen",
+      "sentences": [
+        "Wollen wir draußen sitzen?"
+      ],
+      "meaning": "outside"
+    },
+    {
+      "page": 13,
+      "word": "drucken",
+      "sentences": [
+        "Bitte drucke das Formular für mich."
+      ],
+      "meaning": "to print"
+    },
+    {
+      "page": 13,
+      "word": "der Drucker, –",
+      "sentences": [
+        "Mein Drucker ist kaputt."
+      ],
+      "meaning": "printer"
+    },
+    {
+      "page": 13,
+      "word": "drücken",
+      "sentences": [
+        "Drück hier, dann geht der Computer an."
+      ],
+      "meaning": "to press, to push"
+    },
+    {
+      "page": 13,
+      "word": "durch",
+      "sentences": [
+        "Am besten gehen Sie durch die Breite Straße."
+      ],
+      "meaning": "through"
+    },
+    {
+      "page": 13,
+      "word": "die Durchsage, -n",
+      "sentences": [
+        "Ich habe die Durchsage nicht verstanden."
+      ],
+      "meaning": "announcement (public address)"
+    },
+    {
+      "page": 13,
+      "word": "dürfen",
+      "sentences": [
+        "Sie dürfen hier nicht rauchen.",
+        "Darf ich Sie zu einem Kaffee einladen?",
+        "Es darf nicht mehr als 15 Euro kosten."
+      ],
+      "meaning": "to be allowed to, may"
+    },
+    {
+      "page": 13,
+      "word": "der Durst",
+      "sentences": [
+        "Hast du etwas zu trinken? Ich habe großen Durst."
+      ],
+      "meaning": "thirst"
+    },
+    {
+      "page": 13,
+      "word": "(sich) duschen",
+      "sentences": [
+        "Ich bade nicht so gern, ich dusche lieber."
+      ],
+      "meaning": "to shower"
+    },
+    {
+      "page": 13,
+      "word": "die Dusche",
+      "sentences": [
+        "Unsere Wohnung hat nur eine Dusche."
+      ],
+      "meaning": "shower"
+    },
+    {
+      "page": 13,
+      "word": "die Ecke, -n",
+      "sentences": [
+        "An der nächsten Ecke links."
+      ],
+      "meaning": "corner"
+    },
+    {
+      "page": 13,
+      "word": "die Ehefrau, -en/",
+      "sentences": [],
+      "meaning": "wife"
+    },
+    {
+      "page": 13,
+      "word": "der Ehemann, ä, er",
+      "sentences": [
+        "Das ist mein (Ehe-) Mann/meine (Ehe-) Frau."
+      ],
+      "meaning": "husband"
+    },
+    {
+      "page": 13,
+      "word": "das Ei, -er",
+      "sentences": [
+        "Möchtest du ein Ei zum Frühstück?"
+      ],
+      "meaning": "egg"
+    },
+    {
+      "page": 13,
+      "word": "eilig",
+      "sentences": [
+        "Hast du es eilig?"
+      ],
+      "meaning": "urgent, in a hurry"
+    },
+    {
+      "page": 13,
+      "word": "ein-",
+      "sentences": [
+        "Ich nehme ein Bier. Willst du auch eins?",
+        "Ist hier einer, der das kann?"
+      ],
+      "meaning": "a, an; one"
+    },
+    {
+      "page": 13,
+      "word": "einfach",
+      "sentences": [
+        "Die Prüfung ist ganz einfach.",
+        "Hin und zurück? – Nein, bitte nur einfach.",
+        "Ich brauche nur ein einfaches Zimmer."
+      ],
+      "meaning": "simple, easy"
+    },
+    {
+      "page": 13,
+      "word": "der Eingang",
+      "sentences": [
+        "Der Eingang ist um die Ecke."
+      ],
+      "meaning": "entrance"
+    },
+    {
+      "page": 13,
+      "word": "einkaufen",
+      "sentences": [
+        "Ich muss noch für morgen einkaufen."
+      ],
+      "meaning": "to shop, to buy groceries"
+    },
+    {
+      "page": 13,
+      "word": "einladen",
+      "sentences": [
+        "Darf ich Sie zu einem Kaffee einladen?"
+      ],
+      "meaning": "to invite"
+    },
+    {
+      "page": 13,
+      "word": "die Einladung",
+      "sentences": [
+        "Danke für die Einladung!"
+      ],
+      "meaning": "invitation"
+    },
+    {
+      "page": 14,
+      "word": "einmal",
+      "sentences": [
+        "Diese Prüfung mache ich nicht noch einmal."
+      ],
+      "meaning": "once"
+    },
+    {
+      "page": 14,
+      "word": "einsteigen",
+      "sentences": [
+        "Schnell, steig ein, der Zug fährt gleich."
+      ],
+      "meaning": "to get on, to board (a vehicle)"
+    },
+    {
+      "page": 14,
+      "word": "der Eintritt",
+      "sentences": [
+        "Der Preis für den Eintritt ist 5 Euro."
+      ],
+      "meaning": "entry, admission"
+    },
+    {
+      "page": 14,
+      "word": "das Einzelzimmer",
+      "sentences": [
+        "Haben Sie noch ein Einzelzimmer?"
+      ],
+      "meaning": "single room"
+    },
+    {
+      "page": 14,
+      "word": "die Eltern (pl.)",
+      "sentences": [
+        "Meine Eltern leben in Spanien."
+      ],
+      "meaning": "parents"
+    },
+    {
+      "page": 14,
+      "word": "die E-Mail, -s",
+      "sentences": [
+        "Ich habe Ihre E-Mail nicht bekommen."
+      ],
+      "meaning": "email"
+    },
+    {
+      "page": 14,
+      "word": "der Empfänger, –",
+      "sentences": [
+        "Auf dem Brief steht dein Name, also bist du der Empfänger."
+      ],
+      "meaning": "recipient"
+    },
+    {
+      "page": 14,
+      "word": "empfehlen",
+      "sentences": [
+        "Welchen Wein können Sie mir empfehlen?"
+      ],
+      "meaning": "to recommend"
+    },
+    {
+      "page": 14,
+      "word": "enden",
+      "sentences": [
+        "Die Straße endet hier."
+      ],
+      "meaning": "to end"
+    },
+    {
+      "page": 14,
+      "word": "das Ende",
+      "sentences": [
+        "Sie wohnt am Ende der Straße.",
+        "Er bekommt sein Geld am Ende des Monats."
+      ],
+      "meaning": "end"
+    },
+    {
+      "page": 14,
+      "word": "entschuldigen",
+      "sentences": [
+        "Entschuldigen Sie bitte!"
+      ],
+      "meaning": "to apologize, to excuse"
+    },
+    {
+      "page": 14,
+      "word": "die Entschuldigung",
+      "sentences": [
+        "Entschuldigung! – Bitte."
+      ],
+      "meaning": "apology, excuse"
+    },
+    {
+      "page": 14,
+      "word": "er",
+      "sentences": [
+        "Er heißt Ali."
+      ],
+      "meaning": "he"
+    },
+    {
+      "page": 14,
+      "word": "das Ergebnis, -se",
+      "sentences": [
+        "Das Ergebnis des Tests bekommen Sie in zwei Wochen."
+      ],
+      "meaning": "result"
+    },
+    {
+      "page": 14,
+      "word": "erklären",
+      "sentences": [
+        "Kannst du mir das erklären?"
+      ],
+      "meaning": "to explain"
+    },
+    {
+      "page": 14,
+      "word": "erlauben",
+      "sentences": [
+        "Rauchen ist hier nicht erlaubt."
+      ],
+      "meaning": "to allow, to permit"
+    },
+    {
+      "page": 14,
+      "word": "der Erwachsene, -n",
+      "sentences": [
+        "Dieser Film ist nur für Erwachsene."
+      ],
+      "meaning": "adult"
+    },
+    {
+      "page": 14,
+      "word": "erzählen",
+      "sentences": [
+        "Wir müssen euch etwas erzählen!"
+      ],
+      "meaning": "to tell (a story), to narrate"
+    },
+    {
+      "page": 14,
+      "word": "es",
+      "sentences": [
+        "Es regnet."
+      ],
+      "meaning": "it"
+    },
+    {
+      "page": 14,
+      "word": "essen",
+      "sentences": [
+        "Was gibt es zu essen?"
+      ],
+      "meaning": "to eat"
+    },
+    {
+      "page": 14,
+      "word": "das Essen",
+      "sentences": [
+        "Das Essen ist heute sehr gut."
+      ],
+      "meaning": "food, meal"
+    },
+    {
+      "page": 14,
+      "word": "euer",
+      "sentences": [
+        "Euer Kurs beginnt heute."
+      ],
+      "meaning": "your (plural, informal)"
+    },
+    {
+      "page": 14,
+      "word": "fahren",
+      "sentences": [
+        "Ich fahre mit dem Auto zur Arbeit."
+      ],
+      "meaning": "to drive, to travel, to go (by vehicle)"
+    },
+    {
+      "page": 14,
+      "word": "der Fahrer",
+      "sentences": [
+        "Bitte nicht mit dem Fahrer sprechen!"
+      ],
+      "meaning": "driver"
+    },
+    {
+      "page": 14,
+      "word": "die Fahrkarte, -n",
+      "sentences": [
+        "Hast du schon eine Fahrkarte?"
+      ],
+      "meaning": "(travel) ticket"
+    },
+    {
+      "page": 14,
+      "word": "das Fahrrad, -ä, er",
+      "sentences": [
+        "Fährst du mit dem Fahrrad oder mit dem Auto?"
+      ],
+      "meaning": "bicycle"
+    },
+    {
+      "page": 14,
+      "word": "falsch",
+      "sentences": [
+        "Das ist falsch."
+      ],
+      "meaning": "wrong, false"
+    },
+    {
+      "page": 14,
+      "word": "die Familie, -n",
+      "sentences": [
+        "Meine Familie lebt in Spanien."
+      ],
+      "meaning": "family"
+    },
+    {
+      "page": 14,
+      "word": "der Familienname",
+      "sentences": [
+        "Meine Familiennamen sind García González."
+      ],
+      "meaning": "surname, family name"
+    },
+    {
+      "page": 14,
+      "word": "der Familienstand",
+      "sentences": [
+        "Bei „Familienstand“ musst du „ledig“ ankreuzen."
+      ],
+      "meaning": "marital status"
+    },
+    {
+      "page": 14,
+      "word": "die Farbe, -n",
+      "sentences": [
+        "Die Farbe gefällt mir gut."
+      ],
+      "meaning": "color"
+    },
+    {
+      "page": 14,
+      "word": "das Fax, -e",
+      "sentences": [
+        "Schicken Sie uns einfach ein Fax!"
+      ],
+      "meaning": "fax"
+    },
+    {
+      "page": 14,
+      "word": "Feier-",
+      "sentences": [
+        "z. B. Feierabend, Feiertag Am Montag ist Feiertag."
+      ],
+      "meaning": "holiday/celebration- (prefix)"
+    },
+    {
+      "page": 14,
+      "word": "feiern",
+      "sentences": [
+        "Wir feiern heute meinen Geburtstag."
+      ],
+      "meaning": "to celebrate"
+    },
+    {
+      "page": 14,
+      "word": "fehlen",
+      "sentences": [
+        "Herr Müller ist nicht da, er fehlt schon seit drei Tagen.",
+        "Was fehlt Ihnen?"
+      ],
+      "meaning": "to be missing, to be lacking"
+    },
+    {
+      "page": 14,
+      "word": "der Fehler, –",
+      "sentences": [
+        "Diesen Fehler mache ich immer."
+      ],
+      "meaning": "mistake"
+    },
+    {
+      "page": 14,
+      "word": "fernsehen",
+      "sentences": [
+        "Wollen wir heute Abend mal fernsehen?"
+      ],
+      "meaning": "to watch TV"
+    },
+    {
+      "page": 14,
+      "word": "fertig",
+      "sentences": [
+        "Bist du fertig?",
+        "Ist mein Auto schon fertig?"
+      ],
+      "meaning": "ready, finished"
+    },
+    {
+      "page": 14,
+      "word": "das Feuer",
+      "sentences": [
+        "Haben Sie Feuer?"
+      ],
+      "meaning": "fire"
+    },
+    {
+      "page": 14,
+      "word": "das Fieber",
+      "sentences": [
+        "Mein Mann hat noch immer Fieber."
+      ],
+      "meaning": "fever"
+    },
+    {
+      "page": 14,
+      "word": "der Film, -e",
+      "sentences": [
+        "Ich möchte gern diesen Film sehen."
+      ],
+      "meaning": "film, movie"
+    },
+    {
+      "page": 14,
+      "word": "finden",
+      "sentences": [
+        "Wir müssen den Schlüssel finden."
+      ],
+      "meaning": "to find"
+    },
+    {
+      "page": 14,
+      "word": "die Firma",
+      "sentences": [
+        "Er arbeitet jetzt bei einer anderen Firma."
+      ],
+      "meaning": "company, firm"
+    },
+    {
+      "page": 14,
+      "word": "der Fisch, -e",
+      "sentences": [
+        "Ich esse gern Fisch. Fleisch mag ich nicht."
+      ],
+      "meaning": "fish"
+    },
+    {
+      "page": 15,
+      "word": "die Flasche, -n",
+      "sentences": [
+        "Eine Flasche Bier, bitte."
+      ],
+      "meaning": "bottle"
+    },
+    {
+      "page": 15,
+      "word": "das Fleisch",
+      "sentences": [
+        "Fleisch mag ich nicht."
+      ],
+      "meaning": "meat"
+    },
+    {
+      "page": 15,
+      "word": "fliegen",
+      "sentences": [
+        "Ich fliege nicht gern. Deshalb fahre ich mit dem Zug."
+      ],
+      "meaning": "to fly"
+    },
+    {
+      "page": 15,
+      "word": "abfliegen",
+      "sentences": [
+        "Wann fliegst du ab?"
+      ],
+      "meaning": "to depart, to take off (by plane)"
+    },
+    {
+      "page": 15,
+      "word": "der Abflug",
+      "sentences": [
+        "Der Abflug ist um 11.20 Uhr."
+      ],
+      "meaning": "departure (of a flight)"
+    },
+    {
+      "page": 15,
+      "word": "der Flughafen",
+      "sentences": [
+        "Kannst du mich zum Flughafen bringen?"
+      ],
+      "meaning": "airport"
+    },
+    {
+      "page": 15,
+      "word": "das Flugzeug",
+      "sentences": [
+        "Das Flugzeug aus Berlin kommt heute später an."
+      ],
+      "meaning": "airplane"
+    },
+    {
+      "page": 15,
+      "word": "das Formular, -e",
+      "sentences": [
+        "Sie müssen dieses Formular ausfüllen."
+      ],
+      "meaning": "form (document)"
+    },
+    {
+      "page": 15,
+      "word": "das Foto, -s",
+      "sentences": [
+        "Darf ich ein Foto machen?"
+      ],
+      "meaning": "photo"
+    },
+    {
+      "page": 15,
+      "word": "fragen",
+      "sentences": [
+        "Er möchte Sie etwas fragen. Wann kommen Sie?"
+      ],
+      "meaning": "to ask"
+    },
+    {
+      "page": 15,
+      "word": "die Frage, -n",
+      "sentences": [
+        "Ich habe eine Frage."
+      ],
+      "meaning": "question"
+    },
+    {
+      "page": 15,
+      "word": "die Frau, -en",
+      "sentences": [
+        "Das ist Frau Becker.",
+        "Guten Tag, Frau Schmitt!",
+        "Hier arbeiten mehr Frauen als Männer."
+      ],
+      "meaning": "woman, wife, Mrs."
+    },
+    {
+      "page": 15,
+      "word": "frei",
+      "sentences": [
+        "Ist der Platz noch frei?"
+      ],
+      "meaning": "free"
+    },
+    {
+      "page": 15,
+      "word": "die Freizeit",
+      "sentences": [
+        "In meiner Freizeit spiele ich oft Fußball."
+      ],
+      "meaning": "free time, leisure"
+    },
+    {
+      "page": 15,
+      "word": "fremd",
+      "sentences": [
+        "Das weiß ich nicht; ich bin fremd hier."
+      ],
+      "meaning": "foreign, strange"
+    },
+    {
+      "page": 15,
+      "word": "(sich) freuen",
+      "sentences": [
+        "Ich freue mich auf den Urlaub."
+      ],
+      "meaning": "to be glad, to be happy"
+    },
+    {
+      "page": 15,
+      "word": "der Freund, -e",
+      "sentences": [
+        "Das ist ein Freund von mir.",
+        "Das ist meine Freundin."
+      ],
+      "meaning": "friend"
+    },
+    {
+      "page": 15,
+      "word": "früher",
+      "sentences": [
+        "Früher waren wir oft zusammen im Kino."
+      ],
+      "meaning": "earlier, formerly"
+    },
+    {
+      "page": 15,
+      "word": "frühstücken",
+      "sentences": [
+        "Am Sonntag frühstücke ich gern im Bett."
+      ],
+      "meaning": "to have breakfast"
+    },
+    {
+      "page": 15,
+      "word": "das Frühstück",
+      "sentences": [
+        "Möchtest du ein Ei zum Frühstück?"
+      ],
+      "meaning": "breakfast"
+    },
+    {
+      "page": 15,
+      "word": "die Führung",
+      "sentences": [
+        "Die Führung durch das Haus beginnt in 3 Minuten."
+      ],
+      "meaning": "guided tour"
+    },
+    {
+      "page": 15,
+      "word": "für",
+      "sentences": [
+        "Das ist für Sie.",
+        "Das ist der Schlüssel für die Haustür.",
+        "Das ist das Brot für morgen."
+      ],
+      "meaning": "for"
+    },
+    {
+      "page": 15,
+      "word": "der Fuß, -ü, e",
+      "sentences": [
+        "Der linke Fuß tut mir weh."
+      ],
+      "meaning": "foot"
+    },
+    {
+      "page": 15,
+      "word": "der Fußball",
+      "sentences": [
+        "Spielt ihr gerne Fußball?"
+      ],
+      "meaning": "soccer, football"
+    },
+    {
+      "page": 15,
+      "word": "der Garten",
+      "sentences": [
+        "Wir haben leider keinen Garten."
+      ],
+      "meaning": "garden"
+    },
+    {
+      "page": 15,
+      "word": "der Gast, -ä, e",
+      "sentences": [
+        "Am Wochenende haben wir mehrere Gäste."
+      ],
+      "meaning": "guest"
+    },
+    {
+      "page": 15,
+      "word": "geben",
+      "sentences": [
+        "Kannst du mir bitte deinen Kugelschreiber geben?",
+        "Es gibt keine Karten mehr."
+      ],
+      "meaning": "to give"
+    },
+    {
+      "page": 15,
+      "word": "geboren",
+      "sentences": [
+        "Ich bin in Zagreb geboren."
+      ],
+      "meaning": "born"
+    },
+    {
+      "page": 15,
+      "word": "das Geburtsjahr",
+      "sentences": [
+        "Das Geburtsjahr Ihres Sohnes, bitte?"
+      ],
+      "meaning": "year of birth"
+    },
+    {
+      "page": 15,
+      "word": "der Geburtsort",
+      "sentences": [
+        "Bitte schreiben Sie Ihren Geburtsort auf das Formular."
+      ],
+      "meaning": "place of birth"
+    },
+    {
+      "page": 15,
+      "word": "der Geburtstag",
+      "sentences": [
+        "Herzlichen Glückwunsch zum Geburtstag!"
+      ],
+      "meaning": "birthday"
+    },
+    {
+      "page": 15,
+      "word": "gefallen",
+      "sentences": [
+        "Das gefällt mir."
+      ],
+      "meaning": "to please, to like"
+    },
+    {
+      "page": 15,
+      "word": "gegen",
+      "sentences": [
+        "Fahr nicht gegen den Baum!",
+        "Ich bin gegen diese Lösung.",
+        "Wer spielt gegen wen?"
+      ],
+      "meaning": "against"
+    },
+    {
+      "page": 15,
+      "word": "gehen",
+      "sentences": [
+        "Ich weiß nicht, wie das geht.",
+        "Wie geht‘s?",
+        "Jetzt muss ich (aber) leider gehen.",
+        "Ich muss zum Arzt gehen.",
+        "Das geht nicht!"
+      ],
+      "meaning": "to go, to walk"
+    },
+    {
+      "page": 15,
+      "word": "gehören",
+      "sentences": [
+        "Wem gehört das?"
+      ],
+      "meaning": "to belong to"
+    },
+    {
+      "page": 15,
+      "word": "das Geld",
+      "sentences": [
+        "Hast du noch Geld?"
+      ],
+      "meaning": "money"
+    },
+    {
+      "page": 15,
+      "word": "das Gemüse",
+      "sentences": [
+        "Gemüse brauchen wir auch noch."
+      ],
+      "meaning": "vegetables"
+    },
+    {
+      "page": 16,
+      "word": "das Gepäck",
+      "sentences": [
+        "Wollen Sie Ihr Gepäck mitnehmen?"
+      ],
+      "meaning": "luggage"
+    },
+    {
+      "page": 16,
+      "word": "gerade",
+      "sentences": [
+        "Da kommt er ja gerade."
+      ],
+      "meaning": "just, straight, right now"
+    },
+    {
+      "page": 16,
+      "word": "geradeaus",
+      "sentences": [
+        "Gehen Sie immer geradeaus!"
+      ],
+      "meaning": "straight ahead"
+    },
+    {
+      "page": 16,
+      "word": "gern(e)",
+      "sentences": [
+        "Ich gehe gerne einkaufen."
+      ],
+      "meaning": "gladly, willingly"
+    },
+    {
+      "page": 16,
+      "word": "das Geschäft, -e",
+      "sentences": [
+        "Die Geschäfte schließen um 18.30 Uhr."
+      ],
+      "meaning": "shop, business, store"
+    },
+    {
+      "page": 16,
+      "word": "das Geschenk, -e",
+      "sentences": [
+        "Danke für das schöne Geschenk."
+      ],
+      "meaning": "gift, present"
+    },
+    {
+      "page": 16,
+      "word": "die Geschwister (pl.)",
+      "sentences": [
+        "Ich habe leider keine Geschwister."
+      ],
+      "meaning": "siblings"
+    },
+    {
+      "page": 16,
+      "word": "das Gespräch, -e",
+      "sentences": [
+        "Das Gespräch mit Frau Kunz ist um 14 Uhr."
+      ],
+      "meaning": "conversation"
+    },
+    {
+      "page": 16,
+      "word": "gestern",
+      "sentences": [
+        "Gestern war ich krank."
+      ],
+      "meaning": "yesterday"
+    },
+    {
+      "page": 16,
+      "word": "gestorben",
+      "sentences": [
+        "Meine Frau ist gestern gestorben."
+      ],
+      "meaning": "died (past participle of 'sterben')"
+    },
+    {
+      "page": 16,
+      "word": "das Getränk, -e",
+      "sentences": [
+        "Mein Lieblingsgetränk ist Tomatensaft."
+      ],
+      "meaning": "drink, beverage"
+    },
+    {
+      "page": 16,
+      "word": "das Gewicht",
+      "sentences": [
+        "Bei „Gewicht“ schreibst du: 62 Kilo."
+      ],
+      "meaning": "weight"
+    },
+    {
+      "page": 16,
+      "word": "gewinnen",
+      "sentences": [
+        "Wer gewinnt das Spiel?"
+      ],
+      "meaning": "to win"
+    },
+    {
+      "page": 16,
+      "word": "das Glas, -ä, er",
+      "sentences": [
+        "Bitte noch ein Glas Wein!",
+        "Wir brauchen noch drei Gläser."
+      ],
+      "meaning": "glass"
+    },
+    {
+      "page": 16,
+      "word": "glauben",
+      "sentences": [
+        "Sie können mir glauben, es ist so.",
+        "Ich glaube, er kommt gleich."
+      ],
+      "meaning": "to believe, to think"
+    },
+    {
+      "page": 16,
+      "word": "gleich",
+      "sentences": [
+        "Das ist mir gleich.",
+        "Das ist der gleiche Preis.",
+        "Ich komme gleich."
+      ],
+      "meaning": "same, equal; right away"
+    },
+    {
+      "page": 16,
+      "word": "das Gleis, -e",
+      "sentences": [
+        "Der ICE nach Berlin hält heute an Gleis 12."
+      ],
+      "meaning": "(railway) track, platform"
+    },
+    {
+      "page": 16,
+      "word": "das Glück",
+      "sentences": [
+        "Viel Glück!"
+      ],
+      "meaning": "luck, happiness"
+    },
+    {
+      "page": 16,
+      "word": "glücklich",
+      "sentences": [
+        "Meine Kinder sind glücklich verheiratet."
+      ],
+      "meaning": "happy"
+    },
+    {
+      "page": 16,
+      "word": "der Glückwunsch",
+      "sentences": [
+        "Herzlichen Glückwunsch zum Geburtstag."
+      ],
+      "meaning": "congratulations, good wishes"
+    },
+    {
+      "page": 16,
+      "word": "Grad (Celsius)",
+      "sentences": [
+        "Heute haben wir dreißig Grad."
+      ],
+      "meaning": "degree(s) (Celsius)"
+    },
+    {
+      "page": 16,
+      "word": "gratulieren",
+      "sentences": [
+        "Ich gratuliere dir!"
+      ],
+      "meaning": "to congratulate"
+    },
+    {
+      "page": 16,
+      "word": "grillen",
+      "sentences": [
+        "Heute grillen wir im Garten."
+      ],
+      "meaning": "to grill, to barbecue"
+    },
+    {
+      "page": 16,
+      "word": "groß",
+      "sentences": [
+        "Mein Bruder und ich sind gleich groß.",
+        "Frankfurt ist eine große Stadt."
+      ],
+      "meaning": "big, large, tall"
+    },
+    {
+      "page": 16,
+      "word": "die Größe",
+      "sentences": [
+        "Haben Sie das auch in Größe 40?"
+      ],
+      "meaning": "size"
+    },
+    {
+      "page": 16,
+      "word": "die Großeltern (pl.)",
+      "sentences": [
+        "Meine Großeltern leben in Japan."
+      ],
+      "meaning": "grandparents"
+    },
+    {
+      "page": 16,
+      "word": "die Großmutter",
+      "sentences": [
+        "Meine Großmutter heißt Eva."
+      ],
+      "meaning": "grandmother"
+    },
+    {
+      "page": 16,
+      "word": "der Großvater",
+      "sentences": [
+        "Mein Großvater ist schon 80."
+      ],
+      "meaning": "grandfather"
+    },
+    {
+      "page": 16,
+      "word": "die Gruppe, -n",
+      "sentences": [
+        "Die erste Gruppe beginnt um 16 Uhr."
+      ],
+      "meaning": "group"
+    },
+    {
+      "page": 16,
+      "word": "der Gruß, -ü, e",
+      "sentences": [
+        "Viele Grüße an Ihre Frau.",
+        "Mit freundlichen Grüßen"
+      ],
+      "meaning": "greeting"
+    },
+    {
+      "page": 16,
+      "word": "gültig",
+      "sentences": [
+        "Der Pass ist nicht mehr gültig."
+      ],
+      "meaning": "valid"
+    },
+    {
+      "page": 16,
+      "word": "günstig",
+      "sentences": [
+        "Dort gibt es günstige Angebote."
+      ],
+      "meaning": "favorable, cheap (price)"
+    },
+    {
+      "page": 16,
+      "word": "gut",
+      "sentences": [
+        "Das finde ich gut.",
+        "Ich komme um 13 Uhr. – Gut!",
+        "Guten Morgen!",
+        "Ein gutes neues Jahr!",
+        "Guten Appetit!"
+      ],
+      "meaning": "good"
+    },
+    {
+      "page": 16,
+      "word": "das Haar, -e",
+      "sentences": [
+        "Sie hat lange Haare."
+      ],
+      "meaning": "hair"
+    },
+    {
+      "page": 16,
+      "word": "haben",
+      "sentences": [
+        "Ich habe ein neues Auto."
+      ],
+      "meaning": "to have"
+    },
+    {
+      "page": 16,
+      "word": "das Hähnchen, -",
+      "sentences": [
+        "Ein Hähnchen mit Pommes bitte!"
+      ],
+      "meaning": "chicken (as food)"
+    },
+    {
+      "page": 16,
+      "word": "die Halbpension",
+      "sentences": [
+        "Möchten Sie Vollpension oder Halbpension?"
+      ],
+      "meaning": "half board"
+    },
+    {
+      "page": 16,
+      "word": "die Halle",
+      "sentences": [
+        "Wir treffen uns in Halle B"
+      ],
+      "meaning": "hall"
+    },
+    {
+      "page": 16,
+      "word": "hallo",
+      "sentences": [
+        "Hallo Inge! Wie geht’s?"
+      ],
+      "meaning": "hello"
+    },
+    {
+      "page": 17,
+      "word": "halten",
+      "sentences": [
+        "Dieser Zug hält nicht in Rüdesheim."
+      ],
+      "meaning": "to hold; to stop"
+    },
+    {
+      "page": 17,
+      "word": "die Haltestelle",
+      "sentences": [
+        "An der nächsten Haltestelle müssen Sie aussteigen."
+      ],
+      "meaning": "(bus/tram) stop"
+    },
+    {
+      "page": 17,
+      "word": "die Hand, -ä, e",
+      "sentences": [
+        "Er gibt mir die Hand."
+      ],
+      "meaning": "hand"
+    },
+    {
+      "page": 17,
+      "word": "das Handy, -s",
+      "sentences": [
+        "In der Schule bitte die Handys ausmachen!"
+      ],
+      "meaning": "mobile phone"
+    },
+    {
+      "page": 17,
+      "word": "das Haus, -ä, er",
+      "sentences": [
+        "In welchem Haus wohnst du?",
+        "Ich gehe jetzt nach Hause.",
+        "Paul ist nicht zu Hause."
+      ],
+      "meaning": "house"
+    },
+    {
+      "page": 17,
+      "word": "die Hausaufgabe,-n",
+      "sentences": [
+        "Kannst du mir bei den Hausaufgaben helfen?"
+      ],
+      "meaning": "homework"
+    },
+    {
+      "page": 17,
+      "word": "die Hausfrau, -en/",
+      "sentences": [],
+      "meaning": "housewife"
+    },
+    {
+      "page": 17,
+      "word": "der Hausmann",
+      "sentences": [
+        "Die Hausfrau/der Hausmann wäscht, kocht und kauft ein."
+      ],
+      "meaning": "house husband, stay-at-home dad"
+    },
+    {
+      "page": 17,
+      "word": "die Heimat",
+      "sentences": [
+        "Ich komme aus der Schweiz. Das ist meine Heimat."
+      ],
+      "meaning": "homeland"
+    },
+    {
+      "page": 17,
+      "word": "heiraten",
+      "sentences": [
+        "Meine Schwester heiratet einen Japaner."
+      ],
+      "meaning": "to marry"
+    },
+    {
+      "page": 17,
+      "word": "heißen",
+      "sentences": [
+        "Ich heiße Charlotte Meier.",
+        "Wie heißt das auf Deutsch?"
+      ],
+      "meaning": "to be called"
+    },
+    {
+      "page": 17,
+      "word": "helfen",
+      "sentences": [
+        "Können Sie mir helfen, bitte?"
+      ],
+      "meaning": "to help"
+    },
+    {
+      "page": 17,
+      "word": "hell",
+      "sentences": [
+        "Im Sommer ist es bis 21 Uhr hell."
+      ],
+      "meaning": "bright, light"
+    },
+    {
+      "page": 17,
+      "word": "der Herd",
+      "sentences": [
+        "In der neuen Küche fehlt noch der Herd."
+      ],
+      "meaning": "stove"
+    },
+    {
+      "page": 17,
+      "word": "der Herr, -en",
+      "sentences": [
+        "Guten Tag, Herr Sommer!"
+      ],
+      "meaning": "Mr., gentleman"
+    },
+    {
+      "page": 17,
+      "word": "herzlich",
+      "sentences": [
+        "Herzlichen Glückwunsch!"
+      ],
+      "meaning": "cordial, heartfelt"
+    },
+    {
+      "page": 17,
+      "word": "heute",
+      "sentences": [
+        "Heute ist ein schöner Tag."
+      ],
+      "meaning": "today"
+    },
+    {
+      "page": 17,
+      "word": "hier",
+      "sentences": [
+        "Hier ist 06131-553221, Pamela Linke.",
+        "Hier wohne ich."
+      ],
+      "meaning": "here"
+    },
+    {
+      "page": 17,
+      "word": "die Hilfe",
+      "sentences": [
+        "Hilfe! Bitte helfen Sie mir!",
+        "Brauchen Sie meine Hilfe?"
+      ],
+      "meaning": "help"
+    },
+    {
+      "page": 17,
+      "word": "hinten",
+      "sentences": [
+        "Die Tür zum Aussteigen ist hinten."
+      ],
+      "meaning": "at the back, behind"
+    },
+    {
+      "page": 17,
+      "word": "das Hobby, -s",
+      "sentences": [
+        "Meine Hobbys sind Wandern und Schwimmen."
+      ],
+      "meaning": "hobby"
+    },
+    {
+      "page": 17,
+      "word": "hoch",
+      "sentences": [
+        "Der Mount Everest ist 8.880 Meter hoch."
+      ],
+      "meaning": "high"
+    },
+    {
+      "page": 17,
+      "word": "die Hochzeit",
+      "sentences": [
+        "Zur dieser Hochzeit kommen mehr als fünfzig Gäste."
+      ],
+      "meaning": "wedding"
+    },
+    {
+      "page": 17,
+      "word": "holen",
+      "sentences": [
+        "Ich hole zwei Flaschen Wasser aus der Küche."
+      ],
+      "meaning": "to fetch, to get"
+    },
+    {
+      "page": 17,
+      "word": "hören",
+      "sentences": [
+        "Hör mal! Was ist das?",
+        "Ich habe das Lied schon mal gehört."
+      ],
+      "meaning": "to hear, to listen"
+    },
+    {
+      "page": 17,
+      "word": "das Hotel, -s",
+      "sentences": [
+        "Im Urlaub sind wir in einem Hotel am Meer."
+      ],
+      "meaning": "hotel"
+    },
+    {
+      "page": 17,
+      "word": "der Hund, -e",
+      "sentences": [
+        "Der Hund ist noch jung."
+      ],
+      "meaning": "dog"
+    },
+    {
+      "page": 17,
+      "word": "der Hunger",
+      "sentences": [
+        "Ich habe Hunger! Wann ist das Essen fertig?"
+      ],
+      "meaning": "hunger"
+    },
+    {
+      "page": 17,
+      "word": "ich",
+      "sentences": [
+        "Ich heiße Veronika."
+      ],
+      "meaning": "I"
+    },
+    {
+      "page": 17,
+      "word": "ihr/ihm/ihn",
+      "sentences": [
+        "Gib ihr/ihm bitte das Buch.",
+        "Ruf ihn bitte an."
+      ],
+      "meaning": "you (pl.) / him (dat.) / him (acc.)"
+    },
+    {
+      "page": 17,
+      "word": "immer",
+      "sentences": [
+        "Frau Bast kommt immer zu spät."
+      ],
+      "meaning": "always"
+    },
+    {
+      "page": 17,
+      "word": "in",
+      "sentences": [
+        "Ich wohne in Wiesbaden.",
+        "Der Zug kommt in fünf Minuten.",
+        "Frau Rausch arbeitet in einem Geschäft.",
+        "Komm, wir gehen ins Kino."
+      ],
+      "meaning": "in"
+    },
+    {
+      "page": 17,
+      "word": "die Information, -en",
+      "sentences": [
+        "Wenn Sie Fragen haben, gehen Sie zur Information.",
+        "Wir haben hier wichtige Informationen für Sie."
+      ],
+      "meaning": "information"
+    },
+    {
+      "page": 17,
+      "word": "international",
+      "sentences": [
+        "Unser Deutschkurs ist international: Silvana kommt aus Italien, Conchi aus Spanien, Yin aus China ..."
+      ],
+      "meaning": "international"
+    },
+    {
+      "page": 17,
+      "word": "das Internet",
+      "sentences": [
+        "Das findest du im Internet."
+      ],
+      "meaning": "internet"
+    },
+    {
+      "page": 18,
+      "word": "ja",
+      "sentences": [
+        "Sind Sie Herr Watanabe? – Ja."
+      ],
+      "meaning": "yes"
+    },
+    {
+      "page": 18,
+      "word": "die Jacke, -n",
+      "sentences": [
+        "Zieh dir eine Jacke an. Es ist kalt."
+      ],
+      "meaning": "jacket"
+    },
+    {
+      "page": 18,
+      "word": "jed-",
+      "sentences": [
+        "Blumen kannst du in jedem Bahnhof kaufen."
+      ],
+      "meaning": "every, each"
+    },
+    {
+      "page": 18,
+      "word": "jetzt",
+      "sentences": [
+        "Jetzt machen wir eine Pause."
+      ],
+      "meaning": "now"
+    },
+    {
+      "page": 18,
+      "word": "der Job, -s",
+      "sentences": [
+        "Jenny hat einen neuen Job bei der Post."
+      ],
+      "meaning": "job"
+    },
+    {
+      "page": 18,
+      "word": "der Jugendliche, -n",
+      "sentences": [
+        "Viele Jugendliche kaufen gern ein."
+      ],
+      "meaning": "teenager, young person"
+    },
+    {
+      "page": 18,
+      "word": "jung",
+      "sentences": [
+        "Claudia ist 21. – Was? Noch so jung?"
+      ],
+      "meaning": "young"
+    },
+    {
+      "page": 18,
+      "word": "der Junge, -n",
+      "sentences": [
+        "Ich habe zwei Kinder. Einen Jungen und ein Mädchen."
+      ],
+      "meaning": "boy"
+    },
+    {
+      "page": 18,
+      "word": "der Kaffee",
+      "sentences": [
+        "Zum Frühstück trinke ich immer Kaffee."
+      ],
+      "meaning": "coffee"
+    },
+    {
+      "page": 18,
+      "word": "kaputt",
+      "sentences": [
+        "Das Glas war teuer. Es geht sehr leicht kaputt."
+      ],
+      "meaning": "broken"
+    },
+    {
+      "page": 18,
+      "word": "die Karte, -n",
+      "sentences": [
+        "Ich schreibe meinen Bekannten eine Karte aus dem Urlaub.",
+        "Wollen wir Karten spielen?",
+        "Ich möchte auch etwas essen. Bringen Sie mir die Karte, bitte."
+      ],
+      "meaning": "card, map"
+    },
+    {
+      "page": 18,
+      "word": "(Kredit)-Karte, -n",
+      "sentences": [
+        "Kann ich auch mit Karte (be-) zahlen?"
+      ],
+      "meaning": "credit card"
+    },
+    {
+      "page": 18,
+      "word": "die Kartoffel, -n",
+      "sentences": [
+        "Für Pommes frites braucht man Kartoffeln."
+      ],
+      "meaning": "potato"
+    },
+    {
+      "page": 18,
+      "word": "die Kasse",
+      "sentences": [
+        "Zahlen Sie bitte an der Kasse."
+      ],
+      "meaning": "cash register, checkout"
+    },
+    {
+      "page": 18,
+      "word": "kaufen",
+      "sentences": [
+        "Tim kauft sich ein neues Auto."
+      ],
+      "meaning": "to buy"
+    },
+    {
+      "page": 18,
+      "word": "kein",
+      "sentences": [
+        "Es gibt keine Eintrittskarten mehr."
+      ],
+      "meaning": "no, not any"
+    },
+    {
+      "page": 18,
+      "word": "kennen",
+      "sentences": [
+        "Kennen Sie diese Frau? – Nein, leider nicht."
+      ],
+      "meaning": "to know (a person or thing)"
+    },
+    {
+      "page": 18,
+      "word": "kennenlernen",
+      "sentences": [
+        "Wir sind neu hier. Wir möchten Sie kennenlernen."
+      ],
+      "meaning": "to get to know, to meet"
+    },
+    {
+      "page": 18,
+      "word": "das Kind, -er",
+      "sentences": [
+        "Wie viele Kinder haben Sie?"
+      ],
+      "meaning": "child"
+    },
+    {
+      "page": 18,
+      "word": "der Kindergarten",
+      "sentences": [
+        "Die kleine Laura geht schon in den Kindergarten."
+      ],
+      "meaning": "kindergarten"
+    },
+    {
+      "page": 18,
+      "word": "das Kino, -s",
+      "sentences": [
+        "Wir sehen heute Abend im Kino einen schönen Film."
+      ],
+      "meaning": "cinema"
+    },
+    {
+      "page": 18,
+      "word": "der Kiosk",
+      "sentences": [
+        "Am Kiosk bekommen Sie Getränke, Zigaretten und Zeitungen."
+      ],
+      "meaning": "kiosk, newsstand"
+    },
+    {
+      "page": 18,
+      "word": "klar",
+      "sentences": [
+        "Kommst du mit? – Klar!"
+      ],
+      "meaning": "clear"
+    },
+    {
+      "page": 18,
+      "word": "die Klasse",
+      "sentences": [
+        "In unserer Klasse sind fünfundzwanzig Schüler.",
+        "Im Zug fahre ich immer 2. Klasse."
+      ],
+      "meaning": "class"
+    },
+    {
+      "page": 18,
+      "word": "die Kleidung",
+      "sentences": [
+        "Wo finde ich Kleidung? – Jacken im ersten, Jeans im zweiten Stock."
+      ],
+      "meaning": "clothing"
+    },
+    {
+      "page": 18,
+      "word": "klein",
+      "sentences": [
+        "Eltville ist eine kleine Stadt am Rhein."
+      ],
+      "meaning": "small"
+    },
+    {
+      "page": 18,
+      "word": "kochen",
+      "sentences": [
+        "Herr Georgi kann gut kochen."
+      ],
+      "meaning": "to cook"
+    },
+    {
+      "page": 18,
+      "word": "der Koffer, –",
+      "sentences": [
+        "Ist das Ihr Koffer?"
+      ],
+      "meaning": "suitcase"
+    },
+    {
+      "page": 18,
+      "word": "der Kollege, -n",
+      "sentences": [
+        "Wie heißt die neue Kollegin?"
+      ],
+      "meaning": "colleague"
+    },
+    {
+      "page": 18,
+      "word": "kommen",
+      "sentences": [
+        "Woher kommen Sie? – Aus Frankreich.",
+        "Kommst du mit ins Schwimmbad?"
+      ],
+      "meaning": "to come"
+    },
+    {
+      "page": 18,
+      "word": "können",
+      "sentences": [
+        "Ich kann Deutsch und Russisch.",
+        "Können Sie mir helfen?"
+      ],
+      "meaning": "to be able to, can"
+    },
+    {
+      "page": 18,
+      "word": "das Konto",
+      "sentences": [
+        "Das Geld überweisen wir am ersten März auf Ihr Konto."
+      ],
+      "meaning": "(bank) account"
+    },
+    {
+      "page": 18,
+      "word": "der Kopf",
+      "sentences": [
+        "Mein Kopf tut weh!"
+      ],
+      "meaning": "head"
+    },
+    {
+      "page": 18,
+      "word": "kosten",
+      "sentences": [
+        "Wie viel kostet das? – 10 Euro."
+      ],
+      "meaning": "to cost"
+    },
+    {
+      "page": 18,
+      "word": "krank",
+      "sentences": [
+        "Ich kann heute nicht zur Arbeit kommen, ich bin krank und liege im Bett."
+      ],
+      "meaning": "sick, ill"
+    },
+    {
+      "page": 18,
+      "word": "kriegen",
+      "sentences": [
+        "Ich kriege 15 Euro in der Stunde für meine Arbeit."
+      ],
+      "meaning": "to get, to receive"
+    },
+    {
+      "page": 18,
+      "word": "die Küche",
+      "sentences": [
+        "Der neue Herd kommt in die Küche."
+      ],
+      "meaning": "kitchen"
+    },
+    {
+      "page": 18,
+      "word": "der Kuchen",
+      "sentences": [
+        "Ich nehme ein Stück Kuchen."
+      ],
+      "meaning": "cake"
+    },
+    {
+      "page": 19,
+      "word": "der Kugelschreiber",
+      "sentences": [
+        "Hast du einen Kugelschreiber für mich?"
+      ],
+      "meaning": "ballpoint pen"
+    },
+    {
+      "page": 19,
+      "word": "der Kühlschrank",
+      "sentences": [
+        "Haben wir noch Milch? – Ja, im Kühlschrank."
+      ],
+      "meaning": "refrigerator"
+    },
+    {
+      "page": 19,
+      "word": "kulturell",
+      "sentences": [
+        "Ich bin kulturell interessiert. Ich gehe oft ins Museum."
+      ],
+      "meaning": "cultural"
+    },
+    {
+      "page": 19,
+      "word": "sich kümmern",
+      "sentences": [
+        "Jede Mutter kümmert sich um ihre kleinen Kinder."
+      ],
+      "meaning": "to take care of, to look after"
+    },
+    {
+      "page": 19,
+      "word": "der Kunde, -n",
+      "sentences": [
+        "Einen Moment, bitte. Ich habe eine Kundin."
+      ],
+      "meaning": "customer"
+    },
+    {
+      "page": 19,
+      "word": "der Kurs, -e",
+      "sentences": [
+        "Der Deutschkurs geht bis zum Sommer."
+      ],
+      "meaning": "course"
+    },
+    {
+      "page": 19,
+      "word": "kurz",
+      "sentences": [
+        "Ricardo hat kurzes Haar."
+      ],
+      "meaning": "short"
+    },
+    {
+      "page": 19,
+      "word": "lachen",
+      "sentences": [
+        "Die Kinder lachen viel."
+      ],
+      "meaning": "to laugh"
+    },
+    {
+      "page": 19,
+      "word": "der Laden, -ä",
+      "sentences": [
+        "Im Buchladen können Sie Bücher kaufen."
+      ],
+      "meaning": "shop, store"
+    },
+    {
+      "page": 19,
+      "word": "das Land, -ä, er",
+      "sentences": [
+        "Italien ist ein schönes Land."
+      ],
+      "meaning": "country"
+    },
+    {
+      "page": 19,
+      "word": "lang",
+      "sentences": [
+        "Die Jeans ist zu lang."
+      ],
+      "meaning": "long"
+    },
+    {
+      "page": 19,
+      "word": "lange",
+      "sentences": [
+        "Wie lange fährt der Zug von Hamburg nach Berlin?"
+      ],
+      "meaning": "for a long time"
+    },
+    {
+      "page": 19,
+      "word": "langsam",
+      "sentences": [
+        "Könnten Sie bitte etwas langsamer sprechen?"
+      ],
+      "meaning": "slow"
+    },
+    {
+      "page": 19,
+      "word": "laufen",
+      "sentences": [
+        "Ich möchte nicht Auto fahren, ich möchte laufen."
+      ],
+      "meaning": "to run, to walk"
+    },
+    {
+      "page": 19,
+      "word": "laut",
+      "sentences": [
+        "Nicht so laut! Das Baby schläft."
+      ],
+      "meaning": "loud"
+    },
+    {
+      "page": 19,
+      "word": "leben",
+      "sentences": [
+        "Sie lebt bei ihrer Schwester.",
+        "Ihre Eltern leben nicht mehr."
+      ],
+      "meaning": "to live"
+    },
+    {
+      "page": 19,
+      "word": "das Leben",
+      "sentences": [
+        "Das Leben in diesem Land ist teuer."
+      ],
+      "meaning": "life"
+    },
+    {
+      "page": 19,
+      "word": "die Lebensmittel (pl.)",
+      "sentences": [
+        "Lebensmittel bekommen Sie im Supermarkt."
+      ],
+      "meaning": "groceries, food"
+    },
+    {
+      "page": 19,
+      "word": "ledig",
+      "sentences": [
+        "Sind Sie verheiratet? – Nein. Ledig."
+      ],
+      "meaning": "single, unmarried"
+    },
+    {
+      "page": 19,
+      "word": "legen",
+      "sentences": [
+        "Legen Sie das Buch auf den Tisch."
+      ],
+      "meaning": "to lay, to put"
+    },
+    {
+      "page": 19,
+      "word": "der Lehrer, –",
+      "sentences": [
+        "Unsere Deutschlehrerin heißt Frau Müller."
+      ],
+      "meaning": "teacher"
+    },
+    {
+      "page": 19,
+      "word": "leicht",
+      "sentences": [
+        "Der Koffer ist leicht.",
+        "Deutsch ist nicht leicht."
+      ],
+      "meaning": "easy, light"
+    },
+    {
+      "page": 19,
+      "word": "leider",
+      "sentences": [
+        "Leider kann ich nicht kommen. Ich muss zum Arzt."
+      ],
+      "meaning": "unfortunately"
+    },
+    {
+      "page": 19,
+      "word": "leise",
+      "sentences": [
+        "Seid leise. Die anderen schlafen schon."
+      ],
+      "meaning": "quiet, soft"
+    },
+    {
+      "page": 19,
+      "word": "lernen",
+      "sentences": [
+        "Wie lange lernen Sie schon Deutsch?"
+      ],
+      "meaning": "to learn"
+    },
+    {
+      "page": 19,
+      "word": "lesen",
+      "sentences": [
+        "Ich lese ein Buch von García Márquez."
+      ],
+      "meaning": "to read"
+    },
+    {
+      "page": 19,
+      "word": "letzt-",
+      "sentences": [
+        "Morgen ist der letzte Kurstag."
+      ],
+      "meaning": "last"
+    },
+    {
+      "page": 19,
+      "word": "die Leute (pl.)",
+      "sentences": [
+        "In der Disko sind viele Leute."
+      ],
+      "meaning": "people"
+    },
+    {
+      "page": 19,
+      "word": "das Licht",
+      "sentences": [
+        "Wo macht man hier das Licht an?"
+      ],
+      "meaning": "light"
+    },
+    {
+      "page": 19,
+      "word": "lieb-",
+      "sentences": [
+        "Liebe Susanne, lieber Hans,"
+      ],
+      "meaning": "dear, kind"
+    },
+    {
+      "page": 19,
+      "word": "lieben",
+      "sentences": [
+        "Ich liebe dich!"
+      ],
+      "meaning": "to love"
+    },
+    {
+      "page": 19,
+      "word": "lieber",
+      "sentences": [
+        "Sie fährt lieber mit der Bahn."
+      ],
+      "meaning": "rather, preferably"
+    },
+    {
+      "page": 19,
+      "word": "Lieblings-",
+      "sentences": [
+        "Mein Lieblingsfilm ist „Schwarze Augen“."
+      ],
+      "meaning": "favorite"
+    },
+    {
+      "page": 19,
+      "word": "das Lied, -er",
+      "sentences": [
+        "Welches ist dein Lieblingslied?"
+      ],
+      "meaning": "song"
+    },
+    {
+      "page": 19,
+      "word": "liegen",
+      "sentences": [
+        "Um neun Uhr liegt Judith noch im Bett.",
+        "Frankfurt liegt am Main."
+      ],
+      "meaning": "to lie, to be located"
+    },
+    {
+      "page": 19,
+      "word": "links",
+      "sentences": [
+        "Gehen Sie die nächste Straße links."
+      ],
+      "meaning": "left"
+    },
+    {
+      "page": 19,
+      "word": "der Lkw, -s",
+      "sentences": [
+        "Dieser Lastkraftwagen ist sehr groß."
+      ],
+      "meaning": "truck"
+    },
+    {
+      "page": 19,
+      "word": "das Lokal",
+      "sentences": [
+        "In unserer Straße gibt es ein neues Lokal."
+      ],
+      "meaning": "pub, restaurant, venue"
+    },
+    {
+      "page": 19,
+      "word": "die Lösung, -en",
+      "sentences": [
+        "Die Lösung ist ganz einfach."
+      ],
+      "meaning": "solution"
+    },
+    {
+      "page": 19,
+      "word": "lustig",
+      "sentences": [
+        "Frau Mertens ist lustig. Sie lacht immer."
+      ],
+      "meaning": "funny"
+    },
+    {
+      "page": 19,
+      "word": "machen",
+      "sentences": [
+        "Was machst du heute Abend?",
+        "Ich muss jetzt das Essen machen."
+      ],
+      "meaning": "to do, to make"
+    },
+    {
+      "page": 20,
+      "word": "das Mädchen, –",
+      "sentences": [
+        "Familie Kurz bekommt ein Baby. – Junge oder Mädchen?"
+      ],
+      "meaning": "girl"
+    },
+    {
+      "page": 20,
+      "word": "man",
+      "sentences": [
+        "Hier darf man nicht rauchen."
+      ],
+      "meaning": "one, you (impersonal)"
+    },
+    {
+      "page": 20,
+      "word": "der Mann, -ä, er",
+      "sentences": [
+        "Mein Mann arbeitet bei der Polizei."
+      ],
+      "meaning": "man, husband"
+    },
+    {
+      "page": 20,
+      "word": "männlich",
+      "sentences": [
+        "Kreuzen Sie bitte an: „weiblich“ oder „männlich“."
+      ],
+      "meaning": "male"
+    },
+    {
+      "page": 20,
+      "word": "die Maschine, -n",
+      "sentences": [
+        "Die Waschmaschine ist günstig."
+      ],
+      "meaning": "machine"
+    },
+    {
+      "page": 20,
+      "word": "das Meer",
+      "sentences": [
+        "Wir machen Urlaub am Meer."
+      ],
+      "meaning": "sea"
+    },
+    {
+      "page": 20,
+      "word": "mehr",
+      "sentences": [
+        "Dieses Auto kostet 1.000 Euro mehr als das andere."
+      ],
+      "meaning": "more"
+    },
+    {
+      "page": 20,
+      "word": "mein",
+      "sentences": [
+        "Mein Vater ist Arzt."
+      ],
+      "meaning": "my"
+    },
+    {
+      "page": 20,
+      "word": "meist-",
+      "sentences": [
+        "Die meisten Norddeutschen sind sehr groß."
+      ],
+      "meaning": "most"
+    },
+    {
+      "page": 20,
+      "word": "der Mensch, -en",
+      "sentences": [
+        "Die Menschen sind hier anders als bei uns."
+      ],
+      "meaning": "person, human being"
+    },
+    {
+      "page": 20,
+      "word": "mieten",
+      "sentences": [
+        "Ich möchte ein Auto mieten."
+      ],
+      "meaning": "to rent"
+    },
+    {
+      "page": 20,
+      "word": "die Miete",
+      "sentences": [
+        "Die Miete für diese Wohnung ist 600 Euro."
+      ],
+      "meaning": "rent"
+    },
+    {
+      "page": 20,
+      "word": "die Milch",
+      "sentences": [
+        "Die Milch steht im Kühlschrank."
+      ],
+      "meaning": "milk"
+    },
+    {
+      "page": 20,
+      "word": "mit",
+      "sentences": [
+        "Trinken Sie den Kaffee mit Milch?"
+      ],
+      "meaning": "with"
+    },
+    {
+      "page": 20,
+      "word": "mitbringen",
+      "sentences": [
+        "Ich gehe einkaufen. Soll ich dir was mitbringen?"
+      ],
+      "meaning": "to bring along"
+    },
+    {
+      "page": 20,
+      "word": "mitkommen",
+      "sentences": [
+        "Ich gehe ins Kino. Kommst du mit?"
+      ],
+      "meaning": "to come along"
+    },
+    {
+      "page": 20,
+      "word": "mitmachen",
+      "sentences": [
+        "Warum macht ihr nicht mit?"
+      ],
+      "meaning": "to join in, to participate"
+    },
+    {
+      "page": 20,
+      "word": "mitnehmen",
+      "sentences": [
+        "Nehmen wir meine Schwester ins Kino mit?"
+      ],
+      "meaning": "to take along"
+    },
+    {
+      "page": 20,
+      "word": "die Mitte",
+      "sentences": [
+        "Der Lehrer steht in der Mitte des Klassenzimmers."
+      ],
+      "meaning": "middle"
+    },
+    {
+      "page": 20,
+      "word": "die Möbel (pl.)",
+      "sentences": [
+        "Sind die Möbel neu?"
+      ],
+      "meaning": "furniture"
+    },
+    {
+      "page": 20,
+      "word": "möchten",
+      "sentences": [
+        "Was möchten Sie trinken?"
+      ],
+      "meaning": "would like"
+    },
+    {
+      "page": 20,
+      "word": "mögen",
+      "sentences": [
+        "Magst du Kaffee oder Tee?"
+      ],
+      "meaning": "to like"
+    },
+    {
+      "page": 20,
+      "word": "möglich",
+      "sentences": [
+        "Mit dieser Fahrkarte ist die Fahrt ab 9 Uhr möglich."
+      ],
+      "meaning": "possible"
+    },
+    {
+      "page": 20,
+      "word": "der Moment",
+      "sentences": [
+        "Moment mal bitte!",
+        "Einen Moment bitte."
+      ],
+      "meaning": "moment"
+    },
+    {
+      "page": 20,
+      "word": "morgen",
+      "sentences": [
+        "Morgen beginnt die Schule um 10 Uhr."
+      ],
+      "meaning": "tomorrow"
+    },
+    {
+      "page": 20,
+      "word": "müde",
+      "sentences": [
+        "Ich bin müde. Ich gehe schlafen."
+      ],
+      "meaning": "tired"
+    },
+    {
+      "page": 20,
+      "word": "der Mund",
+      "sentences": [
+        "Öffnen Sie den Mund."
+      ],
+      "meaning": "mouth"
+    },
+    {
+      "page": 20,
+      "word": "müssen",
+      "sentences": [
+        "Ich muss jeden Tag von 8 Uhr bis 18 Uhr arbeiten."
+      ],
+      "meaning": "to have to, must"
+    },
+    {
+      "page": 20,
+      "word": "die Mutter, -ü",
+      "sentences": [
+        "Frau Berghäuser ist die Mutter von Michaela."
+      ],
+      "meaning": "mother"
+    },
+    {
+      "page": 20,
+      "word": "nach",
+      "sentences": [
+        "Ich gehe jetzt nach Hause.",
+        "Ich fliege nach München.",
+        "Es ist schon 5 nach 12."
+      ],
+      "meaning": "to, after"
+    },
+    {
+      "page": 20,
+      "word": "nächst-",
+      "sentences": [
+        "Sehen wir uns nächste Woche?"
+      ],
+      "meaning": "next"
+    },
+    {
+      "page": 20,
+      "word": "der Name, -n",
+      "sentences": [
+        "Mein Name ist Thomas Schmidt.",
+        "Mein Vorname ist Thomas; Schmidt ist der Familienname."
+      ],
+      "meaning": "name"
+    },
+    {
+      "page": 20,
+      "word": "nehmen",
+      "sentences": [
+        "Heute gibt es Hähnchen. Das nehme ich.",
+        "Ich nehme den Bus."
+      ],
+      "meaning": "to take"
+    },
+    {
+      "page": 20,
+      "word": "nein",
+      "sentences": [
+        "Fährst du auch nach München? – Nein, ich habe keine Zeit."
+      ],
+      "meaning": "no"
+    },
+    {
+      "page": 20,
+      "word": "neu",
+      "sentences": [
+        "Ich bin der neue Kollege.",
+        "Wir haben eine neue Wohnung."
+      ],
+      "meaning": "new"
+    },
+    {
+      "page": 20,
+      "word": "nicht",
+      "sentences": [
+        "Das stimmt nicht.",
+        "Das ist doch schön, nicht?"
+      ],
+      "meaning": "not"
+    },
+    {
+      "page": 20,
+      "word": "nichts",
+      "sentences": [
+        "Das macht nichts.",
+        "Hier kaufe ich nichts. Der Laden gefällt mir nicht."
+      ],
+      "meaning": "nothing"
+    },
+    {
+      "page": 20,
+      "word": "nie",
+      "sentences": [
+        "Er kommt nie pünktlich."
+      ],
+      "meaning": "never"
+    },
+    {
+      "page": 21,
+      "word": "noch",
+      "sentences": [
+        "Vielleicht kommt er noch.",
+        "Wir warten noch fünf Minuten.",
+        "Ich habe noch 20 Euro."
+      ],
+      "meaning": "still, yet"
+    },
+    {
+      "page": 21,
+      "word": "normal",
+      "sentences": [
+        "75 kg. Sein Gewicht ist normal."
+      ],
+      "meaning": "normal"
+    },
+    {
+      "page": 21,
+      "word": "die Nummer, -n",
+      "sentences": [
+        "Sie haben Zimmer Nummer zwölf.",
+        "Welche Hausnummer haben Sie?",
+        "Können Sie mir Ihre Nummer geben?"
+      ],
+      "meaning": "number"
+    },
+    {
+      "page": 21,
+      "word": "nur",
+      "sentences": [
+        "Ich möchte nur ein Glas Wasser."
+      ],
+      "meaning": "only"
+    },
+    {
+      "page": 21,
+      "word": "oben",
+      "sentences": [
+        "Ich wohne oben."
+      ],
+      "meaning": "above, upstairs"
+    },
+    {
+      "page": 21,
+      "word": "das Obst",
+      "sentences": [
+        "Im Sommer ist das Obst billig."
+      ],
+      "meaning": "fruit"
+    },
+    {
+      "page": 21,
+      "word": "oder",
+      "sentences": [
+        "Wann können Sie kommen – heute oder morgen?"
+      ],
+      "meaning": "or"
+    },
+    {
+      "page": 21,
+      "word": "öffnen",
+      "sentences": [
+        "Ich öffne die Tür."
+      ],
+      "meaning": "to open"
+    },
+    {
+      "page": 21,
+      "word": "geöffnet",
+      "sentences": [
+        "Der Laden ist samstags bis 16.00 Uhr geöffnet."
+      ],
+      "meaning": "open (adjective/past participle)"
+    },
+    {
+      "page": 21,
+      "word": "oft",
+      "sentences": [
+        "Petra treffe ich oft."
+      ],
+      "meaning": "often"
+    },
+    {
+      "page": 21,
+      "word": "ohne",
+      "sentences": [
+        "Ohne Geld kann er nichts kaufen."
+      ],
+      "meaning": "without"
+    },
+    {
+      "page": 21,
+      "word": "das Öl",
+      "sentences": [
+        "Den Salat machen wir ohne Öl."
+      ],
+      "meaning": "oil"
+    },
+    {
+      "page": 21,
+      "word": "die Oma, -s",
+      "sentences": [
+        "Meine Oma ist schon tot."
+      ],
+      "meaning": "grandma"
+    },
+    {
+      "page": 21,
+      "word": "der Opa, -s",
+      "sentences": [
+        "Mein Opa heißt Hans."
+      ],
+      "meaning": "grandpa"
+    },
+    {
+      "page": 21,
+      "word": "die Ordnung",
+      "sentences": [
+        "Das ist in Ordnung."
+      ],
+      "meaning": "order, tidiness"
+    },
+    {
+      "page": 21,
+      "word": "der Ort, -e",
+      "sentences": [
+        "Der Ort liegt am Meer."
+      ],
+      "meaning": "place, location"
+    },
+    {
+      "page": 21,
+      "word": "das Papier",
+      "sentences": [
+        "Hier sind Papier und Bleistift."
+      ],
+      "meaning": "paper"
+    },
+    {
+      "page": 21,
+      "word": "die Papiere (pl.)",
+      "sentences": [
+        "Haben Sie Ihre Papiere dabei?"
+      ],
+      "meaning": "documents, papers"
+    },
+    {
+      "page": 21,
+      "word": "der Partner, -/",
+      "sentences": [],
+      "meaning": "partner (male)"
+    },
+    {
+      "page": 21,
+      "word": "die Partnerin, -nen",
+      "sentences": [
+        "Sie ist meine Partnerin."
+      ],
+      "meaning": "partner (female)"
+    },
+    {
+      "page": 21,
+      "word": "die Party",
+      "sentences": [
+        "Heute Abend machen wir eine Party."
+      ],
+      "meaning": "party"
+    },
+    {
+      "page": 21,
+      "word": "der Pass, -ä, e",
+      "sentences": [
+        "Im Hotel brauchst du deinen Pass."
+      ],
+      "meaning": "passport"
+    },
+    {
+      "page": 21,
+      "word": "die Pause, -n",
+      "sentences": [
+        "Von 12.00 bis 12.30 Uhr haben wir Mittagspause."
+      ],
+      "meaning": "break, pause"
+    },
+    {
+      "page": 21,
+      "word": "der Plan, -ä, e",
+      "sentences": [
+        "Ich kaufe mir einen Stadtplan."
+      ],
+      "meaning": "plan"
+    },
+    {
+      "page": 21,
+      "word": "der Platz, -ä, e",
+      "sentences": [
+        "Tut mir leid, der Platz ist besetzt.",
+        "Bitte nehmen Sie Platz!",
+        "Ich wohne Messeplatz 5."
+      ],
+      "meaning": "place, seat, square"
+    },
+    {
+      "page": 21,
+      "word": "die Polizei",
+      "sentences": [
+        "Holen Sie die Polizei!"
+      ],
+      "meaning": "police"
+    },
+    {
+      "page": 21,
+      "word": "die Pommes frites",
+      "sentences": [
+        "(pl.) Die Kinder essen Hähnchen mit Pommes frites."
+      ],
+      "meaning": "French fries"
+    },
+    {
+      "page": 21,
+      "word": "die Post",
+      "sentences": [
+        "Wo ist die Post, bitte?",
+        "Ist Post da?"
+      ],
+      "meaning": "post, mail; post office"
+    },
+    {
+      "page": 21,
+      "word": "die Postleitzahl",
+      "sentences": [
+        "Wie ist Ihre Postleitzahl?"
+      ],
+      "meaning": "postal code"
+    },
+    {
+      "page": 21,
+      "word": "das Praktikum",
+      "sentences": [
+        "Ich mache ein Praktikum bei Siemens."
+      ],
+      "meaning": "internship"
+    },
+    {
+      "page": 21,
+      "word": "die Praxis",
+      "sentences": [
+        "Die Praxis ist ab acht Uhr geöffnet."
+      ],
+      "meaning": "practice; doctor's office"
+    },
+    {
+      "page": 21,
+      "word": "der Preis, -e",
+      "sentences": [
+        "Die Preise sind hoch."
+      ],
+      "meaning": "price"
+    },
+    {
+      "page": 21,
+      "word": "das Problem, -e",
+      "sentences": [
+        "Mein Problem ist die Sprache."
+      ],
+      "meaning": "problem"
+    },
+    {
+      "page": 21,
+      "word": "der Prospekt, -e",
+      "sentences": [
+        "Bitte schicken Sie mir einen Prospekt von Ihrem Hotel."
+      ],
+      "meaning": "brochure"
+    },
+    {
+      "page": 21,
+      "word": "die Prüfung",
+      "sentences": [
+        "Die Prüfung ist am Montag um 8.00 Uhr."
+      ],
+      "meaning": "exam, test"
+    },
+    {
+      "page": 21,
+      "word": "pünktlich",
+      "sentences": [
+        "Der Bus fährt pünktlich um acht Uhr.",
+        "Herr Müller ist immer pünktlich."
+      ],
+      "meaning": "punctual, on time"
+    },
+    {
+      "page": 22,
+      "word": "Rad fahren",
+      "sentences": [
+        "Das Kind kann schon Rad fahren."
+      ],
+      "meaning": "to cycle, to ride a bike"
+    },
+    {
+      "page": 22,
+      "word": "rauchen",
+      "sentences": [
+        "Ich rauche nicht."
+      ],
+      "meaning": "to smoke"
+    },
+    {
+      "page": 22,
+      "word": "der Raum, -ä, e",
+      "sentences": [
+        "Der Unterricht ist in Raum 332."
+      ],
+      "meaning": "room, space"
+    },
+    {
+      "page": 22,
+      "word": "die Rechnung, -en",
+      "sentences": [
+        "Die Rechnung, bitte."
+      ],
+      "meaning": "bill, invoice"
+    },
+    {
+      "page": 22,
+      "word": "rechts",
+      "sentences": [
+        "Die Schillerstraße ist hier rechts."
+      ],
+      "meaning": "right (direction)"
+    },
+    {
+      "page": 22,
+      "word": "regnen",
+      "sentences": [
+        "Heute regnet es."
+      ],
+      "meaning": "to rain"
+    },
+    {
+      "page": 22,
+      "word": "der Regen",
+      "sentences": [
+        "Bei diesem Regen gehe ich nicht raus."
+      ],
+      "meaning": "rain"
+    },
+    {
+      "page": 22,
+      "word": "der Reis",
+      "sentences": [
+        "Ich esse gern Reis."
+      ],
+      "meaning": "rice"
+    },
+    {
+      "page": 22,
+      "word": "reisen",
+      "sentences": [
+        "Ich reise gern."
+      ],
+      "meaning": "to travel"
+    },
+    {
+      "page": 22,
+      "word": "die Reise",
+      "sentences": [
+        "Wir machen eine Reise nach Österreich."
+      ],
+      "meaning": "trip, journey"
+    },
+    {
+      "page": 22,
+      "word": "das Reisebüro, -s",
+      "sentences": [
+        "Mein Mann arbeitet im Reisebüro."
+      ],
+      "meaning": "travel agency"
+    },
+    {
+      "page": 22,
+      "word": "der Reiseführer",
+      "sentences": [
+        "Ich kaufe mir einen Reiseführer von Berlin.",
+        "Unser Reiseführer heißt Peter."
+      ],
+      "meaning": "travel guide (person/book)"
+    },
+    {
+      "page": 22,
+      "word": "reparieren",
+      "sentences": [
+        "Er hat das Fahrrad repariert."
+      ],
+      "meaning": "to repair"
+    },
+    {
+      "page": 22,
+      "word": "die Reparatur",
+      "sentences": [
+        "Die Reparatur ist sehr teuer."
+      ],
+      "meaning": "repair"
+    },
+    {
+      "page": 22,
+      "word": "das Restaurant, -s",
+      "sentences": [
+        "Wir essen heute in einem Restaurant."
+      ],
+      "meaning": "restaurant"
+    },
+    {
+      "page": 22,
+      "word": "die Rezeption",
+      "sentences": [
+        "Fragen Sie bitte im Hotel an der Rezeption."
+      ],
+      "meaning": "reception (desk)"
+    },
+    {
+      "page": 22,
+      "word": "richtig",
+      "sentences": [
+        "Habe ich das richtig verstanden?",
+        "Das ist richtig."
+      ],
+      "meaning": "right, correct"
+    },
+    {
+      "page": 22,
+      "word": "riechen",
+      "sentences": [
+        "Dieser Wein riecht gut."
+      ],
+      "meaning": "to smell"
+    },
+    {
+      "page": 22,
+      "word": "ruhig",
+      "sentences": [
+        "Ich möchte ein ruhiges Zimmer."
+      ],
+      "meaning": "calm, quiet"
+    },
+    {
+      "page": 22,
+      "word": "der Saft",
+      "sentences": [
+        "Möchtest du einen Apfelsaft?"
+      ],
+      "meaning": "juice"
+    },
+    {
+      "page": 22,
+      "word": "sagen",
+      "sentences": [
+        "Sag mal, wie geht es dir denn?"
+      ],
+      "meaning": "to say"
+    },
+    {
+      "page": 22,
+      "word": "der Salat",
+      "sentences": [
+        "Wie schmeckt dir der Salat?"
+      ],
+      "meaning": "salad, lettuce"
+    },
+    {
+      "page": 22,
+      "word": "das Salz",
+      "sentences": [
+        "Herr Ober, kann ich bitte Salz haben?"
+      ],
+      "meaning": "salt"
+    },
+    {
+      "page": 22,
+      "word": "Satz, -ä, e",
+      "sentences": [
+        "Dieser Satz ist sehr einfach."
+      ],
+      "meaning": "sentence"
+    },
+    {
+      "page": 22,
+      "word": "die S-Bahn",
+      "sentences": [
+        "Ich nehme lieber die S-Bahn."
+      ],
+      "meaning": "suburban railway"
+    },
+    {
+      "page": 22,
+      "word": "der Schalter",
+      "sentences": [
+        "Gehen Sie bitte zum Schalter drei!"
+      ],
+      "meaning": "counter, switch"
+    },
+    {
+      "page": 22,
+      "word": "scheinen",
+      "sentences": [
+        "Die Sonne scheint."
+      ],
+      "meaning": "to shine; to seem"
+    },
+    {
+      "page": 22,
+      "word": "schicken",
+      "sentences": [
+        "Bitte schicken Sie mir eine E-Mail."
+      ],
+      "meaning": "to send"
+    },
+    {
+      "page": 22,
+      "word": "das Schild, -er",
+      "sentences": [
+        "Haben Sie nicht das Schild gesehen?"
+      ],
+      "meaning": "sign"
+    },
+    {
+      "page": 22,
+      "word": "der Schinken, –",
+      "sentences": [
+        "Ich möchte gern ein Schinkenbrot."
+      ],
+      "meaning": "ham"
+    },
+    {
+      "page": 22,
+      "word": "schlafen",
+      "sentences": [
+        "Ich schlafe meistens acht Stunden."
+      ],
+      "meaning": "to sleep"
+    },
+    {
+      "page": 22,
+      "word": "schlecht",
+      "sentences": [
+        "Mir ist schlecht!",
+        "Sie sehen schlecht aus.",
+        "Wir haben schlechtes Wetter."
+      ],
+      "meaning": "bad"
+    },
+    {
+      "page": 22,
+      "word": "schließen",
+      "sentences": [
+        "Bitte, schließen Sie die Tür."
+      ],
+      "meaning": "to close"
+    },
+    {
+      "page": 22,
+      "word": "geschlossen",
+      "sentences": [
+        "Die Bank hat am Samstag geschlossen."
+      ],
+      "meaning": "closed"
+    },
+    {
+      "page": 22,
+      "word": "der Schluss",
+      "sentences": [
+        "Ich muss jetzt Schluss machen.",
+        "Zum Schluss gibt er uns allen die Hand."
+      ],
+      "meaning": "end"
+    },
+    {
+      "page": 22,
+      "word": "der Schlüssel, –",
+      "sentences": [
+        "Ich gebe Ihnen noch den Zimmerschlüssel."
+      ],
+      "meaning": "key"
+    },
+    {
+      "page": 22,
+      "word": "schmecken",
+      "sentences": [
+        "Schmeckt das gut?"
+      ],
+      "meaning": "to taste"
+    },
+    {
+      "page": 22,
+      "word": "schnell",
+      "sentences": [
+        "Er fährt schnell."
+      ],
+      "meaning": "fast, quick"
+    },
+    {
+      "page": 22,
+      "word": "schon",
+      "sentences": [
+        "Ist das Essen schon fertig?"
+      ],
+      "meaning": "already"
+    },
+    {
+      "page": 22,
+      "word": "schön",
+      "sentences": [
+        "Schönen Urlaub!",
+        "Das ist sehr schön."
+      ],
+      "meaning": "beautiful, nice"
+    },
+    {
+      "page": 22,
+      "word": "der Schrank, -ä, e",
+      "sentences": [
+        "Die Gläser stehen im Schrank."
+      ],
+      "meaning": "cupboard, closet, wardrobe"
+    },
+    {
+      "page": 22,
+      "word": "schreiben",
+      "sentences": [
+        "Er schreibt jeden Tag fünfzig E-Mails."
+      ],
+      "meaning": "to write"
+    },
+    {
+      "page": 23,
+      "word": "der Schuh, -e",
+      "sentences": [
+        "Zieh die Schuhe aus!"
+      ],
+      "meaning": "shoe"
+    },
+    {
+      "page": 23,
+      "word": "die Schule",
+      "sentences": [
+        "Meine Tochter geht schon in die Schule.",
+        "Die Schule ist gleich hier um die Ecke."
+      ],
+      "meaning": "school"
+    },
+    {
+      "page": 23,
+      "word": "der Schüler, –",
+      "sentences": [
+        "In meinem Kurs sind acht Schülerinnen und fünf Schüler."
+      ],
+      "meaning": "pupil, student"
+    },
+    {
+      "page": 23,
+      "word": "schwer",
+      "sentences": [
+        "Ist Ihr Gepäck sehr schwer?",
+        "Das ist eine schwere Arbeit."
+      ],
+      "meaning": "heavy, difficult"
+    },
+    {
+      "page": 23,
+      "word": "die Schwester, -n",
+      "sentences": [
+        "Meine Schwester kommt am Dienstag."
+      ],
+      "meaning": "sister"
+    },
+    {
+      "page": 23,
+      "word": "schwimmen",
+      "sentences": [
+        "Ich schwimme jeden Tag einen Kilometer."
+      ],
+      "meaning": "to swim"
+    },
+    {
+      "page": 23,
+      "word": "das Schwimmbad",
+      "sentences": [
+        "Kommst du mit ins Schwimmbad?"
+      ],
+      "meaning": "swimming pool"
+    },
+    {
+      "page": 23,
+      "word": "der See",
+      "sentences": [
+        "Komm, wir fahren zum Starnberger See."
+      ],
+      "meaning": "lake"
+    },
+    {
+      "page": 23,
+      "word": "sehen",
+      "sentences": [
+        "Ich kann dich nicht sehen.",
+        "Ich habe diesen Jungen schon einmal gesehen."
+      ],
+      "meaning": "to see"
+    },
+    {
+      "page": 23,
+      "word": "die Sehenswürdigkeit,",
+      "sentences": [
+        "-en Welche Sehenswürdigkeiten gibt es in Frankfurt?"
+      ],
+      "meaning": "sight, tourist attraction"
+    },
+    {
+      "page": 23,
+      "word": "sehr",
+      "sentences": [
+        "Danke sehr!",
+        "Das ist sehr schwer."
+      ],
+      "meaning": "very"
+    },
+    {
+      "page": 23,
+      "word": "sein",
+      "sentences": [
+        "Herr Müller ist in seinem Zimmer.",
+        "Mir ist kalt.",
+        "Ich bin dreiundzwanzig."
+      ],
+      "meaning": "to be"
+    },
+    {
+      "page": 23,
+      "word": "an sein",
+      "sentences": [
+        "Das Licht ist noch an."
+      ],
+      "meaning": "to be on/switched on"
+    },
+    {
+      "page": 23,
+      "word": "auf sein",
+      "sentences": [
+        "Das Fenster ist noch auf."
+      ],
+      "meaning": "to be open"
+    },
+    {
+      "page": 23,
+      "word": "weg sein",
+      "sentences": [
+        "Herr Meier ist schon weg."
+      ],
+      "meaning": "to be gone, to be away"
+    },
+    {
+      "page": 23,
+      "word": "zu sein",
+      "sentences": [
+        "Die Tür ist zu."
+      ],
+      "meaning": "to be closed"
+    },
+    {
+      "page": 23,
+      "word": "seit",
+      "sentences": [
+        "Ich wohne seit drei Jahren in Köln."
+      ],
+      "meaning": "since (time)"
+    },
+    {
+      "page": 23,
+      "word": "selbstständig",
+      "sentences": [
+        "Er ist selbstständig."
+      ],
+      "meaning": "independent, self-employed"
+    },
+    {
+      "page": 23,
+      "word": "sich",
+      "sentences": [
+        "Sie müssen sich erst anmelden."
+      ],
+      "meaning": "himself/herself/itself/themselves (reflexive)"
+    },
+    {
+      "page": 23,
+      "word": "sie",
+      "sentences": [
+        "Wie heißt sie?"
+      ],
+      "meaning": "she, they"
+    },
+    {
+      "page": 23,
+      "word": "Sie",
+      "sentences": [
+        "Wie heißen Sie, bitte?"
+      ],
+      "meaning": "you (formal)"
+    },
+    {
+      "page": 23,
+      "word": "sitzen",
+      "sentences": [
+        "Wo sitzen Sie?"
+      ],
+      "meaning": "to sit"
+    },
+    {
+      "page": 23,
+      "word": "so",
+      "sentences": [
+        "Sie müssen das so machen!",
+        "Fahren Sie bitte nicht so schnell!",
+        "Meine Frau ist so groß wie ich.",
+        "So, das war‘s/wär‘s!"
+      ],
+      "meaning": "so, like this"
+    },
+    {
+      "page": 23,
+      "word": "das Sofa",
+      "sentences": [
+        "Das Sofa ist neu."
+      ],
+      "meaning": "sofa, couch"
+    },
+    {
+      "page": 23,
+      "word": "sofort",
+      "sentences": [
+        "Bitte antworten Sie sofort."
+      ],
+      "meaning": "immediately"
+    },
+    {
+      "page": 23,
+      "word": "der Sohn, -ö, e",
+      "sentences": [
+        "Das ist Hans, mein Sohn."
+      ],
+      "meaning": "son"
+    },
+    {
+      "page": 23,
+      "word": "sollen",
+      "sentences": [
+        "Soll ich kommen?",
+        "Was soll ich mitbringen?"
+      ],
+      "meaning": "should, to be supposed to"
+    },
+    {
+      "page": 23,
+      "word": "die Sonne",
+      "sentences": [
+        "Die Sonne scheint."
+      ],
+      "meaning": "sun"
+    },
+    {
+      "page": 23,
+      "word": "spät",
+      "sentences": [
+        "Es ist schon spät, ich muss gehen."
+      ],
+      "meaning": "late"
+    },
+    {
+      "page": 23,
+      "word": "später",
+      "sentences": [
+        "Das können wir später machen."
+      ],
+      "meaning": "later"
+    },
+    {
+      "page": 23,
+      "word": "die Speisekarte",
+      "sentences": [
+        "Bringen Sie mir die Speisekarte, bitte."
+      ],
+      "meaning": "menu"
+    },
+    {
+      "page": 23,
+      "word": "spielen",
+      "sentences": [
+        "Die Kinder spielen draußen.",
+        "Spielen Sie Karten?"
+      ],
+      "meaning": "to play"
+    },
+    {
+      "page": 23,
+      "word": "der Sport",
+      "sentences": [
+        "Ich mache viel Sport."
+      ],
+      "meaning": "sport"
+    },
+    {
+      "page": 23,
+      "word": "die Sprache, -n",
+      "sentences": [
+        "Welche Sprachen sprichst du?"
+      ],
+      "meaning": "language"
+    },
+    {
+      "page": 23,
+      "word": "sprechen",
+      "sentences": [
+        "Kann ich (mit) Herrn Klein sprechen?"
+      ],
+      "meaning": "to speak"
+    },
+    {
+      "page": 23,
+      "word": "die Stadt, -ä, e",
+      "sentences": [
+        "Heidelberg ist eine alte Stadt."
+      ],
+      "meaning": "city, town"
+    },
+    {
+      "page": 23,
+      "word": "stehen",
+      "sentences": [
+        "Ich glaube es nicht, aber es steht in der Zeitung.",
+        "Der Bus steht schon an der Haltestelle."
+      ],
+      "meaning": "to stand"
+    },
+    {
+      "page": 23,
+      "word": "die Stelle, -n",
+      "sentences": [
+        "Ich habe eine neue Stelle."
+      ],
+      "meaning": "place, position, job"
+    },
+    {
+      "page": 24,
+      "word": "stellen",
+      "sentences": [
+        "Stell die Tasche rechts in die Ecke!"
+      ],
+      "meaning": "to put, to place"
+    },
+    {
+      "page": 24,
+      "word": "der Stock",
+      "sentences": [
+        "Unsere Wohnung liegt im ersten Stock."
+      ],
+      "meaning": "floor (of a building); stick"
+    },
+    {
+      "page": 24,
+      "word": "die Straße, -n",
+      "sentences": [
+        "In welcher Straße wohnen Sie?"
+      ],
+      "meaning": "street"
+    },
+    {
+      "page": 24,
+      "word": "die Straßenbahn",
+      "sentences": [
+        "Wo fährt die Straßenbahn ab?"
+      ],
+      "meaning": "tram, streetcar"
+    },
+    {
+      "page": 24,
+      "word": "studieren",
+      "sentences": [
+        "Ich studiere in Mainz."
+      ],
+      "meaning": "to study (at university)"
+    },
+    {
+      "page": 24,
+      "word": "das Studium",
+      "sentences": [
+        "Das Studium beginnt im Oktober."
+      ],
+      "meaning": "studies (at university)"
+    },
+    {
+      "page": 24,
+      "word": "der Student, -en",
+      "sentences": [
+        "Ich bin Studentin."
+      ],
+      "meaning": "student (university)"
+    },
+    {
+      "page": 24,
+      "word": "die Stunde, -n",
+      "sentences": [
+        "Ich bin in einer Stunde zurück."
+      ],
+      "meaning": "hour"
+    },
+    {
+      "page": 24,
+      "word": "suchen",
+      "sentences": [
+        "Suchst du etwas?"
+      ],
+      "meaning": "to look for, to search"
+    },
+    {
+      "page": 24,
+      "word": "tanzen",
+      "sentences": [
+        "Tanzen Sie gern?"
+      ],
+      "meaning": "to dance"
+    },
+    {
+      "page": 24,
+      "word": "die Tasche, -n",
+      "sentences": [
+        "Ich habe die Schlüssel in der Tasche."
+      ],
+      "meaning": "bag"
+    },
+    {
+      "page": 24,
+      "word": "das Taxi, -s",
+      "sentences": [
+        "Es gibt heute keinen Bus mehr. Er fährt mit dem Taxi."
+      ],
+      "meaning": "taxi"
+    },
+    {
+      "page": 24,
+      "word": "der Tee",
+      "sentences": [
+        "Ich trinke morgens immer Tee."
+      ],
+      "meaning": "tea"
+    },
+    {
+      "page": 24,
+      "word": "der Teil, -e",
+      "sentences": [
+        "Lies bitte auch den zweiten Teil."
+      ],
+      "meaning": "part"
+    },
+    {
+      "page": 24,
+      "word": "telefonieren",
+      "sentences": [
+        "Darf ich mal telefonieren?"
+      ],
+      "meaning": "to make a phone call"
+    },
+    {
+      "page": 24,
+      "word": "das Telefon",
+      "sentences": [
+        "Haben Sie Telefon?"
+      ],
+      "meaning": "telephone"
+    },
+    {
+      "page": 24,
+      "word": "der Termin, -e",
+      "sentences": [
+        "Am besten machen wir sofort einen Termin."
+      ],
+      "meaning": "appointment"
+    },
+    {
+      "page": 24,
+      "word": "der Test",
+      "sentences": [
+        "Der Test war einfach."
+      ],
+      "meaning": "test"
+    },
+    {
+      "page": 24,
+      "word": "teuer",
+      "sentences": [
+        "Das ist mir zu teuer."
+      ],
+      "meaning": "expensive"
+    },
+    {
+      "page": 24,
+      "word": "der Text, -e",
+      "sentences": [
+        "Lesen Sie bitte diesen Text."
+      ],
+      "meaning": "text"
+    },
+    {
+      "page": 24,
+      "word": "das Thema",
+      "sentences": [
+        "Wir sprechen heute über das Thema „Essen und Trinken“."
+      ],
+      "meaning": "topic, theme"
+    },
+    {
+      "page": 24,
+      "word": "das Ticket, -s",
+      "sentences": [
+        "Wie viel kostet das Ticket?"
+      ],
+      "meaning": "ticket"
+    },
+    {
+      "page": 24,
+      "word": "der Tisch, -e",
+      "sentences": [
+        "Die Fotos liegen auf dem Tisch."
+      ],
+      "meaning": "table"
+    },
+    {
+      "page": 24,
+      "word": "die Tochter, -ö",
+      "sentences": [
+        "Das ist meine Tochter Katharina."
+      ],
+      "meaning": "daughter"
+    },
+    {
+      "page": 24,
+      "word": "die Toilette, -en",
+      "sentences": [
+        "Wo ist die Toilette, bitte?"
+      ],
+      "meaning": "toilet"
+    },
+    {
+      "page": 24,
+      "word": "die Tomate, -n",
+      "sentences": [
+        "Die Tomate ist noch grün."
+      ],
+      "meaning": "tomato"
+    },
+    {
+      "page": 24,
+      "word": "tot",
+      "sentences": [
+        "Sein Vater ist schon lange tot."
+      ],
+      "meaning": "dead"
+    },
+    {
+      "page": 24,
+      "word": "(sich) treffen",
+      "sentences": [
+        "Ich treffe in der Stadt einen Kollegen.",
+        "Wir treffen uns immer freitags."
+      ],
+      "meaning": "to meet"
+    },
+    {
+      "page": 24,
+      "word": "die Treppe, -n",
+      "sentences": [
+        "Die Toilette? Die Treppe hoch und dann links."
+      ],
+      "meaning": "stairs"
+    },
+    {
+      "page": 24,
+      "word": "trinken",
+      "sentences": [
+        "Möchtest du etwas trinken?"
+      ],
+      "meaning": "to drink"
+    },
+    {
+      "page": 24,
+      "word": "tschüss",
+      "sentences": [
+        "Junge Leute sagen meistens „tschüss!“ und nicht „auf Wiedersehen“."
+      ],
+      "meaning": "bye"
+    },
+    {
+      "page": 24,
+      "word": "tun",
+      "sentences": [
+        "Ich habe noch etwas zu tun.",
+        "Was tut Ihr Mann?"
+      ],
+      "meaning": "to do"
+    },
+    {
+      "page": 24,
+      "word": "über",
+      "sentences": [
+        "Gehen Sie hier über die Straße.",
+        "Er wohnt im zweiten Stock über Familie Meier.",
+        "Sind Sie über 18?"
+      ],
+      "meaning": "over, about, above"
+    },
+    {
+      "page": 24,
+      "word": "übernachten",
+      "sentences": [
+        "Du kannst bei mir übernachten."
+      ],
+      "meaning": "to stay overnight"
+    },
+    {
+      "page": 24,
+      "word": "überweisen",
+      "sentences": [
+        "Sie können das Geld auch überweisen."
+      ],
+      "meaning": "to transfer (money)"
+    },
+    {
+      "page": 24,
+      "word": "die Uhr",
+      "sentences": [
+        "Es ist vier Uhr."
+      ],
+      "meaning": "clock, watch, o'clock"
+    },
+    {
+      "page": 24,
+      "word": "um",
+      "sentences": [
+        "Er kommt um sieben Uhr.",
+        "Da kommt er gerade um die Ecke."
+      ],
+      "meaning": "around, at (time)"
+    },
+    {
+      "page": 24,
+      "word": "umziehen",
+      "sentences": [
+        "Nächsten Monat ziehen wir um."
+      ],
+      "meaning": "to move (house)"
+    },
+    {
+      "page": 24,
+      "word": "und",
+      "sentences": [
+        "Peter und Helmut sind meine Söhne."
+      ],
+      "meaning": "and"
+    },
+    {
+      "page": 25,
+      "word": "unser-",
+      "sentences": [
+        "Das ist unsere Lehrerin."
+      ],
+      "meaning": "our"
+    },
+    {
+      "page": 25,
+      "word": "unten",
+      "sentences": [
+        "Er wohnt ganz unten im Haus."
+      ],
+      "meaning": "below, downstairs"
+    },
+    {
+      "page": 25,
+      "word": "unter",
+      "sentences": [
+        "Unter uns wohnt eine Familie mit drei Kindern."
+      ],
+      "meaning": "under"
+    },
+    {
+      "page": 25,
+      "word": "der Unterricht",
+      "sentences": [
+        "Wir haben Unterricht von 8.00 bis 12.00 Uhr."
+      ],
+      "meaning": "lesson, class"
+    },
+    {
+      "page": 25,
+      "word": "unterschreiben",
+      "sentences": [
+        "Wo muss ich unterschreiben?"
+      ],
+      "meaning": "to sign"
+    },
+    {
+      "page": 25,
+      "word": "die Unterschrift",
+      "sentences": [
+        "Hier fehlt noch Ihre Unterschrift."
+      ],
+      "meaning": "signature"
+    },
+    {
+      "page": 25,
+      "word": "der Urlaub",
+      "sentences": [
+        "Ich nehme im September Urlaub."
+      ],
+      "meaning": "vacation, holiday"
+    },
+    {
+      "page": 25,
+      "word": "der Vater, -ä",
+      "sentences": [
+        "Mein Vater ist Arbeiter."
+      ],
+      "meaning": "father"
+    },
+    {
+      "page": 25,
+      "word": "verboten",
+      "sentences": [
+        "Hier ist Rauchen verboten."
+      ],
+      "meaning": "forbidden"
+    },
+    {
+      "page": 25,
+      "word": "verdienen",
+      "sentences": [
+        "Ich verdiene 1.500 Euro im Monat."
+      ],
+      "meaning": "to earn"
+    },
+    {
+      "page": 25,
+      "word": "der Verein",
+      "sentences": [
+        "Es gibt einen neuen Sportverein in der Stadt."
+      ],
+      "meaning": "club, association"
+    },
+    {
+      "page": 25,
+      "word": "verheiratet",
+      "sentences": [
+        "Ich bin verheiratet und habe drei Kinder."
+      ],
+      "meaning": "married"
+    },
+    {
+      "page": 25,
+      "word": "verkaufen",
+      "sentences": [
+        "Er verkauft sein altes Auto."
+      ],
+      "meaning": "to sell"
+    },
+    {
+      "page": 25,
+      "word": "der Verkäufer, –",
+      "sentences": [
+        "Meine Mutter ist Verkäuferin im Kaufhaus."
+      ],
+      "meaning": "salesperson"
+    },
+    {
+      "page": 25,
+      "word": "vermieten",
+      "sentences": [
+        "Die Wohnung ist schon vermietet."
+      ],
+      "meaning": "to rent out, to let"
+    },
+    {
+      "page": 25,
+      "word": "der Vermieter",
+      "sentences": [
+        "Unser Vermieter heißt Huber. Er wohnt auch hier."
+      ],
+      "meaning": "landlord"
+    },
+    {
+      "page": 25,
+      "word": "verstehen",
+      "sentences": [
+        "Können Sie mich verstehen?"
+      ],
+      "meaning": "to understand"
+    },
+    {
+      "page": 25,
+      "word": "der Verwandte, -n",
+      "sentences": [
+        "Peter besucht seine Verwandten in Polen."
+      ],
+      "meaning": "relative"
+    },
+    {
+      "page": 25,
+      "word": "viel",
+      "sentences": [
+        "Hier regnet es viel."
+      ],
+      "meaning": "much, a lot"
+    },
+    {
+      "page": 25,
+      "word": "vielleicht",
+      "sentences": [
+        "Ich komme vielleicht mit dem Bus."
+      ],
+      "meaning": "maybe, perhaps"
+    },
+    {
+      "page": 25,
+      "word": "von",
+      "sentences": [
+        "Das Auto von Felix ist kaputt.",
+        "Er kommt gerade von Köln/von zu Hause."
+      ],
+      "meaning": "from, of"
+    },
+    {
+      "page": 25,
+      "word": "vor",
+      "sentences": [
+        "Der Termin war vor einer Stunde.",
+        "Das Auto steht vor der Tür."
+      ],
+      "meaning": "in front of, before"
+    },
+    {
+      "page": 25,
+      "word": "der Vorname, -n",
+      "sentences": [
+        "Ich heiße Müller, mein Vorname ist Eva."
+      ],
+      "meaning": "first name"
+    },
+    {
+      "page": 25,
+      "word": "die Vorsicht",
+      "sentences": [
+        "Vorsicht! Da kommt ein Auto."
+      ],
+      "meaning": "caution"
+    },
+    {
+      "page": 25,
+      "word": "(sich) vorstellen",
+      "sentences": [
+        "Wir wollen uns kennenlernen. Können Sie sich bitte vorstellen?"
+      ],
+      "meaning": "to introduce; to imagine"
+    },
+    {
+      "page": 25,
+      "word": "die Vorwahl",
+      "sentences": [
+        "Wie ist die Vorwahl von München?"
+      ],
+      "meaning": "area code"
+    },
+    {
+      "page": 25,
+      "word": "wandern",
+      "sentences": [
+        "Wir wandern um den Chiemsee."
+      ],
+      "meaning": "to hike"
+    },
+    {
+      "page": 25,
+      "word": "wann",
+      "sentences": [
+        "Wann bist du fertig?",
+        "Wann kann ich Sie anrufen?",
+        "Wann sind Sie geboren?"
+      ],
+      "meaning": "when"
+    },
+    {
+      "page": 25,
+      "word": "warten",
+      "sentences": [
+        "Können Sie ein paar Minuten warten?",
+        "Auf wen warten Sie?"
+      ],
+      "meaning": "to wait"
+    },
+    {
+      "page": 25,
+      "word": "warum",
+      "sentences": [
+        "Warum kommt er nicht?"
+      ],
+      "meaning": "why"
+    },
+    {
+      "page": 25,
+      "word": "was",
+      "sentences": [
+        "Was ist das?",
+        "Was möchten Sie?"
+      ],
+      "meaning": "what"
+    },
+    {
+      "page": 25,
+      "word": "was für ein",
+      "sentences": [
+        "Was für eine Farbe möchten Sie?"
+      ],
+      "meaning": "what kind of"
+    },
+    {
+      "page": 25,
+      "word": "(sich) waschen",
+      "sentences": [
+        "Wo kann ich mir die Hände waschen?",
+        "Ich muss morgen waschen."
+      ],
+      "meaning": "to wash"
+    },
+    {
+      "page": 25,
+      "word": "das Wasser",
+      "sentences": [
+        "Ein Glas Wasser, bitte."
+      ],
+      "meaning": "water"
+    },
+    {
+      "page": 25,
+      "word": "weh tun",
+      "sentences": [
+        "Ich muss zum Arzt. Mein Bein tut weh."
+      ],
+      "meaning": "to hurt"
+    },
+    {
+      "page": 25,
+      "word": "weiblich",
+      "sentences": [
+        "Kreuzen Sie bitte an: „weiblich“ oder „männlich“."
+      ],
+      "meaning": "female"
+    },
+    {
+      "page": 25,
+      "word": "der Wein",
+      "sentences": [
+        "Nein danke, ich möchte keinen Wein."
+      ],
+      "meaning": "wine"
+    },
+    {
+      "page": 25,
+      "word": "weit",
+      "sentences": [
+        "Zum Bahnhof ist es nicht weit."
+      ],
+      "meaning": "far"
+    },
+    {
+      "page": 26,
+      "word": "weiter",
+      "sentences": [
+        "Der Bus fährt nicht weiter."
+      ],
+      "meaning": "further, continuing"
+    },
+    {
+      "page": 26,
+      "word": "welch-",
+      "sentences": [
+        "Welches Buch möchtest du?"
+      ],
+      "meaning": "which"
+    },
+    {
+      "page": 26,
+      "word": "die Welt",
+      "sentences": [
+        "Es gibt viele Probleme auf der Welt."
+      ],
+      "meaning": "world"
+    },
+    {
+      "page": 26,
+      "word": "wenig",
+      "sentences": [
+        "Ich habe leider nur wenig verstanden.",
+        "Er verdient wenig."
+      ],
+      "meaning": "little, few"
+    },
+    {
+      "page": 26,
+      "word": "wer",
+      "sentences": [
+        "Wer ist das?"
+      ],
+      "meaning": "who"
+    },
+    {
+      "page": 26,
+      "word": "werden",
+      "sentences": [
+        "Mein Sohn will Arzt werden."
+      ],
+      "meaning": "to become"
+    },
+    {
+      "page": 26,
+      "word": "das Wetter",
+      "sentences": [
+        "Wir hatten schlechtes Wetter."
+      ],
+      "meaning": "weather"
+    },
+    {
+      "page": 26,
+      "word": "wichtig",
+      "sentences": [
+        "Dieses Formular ist sehr wichtig."
+      ],
+      "meaning": "important"
+    },
+    {
+      "page": 26,
+      "word": "wie",
+      "sentences": [
+        "Wie heißt du?",
+        "Er schreibt wie ein Kind.",
+        "Meine Frau ist so groß wie ich.",
+        "Wie soll ich das machen?",
+        "Wie groß ist die Wohnung?",
+        "Wie bitte?",
+        "Wie lange bist du schon hier?"
+      ],
+      "meaning": "how"
+    },
+    {
+      "page": 26,
+      "word": "wiederholen",
+      "sentences": [
+        "Können Sie das bitte wiederholen?"
+      ],
+      "meaning": "to repeat"
+    },
+    {
+      "page": 26,
+      "word": "das Wiederhören",
+      "sentences": [
+        "Wir müssen jetzt Schluss machen.",
+        "Also auf Wiederhören!"
+      ],
+      "meaning": "goodbye (on the phone)"
+    },
+    {
+      "page": 26,
+      "word": "das Wiedersehen",
+      "sentences": [
+        "Auf Wiedersehen!"
+      ],
+      "meaning": "goodbye (in person)"
+    },
+    {
+      "page": 26,
+      "word": "wie viel",
+      "sentences": [
+        "Wie viel Milch nehmen Sie?"
+      ],
+      "meaning": "how much"
+    },
+    {
+      "page": 26,
+      "word": "willkommen",
+      "sentences": [
+        "Herzlich willkommen!"
+      ],
+      "meaning": "welcome"
+    },
+    {
+      "page": 26,
+      "word": "der Wind",
+      "sentences": [
+        "Der Wind kommt aus Osten."
+      ],
+      "meaning": "wind"
+    },
+    {
+      "page": 26,
+      "word": "wir",
+      "sentences": [
+        "Wir lernen Deutsch."
+      ],
+      "meaning": "we"
+    },
+    {
+      "page": 26,
+      "word": "wissen",
+      "sentences": [
+        "Weißt du, wie er heißt?"
+      ],
+      "meaning": "to know (a fact)"
+    },
+    {
+      "page": 26,
+      "word": "wo",
+      "sentences": [
+        "Wo waren Sie im Urlaub?",
+        "Wo ist die Post?",
+        "Wo sind Sie geboren?"
+      ],
+      "meaning": "where"
+    },
+    {
+      "page": 26,
+      "word": "woher",
+      "sentences": [
+        "Woher kommen Sie?"
+      ],
+      "meaning": "where from"
+    },
+    {
+      "page": 26,
+      "word": "wohin",
+      "sentences": [
+        "Wohin fährt dieser Bus?",
+        "Wohin wollen Sie am Wochenende?"
+      ],
+      "meaning": "where to"
+    },
+    {
+      "page": 26,
+      "word": "wohnen",
+      "sentences": [
+        "Ich wohne in München."
+      ],
+      "meaning": "to live, to reside"
+    },
+    {
+      "page": 26,
+      "word": "die Wohnung, -en",
+      "sentences": [
+        "Seit wann haben Sie diese Wohnung?"
+      ],
+      "meaning": "apartment, flat"
+    },
+    {
+      "page": 26,
+      "word": "wollen",
+      "sentences": [
+        "Wollen Sie einen Kaffee trinken?"
+      ],
+      "meaning": "to want"
+    },
+    {
+      "page": 26,
+      "word": "das Wort, -ö, er/-e",
+      "sentences": [
+        "Ich kenne das Wort nicht."
+      ],
+      "meaning": "word"
+    },
+    {
+      "page": 26,
+      "word": "wunderbar",
+      "sentences": [
+        "Das Essen schmeckt wunderbar."
+      ],
+      "meaning": "wonderful"
+    },
+    {
+      "page": 26,
+      "word": "zahlen",
+      "sentences": [
+        "Zahlen, bitte!"
+      ],
+      "meaning": "to pay"
+    },
+    {
+      "page": 26,
+      "word": "die Zeit",
+      "sentences": [
+        "Ich habe heute keine Zeit."
+      ],
+      "meaning": "time"
+    },
+    {
+      "page": 26,
+      "word": "zurzeit",
+      "sentences": [
+        "Zurzeit habe ich sehr viel zu tun."
+      ],
+      "meaning": "currently, at the moment"
+    },
+    {
+      "page": 26,
+      "word": "die Zeitung, -en",
+      "sentences": [
+        "Ich lese gern Zeitung."
+      ],
+      "meaning": "newspaper"
+    },
+    {
+      "page": 26,
+      "word": "die Zigarette, -n",
+      "sentences": [
+        "Wie teuer sind die Zigaretten?"
+      ],
+      "meaning": "cigarette"
+    },
+    {
+      "page": 26,
+      "word": "das Zimmer, –",
+      "sentences": [
+        "Das Zimmer ist groß.",
+        "Öffne im Schlafzimmer das Fenster, bitte!",
+        "Die Wohnung hat drei Zimmer.",
+        "Ich habe ein Zimmer bestellt."
+      ],
+      "meaning": "room"
+    },
+    {
+      "page": 26,
+      "word": "der Zoll",
+      "sentences": [
+        "Wir müssen noch durch den Zoll."
+      ],
+      "meaning": "customs"
+    },
+    {
+      "page": 26,
+      "word": "zu",
+      "sentences": [
+        "Der Bus fährt zum Bahnhof.",
+        "Ich gehe zu Fuß.",
+        "Ich bin zu Hause."
+      ],
+      "meaning": "to, closed"
+    },
+    {
+      "page": 27,
+      "word": "zufrieden",
+      "sentences": [
+        "Ich bin mit der Wohnung zufrieden."
+      ],
+      "meaning": "satisfied"
+    },
+    {
+      "page": 27,
+      "word": "der Zug, -ü, e",
+      "sentences": [
+        "Ich fahre gern mit dem Zug."
+      ],
+      "meaning": "train"
+    },
+    {
+      "page": 27,
+      "word": "zurück",
+      "sentences": [
+        "Einmal Frankfurt und zurück.",
+        "Wann kommst du zurück?"
+      ],
+      "meaning": "back"
+    },
+    {
+      "page": 27,
+      "word": "zusammen",
+      "sentences": [
+        "Sollen wir zusammen essen gehen?",
+        "Das macht zusammen 2 Euro 80."
+      ],
+      "meaning": "together"
+    },
+    {
+      "page": 27,
+      "word": "zwischen",
+      "sentences": [
+        "Heidelberg liegt zwischen Frankfurt und Stuttgart.",
+        "Zwischen 8 und 10 Uhr bin ich zu Hause."
+      ],
+      "meaning": "between"
+    }
+  ]
+}
